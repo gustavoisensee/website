@@ -133,14 +133,16 @@ textarea {
 	margin-right: 15px;
 }
 
-.menu-navigation li.current a{
-	cursor: default;
-	opacity: .5;
-}
 
-.menu-navigation a {
+
+.menu-navigation .menu span {
 	color: #fff;
 	text-transform: uppercase;
+}
+
+.current > span {
+	cursor: pointer;
+	color: #000 !important
 }
 
 .intro {
@@ -254,7 +256,7 @@ li > span {
 }
 
 .underline {
-	text-decoration: underline !important;
+	color: #000;
 }
 
 .contentLimit {

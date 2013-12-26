@@ -24,12 +24,12 @@ function Scope() {
 		
 
 		goToSection = function (event) {
-			var section = $(this).attr('href'),
-				sectionOffset = $(section).offset().top;
-			
+			var section = $(this).attr('data-to'),
+				sectionOffset = $('#'+section).offset().top;
+			debugger;
 			$('#menu-navigation li').removeClass('current');
 			$(this).parent().addClass('current');
-			current = section.substring(1, section.length);
+			current = section;
 			$(window).off('scroll');
 
 			$('html, body').stop(true, false).animate({
@@ -50,8 +50,8 @@ function Scope() {
 					if(current != $(this).attr('id')){
 						current = $(this).attr('id');
 						$('#menu-navigation li').removeClass('current');
-						$('#menu-navigation a[href="#'+current+'"]').parent('li').addClass("current");
-						$('#menu-navigation a[href="#'+current+'"]').trigger('click');
+						$('#menu-navigation [data-to="'+current+'"]').parent('li').addClass("current");
+						$('#menu-navigation [data-to="'+current+'"]').trigger('click');
 						return false;
 					}
 				}
@@ -100,7 +100,7 @@ function Scope() {
 
 		load = function () {
 			$('body').data({'go': true});
-			$('#menu-navigation a').on('click', goToSection);
+			$('#menu-navigation .menu').on('click', goToSection);
 			$('#arrows-down-doc').on('click', goDownProject);
 			$('#arrows-down-con').on('click', goDownContact);
 

@@ -7,7 +7,7 @@ function LangPage () {
 		menuLangPtBR: 'Português',
 		menuLangEnUS: 'Inglês',
 		developer: 'Desenvolvedor Front-end',
-		myDescription: "Eu sou Gustavo, tenho 25 anos de idade, formado em técnico de programação pelo cólegio SENAI. Atualmente estou cursando a 7ª de Sistemas de Informação na UNISUL. Trabalhei em duas empresas privadas, participo de projetos open source e atualmente estou trabalhando no LabTrans, laboratorio de Transportes e logística da Universidade Federal de Santa Catarina, Brasil.",
+		myDescription: "Eu sou Gustavo, tenho 25 anos de idade, formado em técnico de programação pelo colégio SENAI. Atualmente estou cursando a 7ª de Sistemas de Informação na UNISUL. Trabalhei em duas empresas privadas, particípo de projetos open source e atualmente estou trabalhando no LabTrans, Laboratório de Transportes e Logística da Universidade Federal de Santa Catarina, Brasil.",
 
 		goToProject: 'Ir para Projetos',
 		project: 'Projetos',
@@ -29,7 +29,7 @@ function LangPage () {
 			menuLangPtBR: 'Portuguese',
 			menuLangEnUS: 'English',
 			developer: 'Front-end Developer',
-			myDescription: "I'm Gustavo, I'm 25 years old, graduated in technical programming by SENAI College. I am currently studying the 7th of Information Systems in UNISUL. I worked in two private companies, participate in open source projects and am currently working on LabTrans, Transportation and logistics laboratory, Federal University of Santa Catarina, Brazil.",
+			myDescription: "I'm Gustavo, I'm 25 years old, Graduated in technical programming by SENAI College. I am currently studying the 7th of Information Systems in UNISUL. I worked in two private companies, participate in open source projects and am currently working on LabTrans, Transportation and Logistics Laboratory, Federal University of Santa Catarina, Brazil.",
 
 			goToProject: 'Go to Projects',
 			project: 'Projects',
