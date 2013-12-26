@@ -8,7 +8,7 @@ function Scope() {
 
 			$scope.sendEmail = function(user, validate) {
 				if (validate) {
-					//sendEmail(user);
+					sendEmail(user);
 					$scope.user = {};
 				}
 			}

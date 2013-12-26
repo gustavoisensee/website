@@ -28,7 +28,7 @@ function LangPage () {
 			menuContact: 'Contact',
 			menuLangPtBR: 'Portuguese',
 			menuLangEnUS: 'English',
-			developer: 'Front-end engineer',
+			developer: 'Front-end Developer',
 			myDescription: "I'm Gustavo, I'm 25 years old, graduated in technical programming by SENAI College. I am currently studying the 7th of Information Systems in UNISUL. I worked in two private companies, participate in open source projects and am currently working on LabTrans, Transportation and logistics laboratory, Federal University of Santa Catarina, Brazil.",
 
 			goToProject: 'Go to Projects',
