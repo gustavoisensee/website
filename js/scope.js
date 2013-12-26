@@ -25,69 +25,47 @@ function Scope() {
 
 		goToSection = function (event) {
 			var section = $(this).attr('href'),
-				sectionOffset = $(section).offset().top,
-				speed = Math.round(sectionOffset/2)+800;
-
-			$('body').data({'go': false}).on("mousewheel", function(event) {
-				$('body').removeClass('opaque');
-				event.preventDefault();
-				return false;
-     		});
+				sectionOffset = $(section).offset().top;
 			
+			$('#menu-navigation li').removeClass('current');
+			$(this).parent().addClass('current');
+			current = section.substring(1, section.length);
+			$(window).off('scroll');
+
 			$('html, body').stop(true, false).animate({
 	        	scrollTop: sectionOffset
-	    	}, speed, setSection);
-	    	event.preventDefault();
+	    	}, 
+	    	{
+	    		duration: 800, 
+		    	complete: function() {
+		    		$(window).on('scroll', goToSectionTwo);
+		    	}
+	    	});
 		},
 
-		changeSection = function () {
-			$('#menu-navigation li').removeClass('current');
-			$('#menu-navigation a[href="#'+current+'"]').parent('li').addClass("current");
-			if($('body').data('go')){
-				$('#menu-navigation a[href="#'+current+'"]').trigger('click');
-			}
-		},
-
-		checkSection = function () {
+		goToSectionTwo = function (event) {
 			$('section').each(function(){
-				$('#masthead').removeAttr('class').addClass(current);
-				if ($(window).scrollTop()>=$(this).offset().top-50 && $(window).scrollTop()<$(this).offset().top+$(this).height()-50){
+				var cont = ($(window).scrollTop() - $(this).offset().top);
+				if (current != $(this).attr('id') && (cont > -100) && (cont < 100)) {
 					if(current != $(this).attr('id')){
 						current = $(this).attr('id');
-						$('#masthead').removeAttr('class');
-						changeSection();
+						$('#menu-navigation li').removeClass('current');
+						$('#menu-navigation a[href="#'+current+'"]').parent('li').addClass("current");
+						$('#menu-navigation a[href="#'+current+'"]').trigger('click');
+						return false;
 					}
-					return false;
 				}
 			});
-			if($(window).scrollTop()>=$('#'+current).offset().top+100 && $(window).scrollTop()<$('#'+current).offset().top+$('#'+current).height()+100 && $('body').data('go')){
-				$('body').addClass('opaque');
-			} else {
-				$('body').removeClass('opaque');
-			}
-		},
-		
-		setSection = function () {
-			$('#masthead').removeAttr('class');
-			$('body').data({'go': true}).off('mousewheel').removeClass('opaque');
-		},
-
-		goToDefinition = function (event) {
-			if($('#project').data('ready')) {
-				$(this).parent('li').addClass('current');
-				$('#project').slideme('playToId', $(this).attr('href'));
-	    	}
-	    	event.preventDefault();
-		},
+		}
 
 		goDownProject = function (event){
-			$('#menuProject').trigger('click');	
-	    	event.preventDefault();
+			$('#menuProject').trigger('click');
+			event.preventDefault();
 		},
 		
 		goDownContact = function (event){
-			$('#menuContact').trigger('click');	
-	    	event.preventDefault();
+			$('#menuContact').trigger('click');
+			event.preventDefault();
 		},
 
 		sendEmail = function (contact){
@@ -125,12 +103,8 @@ function Scope() {
 			$('#menu-navigation a').on('click', goToSection);
 			$('#arrows-down-doc').on('click', goDownProject);
 			$('#arrows-down-con').on('click', goDownContact);
-			
-			$('#project, #contact').slideme({ speed: 3000, css3: true });
 
-			$(window).on('scroll', checkSection).on('resize', function(event) {
-				$('#menu-navigation a[href="#'+current+'"]').trigger('click');
-			}).trigger('scroll');
+			$(window).on('scroll', goToSectionTwo);
 
 			Controller.$inject = ['$scope', '$http'];
 			Controllers.controller('Controllers', Controller);
