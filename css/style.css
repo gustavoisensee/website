@@ -324,6 +324,10 @@ img.illustration {
 	box-shadow: 0 0 0 1px rgba(0,0,0,.1);
 	border-radius: 3px;
 }
+.item:hover {
+	background-color: #EFF;
+	border-radius: 3px;
+}
 
 .ui.menu .item, .ui.menu .item>a {
 	color: rgba(0,0,0,.75);
@@ -335,6 +339,7 @@ img.illustration {
 	border-top: 0;
 	border-left: 0 solid rgba(0,0,0,0);
 	border-right: 0;
+	border-bottom: 2px solid gray;
 }
 .ui.menu .item {
 	font-size: 16px;
