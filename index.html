@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="WebSite">
 
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<meta charset="UTF-8"></meta>
-	<meta name="viewport" content="width=device-width" />
-
-	<title>Website - Gustavo Isensee</title>
+	<title>Gustavo Isensee</title>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,200' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' href='css/style.min.css' type='text/css' />
+	<link rel='stylesheet' href='css/style.css' type='text/css' />
 
+	<!-- plugins -->
     <script src="js/plugin/jquery-1.10.1.min.js"></script>
     <script src="js/plugin/jquery.noty.packaged.min.js"></script>
     <script src="js/plugin/angular.min.js"></script>
 
+    <!-- mine -->
     <script src="js/language.min.js"></script>
     <script src="js/scope.js"></script>
 </head>
@@ -23,24 +23,30 @@
 	    <header id="masthead">
     		<ul id="menu-navigation" class="menu-navigation">
     			<li class="current">
-    				<span id="menuHome" data-to='home' class='menu'>{{langPageCurrent.menuHome}}</span>
+    				<span id="menuHome" data-to='home' class='menu'>{{language.menuHome}}</span>
 				</li>
 				<li>
-					<span id="menuProject" data-to='project' class='menu'>{{langPageCurrent.menuProject}}</span>
+					<span id="menuProject" data-to='project' class='menu'>{{language.menuProject}}</span>
 				</li>
 				<li>
-					<span id="menuContact" data-to='contact' class='menu'>{{langPageCurrent.menuContact}}</span>
+					<span id="menuContact" data-to='contact' class='menu'>{{language.menuContact}}</span>
 				</li>
 				<li>
 					<span>lang: { </span>
-					<span ng-class="langPageCurrent.lang == 'ptBR' ? 'underline' : ''"
-						ng-click="alterLang('ptBR')">{{langPageCurrent.menuLangPtBR}}</span>
+					<span ng-class="language.lang == 'ptBR' ? 'underline' : ''"
+						ng-click="alterLang('ptBR')">{{language.menuLangPtBR}}</span>
 					<span>, </span>
-					<span ng-class="langPageCurrent.lang == 'enUS' ? 'underline' : ''"
-						ng-click="alterLang('enUS')">{{langPageCurrent.menuLangEnUS}}</span>
+					<span ng-class="language.lang == 'enUS' ? 'underline' : ''"
+						ng-click="alterLang('enUS')">{{language.menuLangEnUS}}</span>
 					<span> }</span>
 				</li>
 			</ul>
+
+			<div id="dl-menu" class="dl-menuwrapper">
+				<button id='btnDlmenu' class="dl-trigger"></button>
+				<ul class="dl-menu" menu>
+				</ul>
+			</div>
 	    </header>
 
 		<section id="home" class="intro">
@@ -49,13 +55,13 @@
             </div>
 			<div id="description" class="divRight">
 				<h2><span>Gustavo</span></h2>
-                <h3>{{langPageCurrent.developer}}</h3>
+                <h3>{{language.developer}}</h3>
                 <div class="contentLimit">
-                	<p>{{langPageCurrent.myDescription}}</p>
+                	<p>{{language.myDescription}}</p>
             	</div>
 			</div>
 			<a id="arrows-down-doc" class="arrows-down" href="#project" 
-            	title="{{langPageCurrent.goToProject}}">{{langPageCurrent.goToProject}}</a>
+            	title="{{language.goToProject}}">{{language.goToProject}}</a>
 		</section>
 
 		<section id="project" class="intro">
@@ -63,61 +69,74 @@
             	<img src="img/project.jpg" class="illustration" alt="" />
             </div>
             <div class="divRight divRightProject">
-                <h2><span>{{langPageCurrent.project}}</span></h2>
-				<div class="ui vertical fluid menu">
-		            <div class="item">
-		            	<span>Custos Portuários</span>
-		            	<a href="http://revista.labtrans.ufsc.br/custos-portuarios-terao-parametros/" target="_blank">Link 2</a>
-		            	<span class="hifen">&nbsp;-&nbsp;</span>
-						<a href="http://www.labtrans.ufsc.br/pt-br/projetos/portos/custos-portuarios/" target="_blank">Link 1</a>
-		            </div>
-		            <div class="item">
-		            	<span>Banco de Horas</span>
-		            </div>
-	          	</div>
-				<div class="ui vertical fluid menu">
-				    <div class="item">
-				    	<span>node-first-app</span>
-		            	<a href="https://github.com/gustavoisensee/node-first-app" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>gustavoisensee.com</span>
-		            	<a href="https://github.com/gustavoisensee/gustavoisensee.com" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>Gplus-button</span>
-		            	<a href="https://github.com/gustavoisensee/gplus-button" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>Pinterest-button</span>
-		            	<a href="https://github.com/gustavoisensee/pinterest-button" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>Tumblr-button</span>
-		            	<a href="https://github.com/gustavoisensee/tumblr-button" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>Linkedin-button</span>
-		            	<a href="https://github.com/gustavoisensee/linkedin-button" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>DrawingBoard</span>
-		            	<a href="https://github.com/gustavoisensee/drawingboard" target="_blank">Link</a>
-				    </div>
-				</div>
-				<div class="ui vertical fluid menu">
-					<div class="item">
-						<span>Realclinic</span>
-		            	<a href="http://www.tdsa.com.br/joomla/index.php/produtos?id=3" target="_blank">Link</a>
+                <h2><span>{{language.project}}</span></h2>
+				<div class="divLeftInside">
+					<div class="ui vertical fluid menu">
+					    <div class="head item">
+							<span>GitHub - 2013</span>
+						</div>
+					    <div class="item">
+					    	<span>node-first-app</span>
+			            	<a href="https://github.com/gustavoisensee/node-first-app" target="_blank">Link</a>
+					    </div>
+					    <div class="item">
+					    	<span>gustavoisensee.com</span>
+			            	<a href="https://github.com/gustavoisensee/gustavoisensee.com" target="_blank">Link</a>
+					    </div>
+					    <div class="item">
+					    	<span>Gplus-button</span>
+			            	<a href="https://github.com/gustavoisensee/gplus-button" target="_blank">Link</a>
+					    </div>
+					    <div class="item">
+					    	<span>Pinterest-button</span>
+			            	<a href="https://github.com/gustavoisensee/pinterest-button" target="_blank">Link</a>
+					    </div>
+					    <div class="item">
+					    	<span>Tumblr-button</span>
+			            	<a href="https://github.com/gustavoisensee/tumblr-button" target="_blank">Link</a>
+					    </div>
+					    <div class="item">
+					    	<span>Linkedin-button</span>
+			            	<a href="https://github.com/gustavoisensee/linkedin-button" target="_blank">Link</a>
+					    </div>
+					    <div class="item">
+					    	<span>DrawingBoard</span>
+			            	<a href="https://github.com/gustavoisensee/drawingboard" target="_blank">Link</a>
+					    </div>
 					</div>
-					<div class="item">
-						<span>Realblood</span>
-		            	<a href="http://www.tdsa.com.br/joomla/index.php/produtos?id=4" target="_blank">Link</a>
+				</div>
+				<div class="divRightInside">
+					<div class="ui vertical fluid menu">
+			            <div class="head item">
+							<span>LabTrans - 2013</span>
+						</div>
+			            <div class="item">
+			            	<span>Custos Portuários</span>
+			            	<a href="http://revista.labtrans.ufsc.br/custos-portuarios-terao-parametros/" target="_blank">Link 2</a>
+			            	<span class="hifen">&nbsp;-&nbsp;</span>
+							<a href="http://www.labtrans.ufsc.br/pt-br/projetos/portos/custos-portuarios/" target="_blank">Link 1</a>
+			            </div>
+			            <div class="item">
+			            	<span>Banco de Horas</span>
+			            </div>
+		          	</div>
+					<div class="ui vertical fluid menu">
+						<div class="head item">
+							<span>TDSA - 2009/2013</span>
+						</div>
+						<div class="item">
+							<span>Realclinic</span>
+			            	<a href="http://www.tdsa.com.br/joomla/index.php/produtos?id=3" target="_blank">Link</a>
+						</div>
+						<div class="item">
+							<span>Realblood</span>
+			            	<a href="http://www.tdsa.com.br/joomla/index.php/produtos?id=4" target="_blank">Link</a>
+						</div>
 					</div>
 				</div>
 			</div>
             <a id="arrows-down-con" class="arrows-down" href="#contact" 
-            	title="{{langPageCurrent.goToContact}}">{{langPageCurrent.goToContact}}</a>
+            	title="{{language.goToContact}}">{{language.goToContact}}</a>
 	    </section>
 
 		<section id="contact" class="intro">
@@ -128,23 +147,23 @@
                 <form name="contact" class="contentLimit" novalidate>
 					<fieldset>
 						<input type="text" id="name" name="name" value="" size="40" ng-model="user.name"
-							required placeholder="{{langPageCurrent.name}}" />
-						<span class="error" ng-show="!contact.name.$valid">{{langPageCurrent.fieldRequired}}</span>
+							required placeholder="{{language.name}}" />
+						<span class="error" ng-show="!contact.name.$valid">{{language.fieldRequired}}</span>
 					</fieldset>
 					<fieldset>
 						<input type="email" id="email" name="email" value="" size="40" ng-model="user.email"
-							required placeholder="{{langPageCurrent.email}}" />
-						<span class="error" ng-show="!contact.email.$valid">{{langPageCurrent.fieldRequired}}</span>
+							required placeholder="{{language.email}}" />
+						<span class="error" ng-show="!contact.email.$valid">{{language.fieldRequired}}</span>
 					</fieldset>
 					<fieldset>
 						<input type="text" id="subject" name="subject" value="" size="40" ng-model="user.subject"
-							required placeholder="{{langPageCurrent.subject}}" />
-						<span class="error" ng-show="!contact.subject.$valid">{{langPageCurrent.fieldRequired}}</span>
+							required placeholder="{{language.subject}}" />
+						<span class="error" ng-show="!contact.subject.$valid">{{language.fieldRequired}}</span>
 					</fieldset>
 					<fieldset>
 						<textarea id="message" name="message" cols="40" rows="10" ng-model="user.message"
-							required placeholder="{{langPageCurrent.message}}"></textarea>
-						<span class="error" ng-show="!contact.message.$valid">{{langPageCurrent.fieldRequired}}</span>
+							required placeholder="{{language.message}}"></textarea>
+						<span class="error" ng-show="!contact.message.$valid">{{language.fieldRequired}}</span>
 					</fieldset>
 					<fieldset>
 						<a class="gplus-icon" href="https://plus.google.com/109325404047497404656/about" 
@@ -159,7 +178,7 @@
 		                <a class="twitter-icon" href="http://twitter.com/gustavoisensee" target="_blank" 
 		                	title="Twitter - @gustavoisensee"></a>
 
-						<button id="btnSend" ng-click="sendEmail(user, contact.$valid)">{{langPageCurrent.send}}</button>
+						<button id="btnSend" ng-click="sendEmail(user, contact.$valid)">{{language.send}}</button>
 					</fieldset>
 				</form>
 			</div>

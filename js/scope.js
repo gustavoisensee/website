@@ -1,10 +1,28 @@
 function Scope() {
 	var current = "home",
 
-		Controllers = angular.module('Controllers', []),
-		Controller = function ($scope, $http) {
+		modulo = angular
+			.module('WebSite', [])
+			.directive('menu', function() {
+			    return {
+			      	template: '<li class=\'current\'>'+
+						'<span data-to=\'home\' class=\'menu\'>{{language.menuHome}}</span>'+
+						'</li><li><span data-to=\'project\' class=\'menu\'>{{language.menuProject}}</span>'+
+						'</li><li><span data-to=\'contact\' class=\'menu\'>{{language.menuContact}}</span>'+
+						'</li><li><span>lang: { </span>'+
+						'<span class=\"{{language.lang == \'ptBR\' ? \'underline\' : \'\'\}}"'+
+						'  ng-click=\"alterLang(\'ptBR\')\">{{language.menuLangPtBR}}</span>'+
+						'<span>, </span>'+
+						'<span class=\"{{language.lang == \'enUS\' ? \'underline\' : \'\'}}\"'+
+						'  ng-click=\"alterLang(\'enUS\')\">{{language.menuLangEnUS}}</span>'+
+						'<span> }</span></li>'
+			    };
+			}
+		),
+
+		Controller = function ($scope) {
 			$scope.user = {};
-			$scope.langPageCurrent = localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR;
+			$scope.language = localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR;
 
 			$scope.sendEmail = function(user, validate) {
 				if (validate) {
@@ -17,18 +35,23 @@ function Scope() {
 				var condition = (lang === 'ptBR'),
 					lang = (condition ? langPage.ptBR : langPage.enUS);
 
-				$scope.langPageCurrent = lang;
+				$scope.language = lang;
 				localStorage.setItem('lang', JSON.stringify(lang));
 			}
 		},
-		
 
 		goToSection = function (event) {
 			var section = $(this).attr('data-to'),
-				sectionOffset = $('#'+section).offset().top;
-			debugger;
+				sectionOffset = $('#'+section).offset().top,
+				lastC = '';
+
+			lastC = this.id.slice(-1);
+
 			$('#menu-navigation li').removeClass('current');
+			$('#dl-menu li').removeClass('current');
+			
 			$(this).parent().addClass('current');
+			$('[data-to='+section+']').parent().addClass('current');
 			current = section;
 			$(window).off('scroll');
 
@@ -41,6 +64,9 @@ function Scope() {
 		    		$(window).on('scroll', goToSectionTwo);
 		    	}
 	    	});
+	    	if ($('#dl-menu .dl-menuopen').length > 0) {
+	    		$('#btnDlmenu').click();	
+	    	};
 		},
 
 		goToSectionTwo = function (event) {
@@ -49,9 +75,9 @@ function Scope() {
 				if (current != $(this).attr('id') && (cont > -100) && (cont < 100)) {
 					if(current != $(this).attr('id')){
 						current = $(this).attr('id');
-						$('#menu-navigation li').removeClass('current');
-						$('#menu-navigation [data-to="'+current+'"]').parent('li').addClass("current");
-						$('#menu-navigation [data-to="'+current+'"]').trigger('click');
+						$('#menu-navigation li, #dl-menu li').removeClass('current');
+						$('#menu-navigation [data-to="'+current+'"], #dl-menu [data-to="'+current+'"]').parent('li').addClass("current");
+						$('#menu-navigation [data-to="'+current+'"], #dl-menu [data-to="'+current+'"]' ).trigger('click');
 						return false;
 					}
 				}
@@ -59,12 +85,12 @@ function Scope() {
 		}
 
 		goDownProject = function (event){
-			$('#menuProject').trigger('click');
+			$('[data-to=project]').trigger('click');
 			event.preventDefault();
 		},
 		
 		goDownContact = function (event){
-			$('#menuContact').trigger('click');
+			$('[data-to=contact]').trigger('click');
 			event.preventDefault();
 		},
 
@@ -98,21 +124,27 @@ function Scope() {
 			});
 		},
 
+		openMenu = function () {
+			if ($('#dl-menu .dl-menuopen').length > 0) {
+				$('#dl-menu ul').removeClass('dl-menuopen');
+			} else {
+				$('#dl-menu ul').addClass('dl-menuopen');
+			}
+		}
+
 		load = function () {
 			$('body').data({'go': true});
-			$('#menu-navigation .menu').on('click', goToSection);
+			$('#menu-navigation .menu, #dl-menu .menu').on('click', goToSection);
 			$('#arrows-down-doc').on('click', goDownProject);
 			$('#arrows-down-con').on('click', goDownContact);
+			$('#btnDlmenu').on('click', openMenu);
 
 			$(window).on('scroll', goToSectionTwo);
-
-			Controller.$inject = ['$scope', '$http'];
-			Controllers.controller('Controllers', Controller);
 		}	
 
 	return {
-		Controller: Controller,
-		load: load
+		load: load,
+		Controller: Controller
 	};
 
 }

@@ -128,12 +128,16 @@ textarea {
 	margin-left: 15px;
 }
 
-.menu-navigation li {
-	display: inline;
-	margin-right: 15px;
+@media (max-width: 524px){
+	.menu-navigation {
+		display: none;
+	}
 }
 
-
+.menu-navigation li {
+	display: inline;
+	margin-right: 15px
+}
 
 .menu-navigation .menu span {
 	color: #fff;
@@ -142,7 +146,7 @@ textarea {
 
 .current > span {
 	cursor: pointer;
-	color: #000 !important
+	color: #D8D8D8 !important
 }
 
 .intro {
@@ -256,7 +260,7 @@ li > span {
 }
 
 .underline {
-	color: #000;
+	color: #D8D8D8;
 }
 
 .contentLimit {
@@ -285,32 +289,25 @@ li > span {
 	margin-top: 8% !important;
 }
 
+.divLeftInside {
+	float: left;
+	width: 50% !important;
+	margin-top: 0px !important;	
+	text-align: left !important;
+}
+
+.divRightInside {
+	float: right;
+	width: 50% !important;
+	margin-top: 0px !important;
+	text-align: left !important;
+}
+
 img.illustration {
 	max-width: 740px;
 	width: 60%;
 	border-radius: 50%;
 	box-shadow: 0 0 0 8px;
-}
-
-@media (max-width: 524px) {
-	.divLeft {
-		margin-top: 25% !important;
-		width: 100% !important;
-	}
-
-	.divRight {
-		width: 90% !important;
-	}
-}
-
-@media (max-width: 330px) {
-	h2 {
-		font-size: 48px !important;
-	}
-
-	button {
-		width: 60px !important;
-	}
 }
 
 /* project */
@@ -324,9 +321,14 @@ img.illustration {
 	box-shadow: 0 0 0 1px rgba(0,0,0,.1);
 	border-radius: 3px;
 }
+.ui.menu .head {
+	background-color: rgba(0,0,0,0.08);
+}
+
 .item:hover {
-	background-color: #EFF;
+	background-color: rgba(0,0,0,0.02);
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 .ui.menu .item, .ui.menu .item>a {
@@ -359,4 +361,162 @@ img.illustration {
 
 .ui.menu .item > a, .ui.menu .item > .hifen {
 	float: right;
+}
+
+/* menu mobile */
+
+.dl-menuwrapper {
+	width: 100%;
+	max-width: 300px;
+	float: left;
+	position: relative;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-perspective-origin: 50% 200%;
+	-moz-perspective-origin: 50% 200%;
+	perspective-origin: 50% 200%;
+}
+
+.dl-menuwrapper button {
+	display: none;
+	background: #ccc;
+	border: none;
+	width: 48px;
+	height: 45px;
+	text-indent: -900em;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	float: left;
+	margin: 5% 0% 0% 5%;
+}
+
+.dl-menuwrapper button:after {
+	content: '';
+	position: absolute;
+	width: 68%;
+	height: 5px;
+	background: #fff;
+	top: 10px;
+	left: 16%;
+	box-shadow: 
+		0 10px 0 #fff, 
+		0 20px 0 #fff;
+}
+
+.dl-menuwrapper ul {
+	padding: 0;
+	list-style: none;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.dl-menuwrapper li {
+	position: relative;
+	padding: 5px 0px 6px 0px;
+	line-height: 20px;
+	font-weight: 300;
+	color: #fff;
+	outline: none;
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+.dl-menuwrapper li a:hover {
+	background: rgba(255,248,213,0.1);
+}
+
+.dl-menuwrapper .dl-menu {
+	margin: 25% 0 0 5%;
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+	
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.dl-menuwrapper .dl-menu.dl-menuopen {
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Colors for demos */
+.dl-menuwrapper button {
+	background: #2867C6;
+}
+
+.dl-menuwrapper button:hover,
+.dl-menuwrapper button.dl-active,
+.dl-menuwrapper ul {
+	background: #2867C6;
+}
+
+
+/* medias */
+@media (min-width: 524px){
+	.dl-menuwrapper .dl-menu {
+		display: none;
+	}
+}
+
+@media (max-width: 524px) {
+	.dl-menuwrapper button {
+		display: block !important;
+	}
+
+	.divLeft {
+		margin-top: 25% !important;
+		width: 100% !important;
+	}
+
+	.divRight {
+		width: 100% !important;
+		text-align: center !important;
+	}
+
+	.divLeftInside {
+		width: 100% !important;
+	}
+
+	.divRightInside {
+		width: 100% !important;
+	}
+
+	.contentLimit {
+		width: 100%;
+	}
+
+	.ui.menu {
+		width: 100%;
+	}
+}
+
+@media (max-width: 330px) {
+	h2 {
+		font-size: 48px !important;
+	}
+
+	.contentLimit > button {
+		width: 60px !important;
+	}
 }
