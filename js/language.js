@@ -1,3 +1,8 @@
+/*
+ Langugage v1.0.1
+ (c) 2013 Gustavo Isensee
+ License: MIT
+*/
 function LangPage () {
 	var ptBR = {
 		lang: 'ptBR',

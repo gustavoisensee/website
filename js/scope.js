@@ -1,3 +1,8 @@
+/*
+ Scope v1.0.1
+ (c) 2013 Gustavo Isensee
+ License: MIT
+*/
 function Scope() {
 	var current = "home",
 
