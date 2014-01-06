@@ -135,7 +135,7 @@ function Scope() {
 			} else {
 				$('#dl-menu ul').addClass('dl-menuopen');
 			}
-		}
+		},
 
 		load = function () {
 			$('body').data({'go': true});
