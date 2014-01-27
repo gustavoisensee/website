@@ -81,7 +81,7 @@ function Scope() {
 	        	scrollTop: sectionOffset
 	    	}, 
 	    	{
-	    		duration: 800, 
+	    		duration: 400, 
 		    	complete: function() {
 		    		$(window).on('scroll', goToSectionTwo);
 		    	}
