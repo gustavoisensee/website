@@ -20,25 +20,7 @@
 </head>
 <body ng-controller="scope.Controller">
     <header id="masthead">
-		<ul id="menu-navigation" class="menu-navigation">
-			<li class="current">
-				<span id="menuHome" data-to='home' class='menu'>{{language.menuHome}}</span>
-			</li>
-			<li>
-				<span id="menuProject" data-to='project' class='menu'>{{language.menuProject}}</span>
-			</li>
-			<li>
-				<span id="menuContact" data-to='contact' class='menu'>{{language.menuContact}}</span>
-			</li>
-			<li>
-				<span>lang: { </span>
-				<span ng-class="language.lang == 'ptBR' ? 'underline' : ''"
-					ng-click="alterLang('ptBR')">{{language.menuLangPtBR}}</span>
-				<span>, </span>
-				<span ng-class="language.lang == 'enUS' ? 'underline' : ''"
-					ng-click="alterLang('enUS')">{{language.menuLangEnUS}}</span>
-				<span> }</span>
-			</li>
+		<ul id="menu-navigation" class="menu-navigation" menu>
 		</ul>
 
 		<div id="dl-menu" class="dl-menuwrapper">
@@ -56,7 +38,7 @@
 			<h2><span>Gustavo</span></h2>
             <h3>{{language.developer}}</h3>
             <div class="contentLimit">
-            	<p>{{language.myDescription}}</p>
+            	<p class="description">{{language.myDescription}}</p>
         	</div>
 		</div>
 		<a id="arrows-down-doc" class="arrows-down" href="#project" 
@@ -71,76 +53,42 @@
             <h2><span>{{language.project}}</span></h2>
 			<div class="divLeftInside">
 				<div class="ui vertical fluid menu">
-				    <div class="head item">
-						<span>GitHub - 2013</span>
-					</div>
-				    <div class="item">
-				    	<span>node-first-app</span>
-		            	<a href="https://github.com/gustavoisensee/node-first-app" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>gustavoisensee.com</span>
-		            	<a href="https://github.com/gustavoisensee/gustavoisensee.com" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>Gplus-button</span>
-		            	<a href="https://github.com/gustavoisensee/gplus-button" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>Pinterest-button</span>
-		            	<a href="https://github.com/gustavoisensee/pinterest-button" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>Tumblr-button</span>
-		            	<a href="https://github.com/gustavoisensee/tumblr-button" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>Linkedin-button</span>
-		            	<a href="https://github.com/gustavoisensee/linkedin-button" target="_blank">Link</a>
-				    </div>
-				    <div class="item">
-				    	<span>DrawingBoard</span>
-		            	<a href="https://github.com/gustavoisensee/drawingboard" target="_blank">Link</a>
-				    </div>
+					<span class="header item">2014</span>
+					<a class="head item" href="http://www.labtrans.ufsc.br/" target="_blank">LabTrans</a>
+	            	<span class="item" title="{{language.noLink}}">Questionário WebPortos</span>
+					<a class="head item" href="https://github.com/" target="_blank">GitHub</a>
+	            	<a class="item" href="https://github.com/gustavoisensee/gustavoisensee.com" target="_blank">gustavoisensee.com</a>
+	            	<a class="item" href="https://github.com/gustavoisensee/drawingboard" target="_blank">DrawingBoard</a>
 				</div>
 			</div>
 			<div class="divRightInside">
 				<div class="ui vertical fluid menu">
-		            <div class="head item">
-						<span>LabTrans - 2013</span>
-					</div>
-		            <div class="item">
-		            	<span>Custos Portuários</span>
-		            	<a href="http://revista.labtrans.ufsc.br/custos-portuarios-terao-parametros/" target="_blank">Link 2</a>
-		            	<span class="hifen">&nbsp;-&nbsp;</span>
-						<a href="http://www.labtrans.ufsc.br/pt-br/projetos/portos/custos-portuarios/" target="_blank">Link 1</a>
-		            </div>
-		            <div class="item">
-		            	<span>Banco de Horas</span>
-		            </div>
-	          	</div>
+					<span class="header item">2013</span>
+					<a class="head item" href="http://www.labtrans.ufsc.br/" target="_blank">LabTrans</a>
+					<a class="item" href="http://www.labtrans.ufsc.br/pt-br/projetos/portos/custos-portuarios/" target="_blank">Custos Portuários</a>
+	            	<span class="item" title="{{language.noLink}}">Banco de Horas</span>
+					<a class="head item" href="https://github.com/" target="_blank">GitHub</a>
+	            	<a class="item" href="https://github.com/gustavoisensee/node-first-app" target="_blank">node-first-app</a>
+	            	<a class="item" href="https://github.com/gustavoisensee/gustavoisensee.com" target="_blank">gustavoisensee.com</a>
+	            	<a class="item" href="https://github.com/gustavoisensee/gplus-button" target="_blank">Gplus-button</a>
+	            	<a class="item" href="https://github.com/gustavoisensee/pinterest-button" target="_blank">Pinterest-button</a>
+	            	<a class="item" href="https://github.com/gustavoisensee/tumblr-button" target="_blank">Tumblr-button</a>
+	            	<a class="item" href="https://github.com/gustavoisensee/linkedin-button" target="_blank">Linkedin-button</a>
+				</div>
 				<div class="ui vertical fluid menu">
-					<div class="head item">
-						<span>TDSA - 2009/2013</span>
-					</div>
-					<div class="item">
-						<span>Realclinic</span>
-		            	<a href="http://www.tdsa.com.br/joomla/index.php/produtos?id=3" target="_blank">Link</a>
-					</div>
-					<div class="item">
-						<span>Realblood</span>
-		            	<a href="http://www.tdsa.com.br/joomla/index.php/produtos?id=4" target="_blank">Link</a>
-					</div>
+					<span class="header item">2009/2012</span>
+					<a class="head item" href="http://www.tdsa.com.br/" target="_blank">TDSA</a>
+	            	<a class="item" href="http://www.tdsa.com.br/joomla/index.php/produtos?id=3" target="_blank">Realclinic</a>
+	            	<a class="item" href="http://www.tdsa.com.br/joomla/index.php/produtos?id=4" target="_blank">Realblood</a>
 				</div>
 			</div>
 		</div>
-        <a id="arrows-down-con" class="arrows-down" href="#contact" 
-        	title="{{language.goToContact}}">{{language.goToContact}}</a>
+        <a id="arrows-down-con" class="arrows-down" href="#contact" title="{{language.goToContact}}">{{language.goToContact}}</a>
     </section>
 
 	<section id="contact" class="intro">
 		<div class="divLeft">
-            <img src="img/letter.jpg" class="illustration" alt="" />
+            <img src="img/contact.jpg" class="illustration" alt="" />
         </div>
         <div class="divRight divRightContact">
             <form name="contact" class="contentLimit" novalidate>
@@ -165,18 +113,6 @@
 					<span class="error" ng-show="!contact.message.$valid">{{language.fieldRequired}}</span>
 				</fieldset>
 				<fieldset>
-					<a class="gplus-icon" href="https://plus.google.com/109325404047497404656/about" 
-						target="_blank" title="Google+ - Gustavo Isensee"></a>
-	        
-	                <a class="facebook-icon" href="http://www.facebook.com/profile.php?id=100000394403997"
-	                	target="_blank" title="Facebook - Gustavo Isensee"></a>
-	        
-	                <a class="linkedin-icon" href="http://www.linkedin.com/pub/gustavo-isensee/3a/93b/752"
-	                	target="_blank" title="LinkedIn - Gustavo Isensee"></a>
-	        
-	                <a class="twitter-icon" href="http://twitter.com/gustavoisensee" target="_blank" 
-	                	title="Twitter - @gustavoisensee"></a>
-
 					<button id="btnSend" ng-click="sendEmail(user, contact.$valid)">{{language.send}}</button>
 				</fieldset>
 			</form>

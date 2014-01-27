@@ -25,6 +25,10 @@ body, html {
 	height: 100%;
 }
 
+.description {
+	font-size: 18px;
+}
+
 h1, h2, h3 {
 	line-height: 80%;
 }
@@ -129,7 +133,15 @@ textarea {
 	margin-left: 15px;
 }
 
-@media (max-width: 524px){
+.menu-navigation .contact{
+	float: right;
+}
+
+.menu-navigation .contact a{
+	margin: 5px 2px;
+}
+
+@media (max-width: 680px){
 	.menu-navigation {
 		display: none;
 	}
@@ -177,15 +189,14 @@ textarea {
 	-o-transition: background-position .5s ease-in;
 	background: url('../img/arrows-down.png') no-repeat;
 	background-position: 0 -5px;
-	bottom: 10px;
+	bottom: 1px;
 	display: block;
-	height: 40px;
-	left: 50%;
-	margin-left: -20px;
+	height: 38px;
+	left: 48%;
 	overflow: hidden;
 	position: absolute;
 	text-indent: -3000em;
-	width: 40px;	
+	width: 40px;
 }
 
 /*
@@ -226,8 +237,8 @@ li > span {
 
 .facebook-icon {
 	background-image: url('../img/facebook-icon.png');
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
 	display: block;
 	position: relative;
 	float: left;
@@ -235,8 +246,8 @@ li > span {
 
 .twitter-icon {
 	background-image: url('../img/twitter-icon.png');
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
 	display: block;
 	position: relative;
 	float: left;
@@ -244,8 +255,8 @@ li > span {
 
 .gplus-icon {
 	background-image: url('../img/gplus-icon.png');
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
 	display: block;
 	position: relative;
 	float: left;
@@ -253,8 +264,17 @@ li > span {
 
 .linkedin-icon {
 	background-image: url('../img/linkedin-icon.png');
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.github-icon {
+	background-image: url('../img/github-icon.png');
+	width: 40px;
+	height: 40px;
 	display: block;
 	position: relative;
 	float: left;
@@ -326,10 +346,20 @@ img.illustration {
 	background-color: rgba(0,0,0,0.08);
 }
 
+
+.header {
+	font-weight: bold;
+}
+
+
 .item:hover {
 	background-color: rgba(0,0,0,0.02);
 	border-radius: 3px;
 	cursor: pointer;
+}
+
+.header:hover {
+	cursor: default; !important;
 }
 
 .ui.menu .item, .ui.menu .item>a {
@@ -342,7 +372,7 @@ img.illustration {
 	border-top: 0;
 	border-left: 0 solid rgba(0,0,0,0);
 	border-right: 0;
-	border-bottom: 2px solid gray;
+	border-bottom: 1px solid gray;
 }
 .ui.menu .item {
 	font-size: 16px;
@@ -350,7 +380,7 @@ img.illustration {
 .ui.menu .item {
 	position: relative;
 	display: inline-block;
-	padding: 10px 10px;
+	padding: 6px 8px;
 	border-top: 0 solid rgba(0,0,0,0);
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-moz-user-select: -moz-none;
@@ -358,10 +388,6 @@ img.illustration {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}
-
-.ui.menu .item > a, .ui.menu .item > .hifen {
-	float: right;
 }
 
 /* menu mobile */
@@ -461,6 +487,11 @@ img.illustration {
 	transition: all 0.3s ease;
 }
 
+.dl-menuwrapper .contact {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
 /* Colors for demos */
 .dl-menuwrapper button {
 	background: #2867C6;
@@ -474,13 +505,13 @@ img.illustration {
 
 
 /* medias */
-@media (min-width: 524px){
+@media (min-width: 680px){
 	.dl-menuwrapper .dl-menu {
 		display: none;
 	}
 }
 
-@media (max-width: 524px) {
+@media (max-width: 680px) {
 	.dl-menuwrapper button {
 		display: block !important;
 	}
@@ -509,6 +540,10 @@ img.illustration {
 
 	.ui.menu {
 		width: 100%;
+	}
+
+	.arrows-down {
+		position: relative;
 	}
 }
 

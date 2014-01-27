@@ -1,5 +1,6 @@
 /*
- Langugage v1.0.1
+ Langugage v1.0.2
+ Date: 2014-01-26
  (c) 2013 Gustavo Isensee
  License: MIT
 */
@@ -23,7 +24,12 @@ function LangPage () {
 		subject: 'Assunto',
 		message: 'Mensagem',
 		send: 'Enviar',
-		fieldRequired: 'Obrigatório'
+		fieldRequired: 'Obrigatório',
+		noLink: 'Sem link',
+
+		fillField: 'Preencha os campos corretamente!',
+		sendContactSuccess: 'Mensagem enviada com sucesso!',
+		sendContactError: 'Ocorreu um problema, preencha os dados corretamente e tente novamente!'
 	},
 
 		enUS = {
@@ -34,7 +40,7 @@ function LangPage () {
 			menuLangPtBR: 'Portuguese',
 			menuLangEnUS: 'English',
 			developer: 'Front-end Developer',
-			myDescription: "I'm Gustavo, I'm 25 years old, Graduated in technical programming by SENAI College. I am currently studying the 7th of Information Systems in UNISUL. I worked in two private companies, participate in open source projects and am currently working on LabTrans, Transportation and Logistics Laboratory, Federal University of Santa Catarina, Brazil.",
+			myDescription: "I'm Gustavo, I'm 25 years old, Graduated in technical programming by SENAI College. I am currently studying the 7th of Information Systems at UNISUL. I worked in two private companies, participate in open source projects and am currently working on LabTrans, Transportation and Logistics Laboratory in Federal University of Santa Catarina, Brazil.",
 
 			goToProject: 'Go to Projects',
 			project: 'Projects',
@@ -45,7 +51,12 @@ function LangPage () {
 			subject: 'Subject',
 			message: 'Message',
 			send: 'Send',
-			fieldRequired: 'Required'
+			fieldRequired: 'Required',
+			noLink: 'No link',
+
+			fillField: 'Fill in the fields correctly!',
+			sendContactSuccess: 'Message sent successfully!',
+			sendContactError: 'There was a problem, fill in the data correctly and try again!'
 		};
 
 	return {

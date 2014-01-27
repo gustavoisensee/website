@@ -1,5 +1,6 @@
 /*
- Scope v1.0.1
+ Scope v1.0.2
+ Date: 2014-01-26
  (c) 2013 Gustavo Isensee
  License: MIT
 */
@@ -10,29 +11,45 @@ function Scope() {
 			.module('WebSite', [])
 			.directive('menu', function() {
 			    return {
-			      	template: '<li class=\'current\'>'+
-						'<span data-to=\'home\' class=\'menu\'>{{language.menuHome}}</span>'+
-						'</li><li><span data-to=\'project\' class=\'menu\'>{{language.menuProject}}</span>'+
-						'</li><li><span data-to=\'contact\' class=\'menu\'>{{language.menuContact}}</span>'+
+			      	template: '<li class="current">'+
+						'<span data-to="home" class="menu">{{language.menuHome}}</span>'+
+						'</li><li><span data-to="project" class="menu">{{language.menuProject}}</span>'+
+						'</li><li><span data-to="contact" class="menu">{{language.menuContact}}</span>'+
 						'</li><li><span>lang: { </span>'+
-						'<span class=\"{{language.lang == \'ptBR\' ? \'underline\' : \'\'\}}"'+
-						'  ng-click=\"alterLang(\'ptBR\')\">{{language.menuLangPtBR}}</span>'+
-						'<span>, </span>'+
-						'<span class=\"{{language.lang == \'enUS\' ? \'underline\' : \'\'}}\"'+
-						'  ng-click=\"alterLang(\'enUS\')\">{{language.menuLangEnUS}}</span>'+
-						'<span> }</span></li>'
+						'<span class=\'{{language.lang == "ptBR" ? "underline" : ""}} \''+
+						'  ng-click=\'alterLang("ptBR")\'>{{language.menuLangPtBR}}</span> <span>, </span>'+
+						'<span class=\'{{language.lang == "enUS" ? "underline" : ""}} \''+
+						'  ng-click=\'alterLang("enUS")\'>{{language.menuLangEnUS}}</span> <span> }</span></li>' +
+						'<div class="contact">' +
+						'<a class="gplus-icon" href="https://plus.google.com/109325404047497404656/about"' +
+						'target="_blank" title="Google+ - Gustavo Isensee"></a>' +
+                        '<a class="facebook-icon" href="http://www.facebook.com/profile.php?id=100000394403997"' +
+                		'target="_blank" title="Facebook - Gustavo Isensee"></a>'+
+                        '<a class="linkedin-icon" href="http://www.linkedin.com/pub/gustavo-isensee/3a/93b/752"' +
+                		'target="_blank" title="LinkedIn - Gustavo Isensee"></a>' +
+                		'<a class="twitter-icon" href="http://twitter.com/gustavoisensee" target="_blank"' +
+                		'title="Twitter - @gustavoisensee"></a>' +
+						'<a class="github-icon" href="https://github.com/gustavoisensee" target="_blank" ' +
+                		'title="Github - gustavoisensee"></a></div>'
 			    };
 			}
 		),
 
 		Controller = function ($scope) {
-			$scope.user = {};
+			$scope.contact = {};
 			$scope.language = localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR;
 
-			$scope.sendEmail = function(user, validate) {
+			$scope.sendEmail = function(contact, validate) {
 				if (validate) {
-					sendEmail(user);
-					$scope.user = {};
+					sendEmail(contact);
+					$scope.contact = {};
+				} else {
+					noty({
+					  	type: 'warning',
+					  	layout: 'bottomRight',
+					    text: $scope.language.fillField,
+					    timeout: 3000
+				  	});
 				}
 			}
 
@@ -114,7 +131,7 @@ function Scope() {
 			        noty({
 					  	type: 'success',
 					  	layout: 'bottomRight',
-					    text: 'Mensagem enviada com sucesso!',
+					    text: $scope.language.sendContactSuccess,
 					    timeout: 3000
 				  	});
 			    },
@@ -122,7 +139,7 @@ function Scope() {
 			    	noty({
 					  	type: 'warning',
 					  	layout: 'bottomRight',
-					    text: 'Ocorreu um problema, preencha os dados corretamente e tente novamente!',
+					    text: $scope.language.sendContactError,
 					    timeout: 3000
 				  	});
 			    }
