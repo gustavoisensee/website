@@ -40,7 +40,7 @@ function LangPage () {
 			menuLangPtBR: 'Portuguese',
 			menuLangEnUS: 'English',
 			developer: 'Front-end Developer',
-			myDescription: "I'm Gustavo, I'm 25 years old, Graduated in technical programming by SENAI College. I am currently studying the 7th of Information Systems at UNISUL. I worked in two private companies, participate in open source projects and am currently working on LabTrans, Transportation and Logistics Laboratory in Federal University of Santa Catarina, Brazil.",
+			myDescription: "I am Gustavo, I'm 25 years old, Graduated in technical programming by SENAI College. I am currently studying the 7th of Information Systems at UNISUL. I worked in two private companies, participate in open source projects and am currently working on LabTrans, Transportation and Logistics Laboratory in Federal University of Santa Catarina, Brazil.",
 
 			goToProject: 'Go to Projects',
 			project: 'Projects',
@@ -54,7 +54,7 @@ function LangPage () {
 			fieldRequired: 'Required',
 			noLink: 'No link',
 
-			fillField: 'Fill in the fields correctly!',
+			fillField: 'Fill the fields correctly!',
 			sendContactSuccess: 'Message sent successfully!',
 			sendContactError: 'There was a problem, fill in the data correctly and try again!'
 		};
