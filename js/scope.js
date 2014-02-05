@@ -122,7 +122,9 @@ function Scope() {
 			    subject: contact.subject,
 			    email: contact.email,
 			    message: contact.message
-			};
+			},
+				language = localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR;
+
 			$.ajax({
 			    type: "POST",
 			    url: "email.php",
@@ -131,7 +133,7 @@ function Scope() {
 			        noty({
 					  	type: 'success',
 					  	layout: 'bottomRight',
-					    text: $scope.language.sendContactSuccess,
+					    text: language.sendContactSuccess,
 					    timeout: 3000
 				  	});
 			    },
@@ -139,7 +141,7 @@ function Scope() {
 			    	noty({
 					  	type: 'warning',
 					  	layout: 'bottomRight',
-					    text: $scope.language.sendContactError,
+					    text: language.sendContactError,
 					    timeout: 3000
 				  	});
 			    }

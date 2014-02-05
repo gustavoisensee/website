@@ -553,3 +553,21 @@ img.illustration {
 		margin-bottom: 1%;
 	}
 }
+
+@media (min-width: 1400px) {
+	p {
+		font-size: 20px !important;
+	}
+}
+
+@media (min-width: 1500px) {
+	p {
+		font-size: 23px !important;
+	}
+}
+
+@media (min-width: 1600px) {
+	p {
+		font-size: 26px !important;
+	}
+}
