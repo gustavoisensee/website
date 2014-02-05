@@ -36,8 +36,10 @@ function Scope() {
 		),
 
 		Controller = function ($scope) {
-			$scope.contact = {};
-			$scope.language = localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR;
+			$scope.contact = {
+				name: ''
+			};
+			$scope.language = (localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR);
 
 			$scope.sendEmail = function(contact, validate) {
 				if (validate) {
@@ -117,11 +119,12 @@ function Scope() {
 		},
 
 		sendEmail = function (contact){
+			debugger;
 			var data = {
-			    name: contact.name,
-			    subject: contact.subject,
-			    email: contact.email,
-			    message: contact.message
+			    name: contact.name.$viewValue,
+			    subject: contact.subject.$viewValue,
+			    email: contact.email.$viewValue,
+			    message: contact.message.$viewValue
 			},
 				language = localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR;
 

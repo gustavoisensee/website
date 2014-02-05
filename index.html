@@ -94,27 +94,27 @@
         <div class="divRight divRightContact">
             <form name="contact" class="contentLimit" novalidate>
 				<fieldset>
-					<input type="text" id="name" name="name" value="" size="40" ng-model="user.name"
+					<input type="text" id="name" name="name" size="40" ng-model="name"
 						required placeholder="{{language.name}}" />
 					<span class="error" ng-show="!contact.name.$valid">{{language.fieldRequired}}</span>
 				</fieldset>
 				<fieldset>
-					<input type="email" id="email" name="email" value="" size="40" ng-model="user.email"
+					<input type="email" id="email" name="email" size="40" ng-model="email"
 						required placeholder="{{language.email}}" />
 					<span class="error" ng-show="!contact.email.$valid">{{language.fieldRequired}}</span>
 				</fieldset>
 				<fieldset>
-					<input type="text" id="subject" name="subject" value="" size="40" ng-model="user.subject"
+					<input type="text" id="subject" name="subject" value="" size="40" ng-model="subject"
 						required placeholder="{{language.subject}}" />
 					<span class="error" ng-show="!contact.subject.$valid">{{language.fieldRequired}}</span>
 				</fieldset>
 				<fieldset>
-					<textarea id="message" name="message" cols="40" rows="10" ng-model="user.message"
+					<textarea id="message" name="message" cols="40" rows="10" ng-model="message"
 						required placeholder="{{language.message}}"></textarea>
 					<span class="error" ng-show="!contact.message.$valid">{{language.fieldRequired}}</span>
 				</fieldset>
 				<fieldset>
-					<button id="btnSend" ng-click="sendEmail(user, contact.$valid)">{{language.send}}</button>
+					<button id="btnSend" ng-click="sendEmail(contact, contact.$valid)">{{language.send}}</button>
 				</fieldset>
 			</form>
 		</div>
