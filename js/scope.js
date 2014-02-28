@@ -1,6 +1,6 @@
 /*
- Scope v1.0.2
- Date: 2014-01-26
+ Scope v1.0.3
+ Date: 2014-02-27
  (c) 2013 Gustavo Isensee
  License: MIT
 */
@@ -37,14 +37,26 @@ function Scope() {
 
 		Controller = function ($scope) {
 			$scope.contact = {
-				name: ''
+				name: '',
+				email: '',
+				subject: '',
+				message: ''
 			};
 			$scope.language = (localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR);
 
 			$scope.sendEmail = function(contact, validate) {
 				if (validate) {
 					sendEmail(contact);
-					$scope.contact = {};
+					
+					$scope.contact.name = '';
+					$scope.contact.email = '';
+					$scope.contact.subject = '';
+					$scope.contact.message = '';
+					
+					$scope.name = '';
+					$scope.email = '';
+					$scope.subject = '';
+					$scope.message = '';
 				} else {
 					noty({
 					  	type: 'warning',
@@ -119,7 +131,6 @@ function Scope() {
 		},
 
 		sendEmail = function (contact){
-			debugger;
 			var data = {
 			    name: contact.name.$viewValue,
 			    subject: contact.subject.$viewValue,
