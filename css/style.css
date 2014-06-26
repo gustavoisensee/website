@@ -78,7 +78,7 @@ fieldset label {
 input, textarea, button {
 	background-color: transparent;
 	border: none;
-	border-radius: 3px;
+	border-radius: 1px;
 	color: #000;
 	font-size: 16px;
 	font-weight: 200;
@@ -106,8 +106,8 @@ textarea {
 	-ms-transition: background-color .5s ease-in;
 	-moz-transition: background-color .5s ease-in;
 	-o-transition: background-color .5s ease-in;
-	background-color: transparent;
-    height: 30px;
+	background-color: rgba(255, 255, 255, 0.13);
+    height: 48px;
     left: 0;
     line-height: 30px;
     position: fixed;
@@ -131,15 +131,17 @@ textarea {
 
 .menu-navigation {
 	text-align: left;
-	margin-left: 15px;
+	margin: 8px 20px;
+	float: left;
 }
 
-.menu-navigation .contact{
+.contact{
+	margin-right: 13px;
 	float: right;
 }
 
-.menu-navigation .contact a{
-	margin: 5px 2px;
+.contact a{
+	margin: 5px 3px;
 }
 
 @media (max-width: 680px){
@@ -341,7 +343,7 @@ img.illustration {
 	font-weight: 400;
 	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1);
 	box-shadow: 0 0 0 1px rgba(0,0,0,.1);
-	border-radius: 3px;
+	border-radius: 1px;
 }
 .ui.menu .head {
 	background-color: rgba(0,0,0,0.08);
@@ -373,7 +375,6 @@ img.illustration {
 	border-top: 0;
 	border-left: 0 solid rgba(0,0,0,0);
 	border-right: 0;
-	border-bottom: 1px solid gray;
 }
 .ui.menu .item {
 	font-size: 16px;
@@ -381,7 +382,7 @@ img.illustration {
 .ui.menu .item {
 	position: relative;
 	display: inline-block;
-	padding: 6px 8px;
+	padding: 10px 22px;
 	border-top: 0 solid rgba(0,0,0,0);
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-moz-user-select: -moz-none;
@@ -444,13 +445,12 @@ img.illustration {
 
 .dl-menuwrapper li {
 	position: relative;
-	padding: 5px 0px 6px 0px;
 	line-height: 20px;
 	font-weight: 300;
 	color: #fff;
 	outline: none;
 	text-decoration: none;
-	margin-left: 15px;
+	margin: 22px;
 }
 
 .dl-menuwrapper li a:hover {
@@ -458,7 +458,7 @@ img.illustration {
 }
 
 .dl-menuwrapper .dl-menu {
-	margin: 25% 0 0 5%;
+	margin: 21% 0 0 5%;
 	position: absolute;
 	width: 100%;
 	opacity: 0;
@@ -506,13 +506,13 @@ img.illustration {
 
 
 /* medias */
-@media (min-width: 680px){
+@media (min-width: 763px){
 	.dl-menuwrapper .dl-menu {
 		display: none;
 	}
 }
 
-@media (max-width: 680px) {
+@media (max-width: 763px) {
 	.dl-menuwrapper button {
 		display: block !important;
 	}
@@ -551,6 +551,19 @@ img.illustration {
 	button {
 		margin-left: 3%;
 		margin-bottom: 1%;
+	}
+
+	#masthead {
+		background-color: transparent;
+		
+	}
+
+	.menu-navigation {
+		display: none;
+	}
+
+	.contact {
+		display: none;
 	}
 }
 
