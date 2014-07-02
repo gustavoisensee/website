@@ -135,13 +135,13 @@ textarea {
 	float: left;
 }
 
-.contact{
+.contact {
 	margin-right: 13px;
 	float: right;
 }
 
 .contact a{
-	margin: 5px 3px;
+	margin: 4px 4px;
 }
 
 @media (max-width: 680px){
@@ -160,9 +160,9 @@ textarea {
 	text-transform: uppercase;
 }
 
-.current > span {
+.current span {
 	cursor: pointer;
-	color: #D8D8D8 !important
+	font-weight: 700;
 }
 
 .intro {
@@ -174,7 +174,7 @@ textarea {
 }
 
 #home {
-	background: #3276b1;
+	background: #3565A1;
 }
 
 #home h1 {
@@ -202,36 +202,16 @@ textarea {
 	width: 40px;
 }
 
-/*
-.arrows-down:hover {
-	background-position: 0 5px;
-}
-*/
-
 #project {
 	background: #47a447;
 }
 
 #contact {
-	background: #ed9c28;
+	background: #DC6D1C;
 }
 
-#contact a.button, #contact input[type="text"], #contact input[type="email"], #contact textarea {
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
 	background: #FCF5F5;
-}
-
-#contact button {
-	-webkit-transition: color .5s ease-in;
-	-ms-transition: color .5s ease-in;
-	-moz-transition: color .5s ease-in;
-	-o-transition: color .5s ease-in;
-	cursor: pointer;
-	display: inline-block;
-	background: #428bca;
-}
-
-#contact button:hover {
-	background: #357ebd;
 }
 
 li > span {
@@ -245,6 +225,8 @@ li > span {
 	display: block;
 	position: relative;
 	float: left;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #FFF;
 }
 
 .twitter-icon {
@@ -254,6 +236,8 @@ li > span {
 	display: block;
 	position: relative;
 	float: left;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #FFF;
 }
 
 .gplus-icon {
@@ -263,6 +247,8 @@ li > span {
 	display: block;
 	position: relative;
 	float: left;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #FFF;
 }
 
 .linkedin-icon {
@@ -272,6 +258,8 @@ li > span {
 	display: block;
 	position: relative;
 	float: left;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #FFF;
 }
 
 .github-icon {
@@ -281,10 +269,12 @@ li > span {
 	display: block;
 	position: relative;
 	float: left;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #FFF;
 }
 
 .underline {
-	color: #D8D8D8;
+	font-weight: 700;
 }
 
 .contentLimit {
@@ -344,6 +334,7 @@ img.illustration {
 	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1);
 	box-shadow: 0 0 0 1px rgba(0,0,0,.1);
 	border-radius: 1px;
+	float: left;
 }
 .ui.menu .head {
 	background-color: rgba(0,0,0,0.08);
@@ -495,24 +486,45 @@ img.illustration {
 
 /* Colors for demos */
 .dl-menuwrapper button {
-	background: #2867C6;
+	background: #428bca;
 }
 
 .dl-menuwrapper button:hover,
 .dl-menuwrapper button.dl-active,
 .dl-menuwrapper ul {
-	background: #2867C6;
+	background: #428bca;
 }
 
-.start-icon {
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.legend-title {
+	float: left;
+	line-height: 26px;
+
+}
+
+.star-icon {
 	background: url('../img/star.png') no-repeat;
 	width: 26px;
-	height: 26px;
-	float: right;
+	height: 24px;
+}
+
+.success-icon {
+	margin-left: 10px;
+	background: url('../img/success.png') no-repeat;
+	width: 26px;
+	height: 24px;
 }
 
 .buttons-project {
 	height: 40px;
+	float: left;
 }
 
 .btn {
@@ -532,14 +544,19 @@ img.illustration {
 	display: none;
 }
 
+.legends {
+	float: left;
+	margin-top: 6px;
+}
+
 /* medias */
-@media (min-width: 763px){
+@media (min-width: 780px){
 	.dl-menuwrapper .dl-menu {
 		display: none;
 	}
 }
 
-@media (max-width: 763px) {
+@media (max-width: 780px) {
 	.dl-menuwrapper button {
 		display: block !important;
 	}
@@ -569,6 +586,7 @@ img.illustration {
 	.ui.menu {
 		width: 94%;
 		margin-left: 3%;
+		float: left;
 	}
 
 	.arrows-down {
@@ -594,7 +612,24 @@ img.illustration {
 	}
 
 	.btn {
-		margin-right: 0px !important;
+		margin-right: -7px !important;
+	}
+
+	.star-icon {
+		margin-left: 17px;
+	}
+
+	.success-icon {
+		margin-left: 17px;
+	}
+
+	.buttons-project {
+		width: 100%;
+	}
+
+	.legends {
+		width: 100%;
+		margin-top: 14px;
 	}
 
 }
