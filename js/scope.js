@@ -46,6 +46,7 @@ function Scope() {
 				message: ''
 			};
 			$scope.language = (localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR);
+			$scope.buttonProject = 1;
 
 			$scope.sendEmail = function(contact, validate) {
 				if (validate) {
