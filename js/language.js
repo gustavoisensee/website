@@ -5,7 +5,7 @@
  License: MIT
 */
 function calculateAge() {
-    var ageDif = Date.now() - new Date(1988,08,22).getTime();
+    var ageDif = Date.now() - new Date('1988-8-22').getTime();
     var ageDate = new Date(ageDif);
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
