@@ -206,14 +206,6 @@ textarea {
 	background: #47a447;
 }
 
-#contact {
-	background: #DC6D1C;
-}
-
-#contact input[type="text"], #contact input[type="email"], #contact textarea {
-	background: #FCF5F5;
-}
-
 li > span {
 	cursor: pointer;
 }
@@ -227,6 +219,7 @@ li > span {
 	float: left;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #FFF;
+	background-position: center; 
 }
 
 .twitter-icon {
@@ -238,6 +231,7 @@ li > span {
 	float: left;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #FFF;
+	background-position: center; 
 }
 
 .gplus-icon {
@@ -249,6 +243,7 @@ li > span {
 	float: left;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #FFF;
+	background-position: center; 
 }
 
 .linkedin-icon {
@@ -260,6 +255,7 @@ li > span {
 	float: left;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #FFF;
+	background-position: center; 
 }
 
 .github-icon {
@@ -271,6 +267,7 @@ li > span {
 	float: left;
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #FFF;
+	background-position: center; 
 }
 
 .underline {
@@ -297,10 +294,6 @@ li > span {
 
 .divRightProject{
 	margin-top: 6% !important;
-}
-
-.divRightContact{
-	margin-top: 10% !important;
 }
 
 .divLeftInside {
@@ -479,11 +472,6 @@ img.illustration {
 	transition: all 0.3s ease;
 }
 
-.dl-menuwrapper .contact {
-	margin-left: 10px;
-	margin-bottom: 10px;
-}
-
 /* Colors for demos */
 .dl-menuwrapper button {
 	background: #428bca;
@@ -506,7 +494,6 @@ img.illustration {
 .legend-title {
 	float: left;
 	line-height: 26px;
-
 }
 
 .star-icon {

@@ -1,6 +1,6 @@
 /*
- Langugage v1.0.3
- Date: 2014-06-26
+ Langugage v1.0.4
+ Date: 2014-09-21
  (c) 2013 Gustavo Isensee
  License: MIT
 */
@@ -24,20 +24,7 @@ function LangPage () {
 		legendTitleCurrentProjet: 'Projeto corrente',
 		legendTitleFinishedProjet: 'Projeto finalizado',
 		goToProject: 'Ir para Projetos',
-		project: 'Projetos',
-
-		goToContact: 'Ir para Contato',
-		name: 'Nome',
-		email: 'Endereço de e-mail',
-		subject: 'Assunto',
-		message: 'Mensagem',
-		send: 'Enviar',
-		fieldRequired: 'Obrigatório',
-		noLink: 'Sem link',
-
-		fillField: 'Preencha os campos corretamente!',
-		sendContactSuccess: 'Mensagem enviada com sucesso!',
-		sendContactError: 'Ocorreu um problema, preencha os dados corretamente e tente novamente!'
+		project: 'Projetos'
 	},
 
 		enUS = {
@@ -53,20 +40,7 @@ function LangPage () {
 			legendTitleCurrentProjet: 'Current project',
 			legendTitleFinishedProjet: 'Finished project',
 			goToProject: 'Go to Projects',
-			project: 'Projects',
-
-			goToContact: 'Go to Contact',
-			name: 'Name',
-			email: 'E-mail address',
-			subject: 'Subject',
-			message: 'Message',
-			send: 'Send',
-			fieldRequired: 'Required',
-			noLink: 'No link',
-
-			fillField: 'Fill the fields correctly!',
-			sendContactSuccess: 'Message sent successfully!',
-			sendContactError: 'There was a problem, fill in the data correctly and try again!'
+			project: 'Projects'
 		};
 
 	return {
