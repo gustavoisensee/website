@@ -1,0 +1,15 @@
+<ul class="dl-menu {{menuOpen}}">
+	<li class="current">
+		<span data-to="home" class="menu" ng-click="goToSection($event)">{{language.menuHome}}</span>
+	</li>
+	<li>
+		<span data-to="project" class="menu" ng-click="goToSection($event)">{{language.menuProject}}</span>
+	</li>
+	<li>
+		<span>lang: {</span>
+	 	<span class='{{language.lang == "ptBR" ? "underline" : ""}}' ng-click='alterLang("ptBR")'>{{language.menuLangPtBR}}</span>
+		<span>, </span>
+	 	<span class='{{language.lang == "enUS" ? "underline" : ""}}' ng-click='alterLang("enUS")'>{{language.menuLangEnUS}}</span>
+		<span> }</span>
+	</li>
+</ul>
