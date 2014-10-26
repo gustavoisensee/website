@@ -1,8 +1,8 @@
 /*
- Langugage v1.0.4
- Date: 2014-09-21
- (c) 2013 Gustavo Isensee
- License: MIT
+Language v1.0.5
+Date: 2014-10-25
+(c) 2013 Gustavo Isensee
+License: MIT
 */
 function calculateAge() {
     var ageDif = Date.now() - new Date('1988-08-22').getTime();
@@ -24,7 +24,8 @@ function LangPage () {
 		legendTitleCurrentProjet: 'Projeto corrente',
 		legendTitleFinishedProjet: 'Projeto finalizado',
 		goToProject: 'Ir para Projetos',
-		project: 'Projetos'
+		project: 'Projetos',
+		noLink: 'Sem link'
 	},
 
 		enUS = {
@@ -40,7 +41,8 @@ function LangPage () {
 			legendTitleCurrentProjet: 'Current project',
 			legendTitleFinishedProjet: 'Finished project',
 			goToProject: 'Go to Projects',
-			project: 'Projects'
+			project: 'Projects',
+			noLink: 'No link'
 		};
 
 	return {
