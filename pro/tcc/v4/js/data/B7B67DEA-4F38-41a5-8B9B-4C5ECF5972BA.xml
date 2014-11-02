@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.9:1", "", "UC009 - Gerenciar Geração de Boletins", "EARoot/EA2/EA1/EA1/EA9/EA98.html", "180.png", "11", "0", "", "Use Case diagram0","{30FBEF09-F6DC-4d08-8EED-B8F2C44ADBE7}");
+tocTab[tocTab.length] = new Array("0.2.1.1.9:2", "", "UC009 - Gerenciar Geração de Boletins", "EARoot/EA2/EA1/EA1/EA9/EA100.html", "7.png", "39", "0", "", "UseCase0","{20029A38-096B-490e-BDEB-91D274771057}");
+tocTab[tocTab.length] = new Array("0.2.1.1.9:3", "", "UC009.1 - Listar boletins dos alunos", "EARoot/EA2/EA1/EA1/EA9/EA101.html", "7.png", "140", "0", "", "UseCase0","{52BC8A85-AC1F-44ec-995D-658C99FEF872}");
+tocTab[tocTab.length] = new Array("0.2.1.1.9:4", "", "UC009.2 - Gerar boletins dos alunos", "EARoot/EA2/EA1/EA1/EA9/EA102.html", "7.png", "139", "0", "", "UseCase0","{D93ADD3C-57D6-4b6e-BDBA-25505FF775C2}");
+tocTab[tocTab.length] = new Array("0.2.1.1.9:5", "", "UC009.3 - Excluir geração de boletins", "EARoot/EA2/EA1/EA1/EA9/EA103.html", "7.png", "141", "0", "", "UseCase0","{63C9C731-633F-4731-86C6-B1AA9AE74376}");
