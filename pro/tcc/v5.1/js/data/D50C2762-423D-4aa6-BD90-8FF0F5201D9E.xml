@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.9:1", "", "UC009 - Gerenciar Aplicação de Frequência ao Aluno", "EARoot/EA2/EA1/EA1/EA9/EA100.html", "180.png", "13", "0", "", "Use Case diagram0","{407EF3F4-0FB4-41c9-8801-AB7789D2B575}");
+tocTab[tocTab.length] = new Array("0.2.1.1.9:2", "", "UC009 - Gerenciar Aplicação de Frequência ao Aluno", "EARoot/EA2/EA1/EA1/EA9/EA102.html", "7.png", "46", "0", "", "UseCase0","{89AC8DCC-ECB9-4103-9C17-AF4B67C4B485}");
+tocTab[tocTab.length] = new Array("0.2.1.1.9:3", "", "UC009.1 - Listar Alunos", "EARoot/EA2/EA1/EA1/EA9/EA103.html", "7.png", "148", "0", "", "UseCase0","{A5ABE5A8-2EAC-4b56-8A44-62BF5383CF2E}");
+tocTab[tocTab.length] = new Array("0.2.1.1.9:4", "", "UC009.2 - Aplicar filtros na listagem", "EARoot/EA2/EA1/EA1/EA9/EA104.html", "7.png", "149", "0", "", "UseCase0","{668CE7C9-2EED-4309-B9A6-661DA99733E7}");
+tocTab[tocTab.length] = new Array("0.2.1.1.9:5", "", "UC009.3 - Aplicar Frequência", "EARoot/EA2/EA1/EA1/EA9/EA105.html", "7.png", "151", "0", "", "UseCase0","{02D92F4C-411C-4641-815E-892876A56542}");
