@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.5:1", "", "UC005 - Gerenciar Turmas", "EARoot/EA2/EA1/EA1/EA5/EA64.html", "180.png", "9", "0", "", "Use Case diagram0","{CD97AADF-0F1E-4bf6-96A0-08EF058CE078}");
+tocTab[tocTab.length] = new Array("0.2.1.1.5:2", "", "UC005 - Gerenciar Turmas", "EARoot/EA2/EA1/EA1/EA5/EA66.html", "7.png", "38", "0", "", "UseCase0","{66EE0245-47FC-4f21-8BE9-005687074A21}");
+tocTab[tocTab.length] = new Array("0.2.1.1.5:3", "", "UC005.1 - Listar Turmas", "EARoot/EA2/EA1/EA1/EA5/EA67.html", "7.png", "128", "0", "", "UseCase0","{6F5B04DF-6EA5-4821-B18E-F4B4345BBC0F}");
+tocTab[tocTab.length] = new Array("0.2.1.1.5:4", "", "UC005.2 - Inserir Turma", "EARoot/EA2/EA1/EA1/EA5/EA68.html", "7.png", "127", "0", "", "UseCase0","{133B144C-709E-4817-86FC-D92BAE11B97F}");
+tocTab[tocTab.length] = new Array("0.2.1.1.5:5", "", "UC005.2.1 - Inserir Disciplinas na Turma", "EARoot/EA2/EA1/EA1/EA5/EA69.html", "7.png", "156", "0", "", "UseCase0","{9D0609DF-A5C1-42dc-8E12-E980F99F50AB}");
+tocTab[tocTab.length] = new Array("0.2.1.1.5:6", "", "UC005.3 - Editar Turma", "EARoot/EA2/EA1/EA1/EA5/EA70.html", "7.png", "129", "0", "", "UseCase0","{25FFBB9D-0EFB-48a8-B234-0C18488FECF9}");
+tocTab[tocTab.length] = new Array("0.2.1.1.5:7", "", "UC005.4 - Excluir Turma", "EARoot/EA2/EA1/EA1/EA5/EA71.html", "7.png", "130", "0", "", "UseCase0","{751B6B2B-ABE0-46c0-A3E5-EE2F040B1AC8}");
+tocTab[tocTab.length] = new Array("0.2.1.1.5:8", "", "UC005.4.1 - Valida exclusão de uma turma", "EARoot/EA2/EA1/EA1/EA5/EA72.html", "7.png", "131", "0", "", "UseCase0","{D31097B3-4AF0-4813-A7C4-B516C068B24D}");

@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.1:1", "", "Administrador", "EARoot/EA1/EA1/EA7.html", "6.png", "20", "0", "", "Actor0","{607DA024-9766-4c1f-AE79-566F3B26EB99}");
-tocTab[tocTab.length] = new Array("0.1.1:2", "", "Aluno", "EARoot/EA1/EA1/EA8.html", "6.png", "25", "0", "", "Actor0","{D03AF3B2-AC56-4b27-9B0A-DAD3E8CBF95A}");
-tocTab[tocTab.length] = new Array("0.1.1:3", "", "Diretor", "EARoot/EA1/EA1/EA9.html", "6.png", "22", "0", "", "Actor0","{25BB6BC3-6583-4e5d-84C7-BE876E07B0F5}");
-tocTab[tocTab.length] = new Array("0.1.1:4", "", "Professor", "EARoot/EA1/EA1/EA10.html", "6.png", "23", "0", "", "Actor0","{92F556BC-7452-45ad-873B-D050C4D282A9}");
-tocTab[tocTab.length] = new Array("0.1.1:5", "", "Responsável", "EARoot/EA1/EA1/EA11.html", "6.png", "27", "0", "", "Actor0","{7249A197-8B99-4154-BB43-0C2B8558FF4C}");
-tocTab[tocTab.length] = new Array("0.1.1:6", "", "Secretário", "EARoot/EA1/EA1/EA12.html", "6.png", "54", "0", "", "Actor0","{D990C5D3-0653-49eb-8A89-39E97662FB93}");
-tocTab[tocTab.length] = new Array("0.1.1:7", "", "Usuário", "EARoot/EA1/EA1/EA13.html", "6.png", "21", "0", "", "Actor0","{F90F52E3-5675-4b0c-90A8-46C9E85C9466}");
