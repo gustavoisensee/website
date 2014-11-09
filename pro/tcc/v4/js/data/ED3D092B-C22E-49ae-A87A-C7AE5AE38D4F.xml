@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.1.6:1", "", "UC006 - Gerenciar Responsável pelo Aluno", "EARoot/EA2/EA1/EA1/EA6/EA72.html", "180.png", "8", "0", "", "Use Case diagram0","{A5B3EDE8-C3A0-4c8c-9459-926EBD053122}");
-tocTab[tocTab.length] = new Array("0.2.1.1.6:2", "", "UC006 - Gerenciar Responsável pelo Aluno", "EARoot/EA2/EA1/EA1/EA6/EA74.html", "7.png", "56", "0", "", "UseCase0","{E15F5DF6-0F81-47a2-930E-F603090C9A2D}");
-tocTab[tocTab.length] = new Array("0.2.1.1.6:3", "", "UC006.1 - Listar Responsável pelo aluno", "EARoot/EA2/EA1/EA1/EA6/EA75.html", "7.png", "122", "0", "", "UseCase0","{2950E450-C39E-40d7-9FC6-0431B83B9A2F}");
-tocTab[tocTab.length] = new Array("0.2.1.1.6:4", "", "UC006.2 - Inserir Responsável pelo aluno", "EARoot/EA2/EA1/EA1/EA6/EA76.html", "7.png", "123", "0", "", "UseCase0","{08D56EA2-62C9-4ca3-9A5D-AF256D0117EF}");
-tocTab[tocTab.length] = new Array("0.2.1.1.6:5", "", "UC006.3 - Editar Responsável pelo aluno", "EARoot/EA2/EA1/EA1/EA6/EA77.html", "7.png", "124", "0", "", "UseCase0","{9A31E564-A7E9-442d-847C-16699885C6A2}");
-tocTab[tocTab.length] = new Array("0.2.1.1.6:6", "", "UC006.4 - Excluir Responsável pelo aluno", "EARoot/EA2/EA1/EA1/EA6/EA78.html", "7.png", "125", "0", "", "UseCase0","{D59004F7-2734-4010-8977-22C96AEC2287}");
-tocTab[tocTab.length] = new Array("0.2.1.1.6:7", "", "UC006.4.1 - Valida exclusão de um responsável pelo aluno", "EARoot/EA2/EA1/EA1/EA6/EA79.html", "7.png", "126", "0", "", "UseCase0","{45FA98C2-CB09-4765-A156-2C70F1DB9F0D}");

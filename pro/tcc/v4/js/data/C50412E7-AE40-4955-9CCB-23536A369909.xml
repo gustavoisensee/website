@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.1.12:1", "", "UC012 - Gerenciar Disponibilização de Material", "EARoot/EA2/EA1/EA1/EA12/EA119.html", "180.png", "14", "0", "", "Use Case diagram0","{D2B23AE6-1775-4946-842E-726C73621FDC}");
-tocTab[tocTab.length] = new Array("0.2.1.1.12:2", "", "UC012 - Gerenciar Disponibilização de Material", "EARoot/EA2/EA1/EA1/EA12/EA121.html", "7.png", "48", "0", "", "UseCase0","{B17EB221-4538-4a0f-90FE-FE29C6D3EFC3}");
-tocTab[tocTab.length] = new Array("0.2.1.1.12:3", "", "UC012.1 - Listar Materiais", "EARoot/EA2/EA1/EA1/EA12/EA122.html", "7.png", "152", "0", "", "UseCase0","{5CF68F41-B29F-42bb-AE39-D8D18A2A21C7}");
-tocTab[tocTab.length] = new Array("0.2.1.1.12:4", "", "UC012.1.1 - Aplicar filtros na listagem", "EARoot/EA2/EA1/EA1/EA12/EA123.html", "7.png", "153", "0", "", "UseCase0","{4BC48D83-319B-4780-8714-EFAD605D636B}");
-tocTab[tocTab.length] = new Array("0.2.1.1.12:5", "", "UC012.2 - Disponibilizar Material", "EARoot/EA2/EA1/EA1/EA12/EA124.html", "7.png", "154", "0", "", "UseCase0","{DF0EE3EF-93AD-44df-981E-7A9A945FA4D6}");
-tocTab[tocTab.length] = new Array("0.2.1.1.12:6", "", "UC012.3 - Excluir Material", "EARoot/EA2/EA1/EA1/EA12/EA125.html", "7.png", "155", "0", "", "UseCase0","{EE3CF116-6758-4e6c-9AF0-080EADC47EFE}");

@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.1.4:1", "", "UC004 - Gerenciar Professores", "EARoot/EA2/EA1/EA1/EA4/EA56.html", "180.png", "6", "0", "", "Use Case diagram0","{892C5B98-9A20-4d27-9794-3763764D2B52}");
-tocTab[tocTab.length] = new Array("0.2.1.1.4:2", "", "UC004 - Gerenciar Professores", "EARoot/EA2/EA1/EA1/EA4/EA58.html", "7.png", "34", "0", "", "UseCase0","{3FE4DFEE-4500-4346-B82E-D4AC8CBF0C07}");
-tocTab[tocTab.length] = new Array("0.2.1.1.4:3", "", "UC004.1 - Listar Professores", "EARoot/EA2/EA1/EA1/EA4/EA59.html", "7.png", "112", "0", "", "UseCase0","{45D98E1A-147C-42be-A727-92359ECF5079}");
-tocTab[tocTab.length] = new Array("0.2.1.1.4:4", "", "UC004.2 - Inserir Professor", "EARoot/EA2/EA1/EA1/EA4/EA60.html", "7.png", "113", "0", "", "UseCase0","{FB400D73-A948-45a1-9CB6-B98B27DEC4F0}");
-tocTab[tocTab.length] = new Array("0.2.1.1.4:5", "", "UC004.3 - Editar Professor", "EARoot/EA2/EA1/EA1/EA4/EA61.html", "7.png", "114", "0", "", "UseCase0","{D0EDC48C-C733-48b6-AA70-61FF2B18EDF1}");
-tocTab[tocTab.length] = new Array("0.2.1.1.4:6", "", "UC004.4 - Excluir Professor", "EARoot/EA2/EA1/EA1/EA4/EA62.html", "7.png", "115", "0", "", "UseCase0","{19FF6C5C-DE4F-4cd6-9C3E-966B2B43E5C5}");
-tocTab[tocTab.length] = new Array("0.2.1.1.4:7", "", "UC004.4.1 - Valida exclusão de um professor", "EARoot/EA2/EA1/EA1/EA4/EA63.html", "7.png", "116", "0", "", "UseCase0","{272B3659-D052-4bdf-AB53-ED8AA4A1BAE2}");
