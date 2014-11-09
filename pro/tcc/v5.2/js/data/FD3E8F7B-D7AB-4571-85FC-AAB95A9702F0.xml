@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.8:1", "", "UC008 - Gerenciar Aplicação de Notas ao Aluno", "EARoot/EA2/EA1/EA1/EA8/EA90.html", "180.png", "12", "0", "", "Use Case diagram0","{F2AD4345-4E32-4281-863E-9D8FC8C55C35}");
+tocTab[tocTab.length] = new Array("0.2.1.1.8:2", "", "UC008 - Gerenciar Aplicação de Notas ao Aluno", "EARoot/EA2/EA1/EA1/EA8/EA92.html", "7.png", "47", "0", "", "UseCase0","{DB136A2D-F3AF-4291-BA56-747472572FFA}");
+tocTab[tocTab.length] = new Array("0.2.1.1.8:3", "", "UC008.1 - Listar Alunos", "EARoot/EA2/EA1/EA1/EA8/EA93.html", "7.png", "142", "0", "", "UseCase0","{D51535C2-7B61-4466-AEE7-DB3D75BD32BB}");
+tocTab[tocTab.length] = new Array("0.2.1.1.8:4", "", "UC008.1.1 - Aplicar filtros na listagem", "EARoot/EA2/EA1/EA1/EA8/EA94.html", "7.png", "150", "0", "", "UseCase0","{0258FF9F-8D23-4a0a-AC75-28BB984C7A93}");
+tocTab[tocTab.length] = new Array("0.2.1.1.8:5", "", "UC008.2 - Inserir Nota ao Aluno", "EARoot/EA2/EA1/EA1/EA8/EA95.html", "7.png", "144", "0", "", "UseCase0","{1CD299F6-9258-478a-BEA0-7D25068041FF}");
+tocTab[tocTab.length] = new Array("0.2.1.1.8:6", "", "UC008.3 - Editar Nota do Aluno", "EARoot/EA2/EA1/EA1/EA8/EA96.html", "7.png", "145", "0", "", "UseCase0","{D3482978-9158-48fb-ADD4-F165750B533A}");
+tocTab[tocTab.length] = new Array("0.2.1.1.8:7", "", "UC008.4 - Excluir Nota do Aluno", "EARoot/EA2/EA1/EA1/EA8/EA97.html", "7.png", "146", "0", "", "UseCase0","{6BB9C0CC-F42D-43d6-B0E1-68958267D9C7}");
+tocTab[tocTab.length] = new Array("0.2.1.1.8:8", "", "UC008.4.1 - Valida a exclusão de uma nota do aluno", "EARoot/EA2/EA1/EA1/EA8/EA98.html", "7.png", "147", "0", "", "UseCase0","{2163AAA4-A667-4fcc-A3C3-2E49C8A7C45C}");

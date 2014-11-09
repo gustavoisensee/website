@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.13:1", "", "UC013 - Gerenciar Visualização de Notas", "EARoot/EA2/EA1/EA1/EA13/EA123.html", "180.png", "17", "0", "", "Use Case diagram0","{A37C8EAB-4649-4f13-BAD7-30DA6EA7323A}");
+tocTab[tocTab.length] = new Array("0.2.1.1.13:2", "", "UC013 - Gerenciar Visualização de Notas", "EARoot/EA2/EA1/EA1/EA13/EA125.html", "7.png", "50", "0", "", "UseCase0","{FFD74EC3-038C-442d-8E46-FA81061854C7}");
+tocTab[tocTab.length] = new Array("0.2.1.1.13:3", "", "UC013.1 - Listar Notas", "EARoot/EA2/EA1/EA1/EA13/EA126.html", "7.png", "163", "0", "", "UseCase0","{C13063E9-1CD5-4560-BC90-34F54E232017}");
+tocTab[tocTab.length] = new Array("0.2.1.1.13:4", "", "UC013.2 - Aplicar filtros na listagem", "EARoot/EA2/EA1/EA1/EA13/EA127.html", "7.png", "164", "0", "", "UseCase0","{D39B264E-2F64-408f-9D24-FEF87A103145}");
