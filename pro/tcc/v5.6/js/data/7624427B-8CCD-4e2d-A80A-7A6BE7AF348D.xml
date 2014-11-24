@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.2:1", "", "UC002 - Gerenciar Escolas", "EARoot/EA2/EA1/EA1/EA2/EA39.html", "180.png", "4", "0", "", "Use Case diagram0","{241D6C6A-A767-4bc8-8122-4FBDF97D03BD}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:2", "", "UC002 - Gerenciar Escolas", "EARoot/EA2/EA1/EA1/EA2/EA41.html", "7.png", "32", "0", "", "UseCase0","{33816103-AA6E-4abc-9738-D6DA660B40C8}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:3", "", "UC002.1 - Listar Escolas", "EARoot/EA2/EA1/EA1/EA2/EA42.html", "7.png", "100", "0", "", "UseCase0","{9CD53807-074B-4036-994D-956458E45C77}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:4", "", "UC002.2 - Inserir Escola", "EARoot/EA2/EA1/EA1/EA2/EA43.html", "7.png", "101", "0", "", "UseCase0","{89380072-5DAD-4494-B30C-07C7111BB36B}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:5", "", "UC002.3 - Editar Escola", "EARoot/EA2/EA1/EA1/EA2/EA44.html", "7.png", "102", "0", "", "UseCase0","{B599BA41-D16E-4a41-A775-375477ABB9BC}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:6", "", "UC002.4 - Excluir Escola", "EARoot/EA2/EA1/EA1/EA2/EA45.html", "7.png", "103", "0", "", "UseCase0","{E8EFE6C0-27F9-43ff-B21E-D7EACEFFEE96}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:7", "", "UC002.4.1 - Valida exclusão de uma escola", "EARoot/EA2/EA1/EA1/EA2/EA46.html", "7.png", "106", "0", "", "UseCase0","{99EEF054-BB15-4a37-8A42-462690AA5469}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:8", "", "UC002.5 - Vincular professor a escola", "EARoot/EA2/EA1/EA1/EA2/EA47.html", "7.png", "167", "0", "", "UseCase0","{C37A3861-E5DC-444e-AE8A-9D235D94C71A}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:9", "", "UC002.6 - Desvincular professor da escola", "EARoot/EA2/EA1/EA1/EA2/EA48.html", "7.png", "203", "0", "", "UseCase0","{4D754D86-4091-4cc3-A4BD-28397CC60799}");
+tocTab[tocTab.length] = new Array("0.2.1.1.2:10", "", "UC002.6.1 - Valida desvinculação de um professor", "EARoot/EA2/EA1/EA1/EA2/EA49.html", "7.png", "168", "0", "", "UseCase0","{420FF3B9-BA62-445c-8BB8-0F0F49DA7BBA}");

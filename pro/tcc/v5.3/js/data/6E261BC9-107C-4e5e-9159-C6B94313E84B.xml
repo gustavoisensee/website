@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.1.14:1", "", "UC014 - Gerenciar Visualização do Conteúdo Programativo das Disciplinas", "EARoot/EA2/EA1/EA1/EA14/EA128.html", "180.png", "18", "0", "", "Use Case diagram0","{14D1A86A-7225-40c9-97AB-EB5E4EDFC274}");
-tocTab[tocTab.length] = new Array("0.2.1.1.14:2", "", "UC014 - Gerenciar Visualização do Conteúdo Programativo das Disciplinas", "EARoot/EA2/EA1/EA1/EA14/EA130.html", "7.png", "105", "0", "", "UseCase0","{2894F014-F8BC-400f-A46B-C2B98734DA7E}");
-tocTab[tocTab.length] = new Array("0.2.1.1.14:3", "", "UC014.1 - Listar Disciplinas", "EARoot/EA2/EA1/EA1/EA14/EA131.html", "7.png", "165", "0", "", "UseCase0","{B4963903-778E-42d5-B260-AC1D4EDE2A01}");
-tocTab[tocTab.length] = new Array("0.2.1.1.14:4", "", "UC014.2 - Visualizar Conteúdo Programativo", "EARoot/EA2/EA1/EA1/EA14/EA132.html", "7.png", "166", "0", "", "UseCase0","{184BB001-A363-4cd6-9230-8EF1F5CB1279}");
