@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.1.12:1", "", "UC012 - Gerenciar Visualização de Frequência", "EARoot/EA2/EA1/EA1/EA12/EA119.html", "180.png", "16", "0", "", "Use Case diagram0","{D777C159-B013-424e-A387-CCCB25DFF90C}");
-tocTab[tocTab.length] = new Array("0.2.1.1.12:2", "", "UC012 - Gerenciar Visualização de Frequência", "EARoot/EA2/EA1/EA1/EA12/EA121.html", "7.png", "49", "0", "", "UseCase0","{744A509D-9643-49fc-8C2C-38BCAEB18991}");
-tocTab[tocTab.length] = new Array("0.2.1.1.12:3", "", "UC012.1 - Listar Frequência", "EARoot/EA2/EA1/EA1/EA12/EA122.html", "7.png", "161", "0", "", "UseCase0","{BD3F023A-9541-44fd-A64A-2C95800081BC}");
-tocTab[tocTab.length] = new Array("0.2.1.1.12:4", "", "UC012.2 - Aplicar filtros na listagem", "EARoot/EA2/EA1/EA1/EA12/EA123.html", "7.png", "162", "0", "", "UseCase0","{35D85E3B-424F-4f9b-A7D1-9E866787ADF7}");
