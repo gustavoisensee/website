@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.3:1", "", "Gerenciar Disciplinas", "EARoot/EA2/EA1/EA2/EA3/EA167.html", "188.png", "21", "0", "", "Custom diagram0","{D86A2561-87C5-4901-B3FD-E739ABBC136B}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3:2", "", "SC003.0 - Listagem de disciplinas", "EARoot/EA2/EA1/EA2/EA3/EA169.html", "11.png", "192", "0", "", "Screen0","{62D5EBB5-C270-477b-840A-883AE207626E}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3:3", "", "SC003.1 - Nova disciplina", "EARoot/EA2/EA1/EA2/EA3/EA170.html", "11.png", "193", "0", "", "Screen0","{D1A7F9A9-67EF-43c8-B6DD-350B88FF3E91}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3:4", "", "SC003.2 - Editar disciplina", "EARoot/EA2/EA1/EA2/EA3/EA171.html", "11.png", "194", "0", "", "Screen0","{554A492B-3444-4f6a-A35D-79ECA5698F7F}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3:5", "", "SC003.3 - Excluir disciplina", "EARoot/EA2/EA1/EA2/EA3/EA172.html", "11.png", "195", "0", "", "Screen0","{2E1410F6-EA71-449d-8F19-95D160EC91A9}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3:6", "", "SC003.3.1 - Excluir a disciplina - Mensagem de tratamento", "EARoot/EA2/EA1/EA2/EA3/EA173.html", "11.png", "196", "0", "", "Screen0","{8D48A9CA-8796-4554-AFC1-23DC532B3AD2}");

@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.1.2.6:1", "", "Gerenciar Matrícula do Aluno", "EARoot/EA2/EA1/EA2/EA6/EA192.html", "188.png", "24", "0", "", "Custom diagram0","{F173C71A-E5B9-4466-A92D-9D06364476E0}");
+tocTab[tocTab.length] = new Array("0.2.1.2.6:2", "", "SC006 - Listar matrículas", "EARoot/EA2/EA1/EA2/EA6/EA194.html", "11.png", "214", "0", "", "Screen0","{C877D26C-94F9-400a-8089-6E93DEAE8DA4}");
+tocTab[tocTab.length] = new Array("0.2.1.2.6:3", "", "SC006.1 - Remover matrícula do aluno", "EARoot/EA2/EA1/EA2/EA6/EA195.html", "11.png", "215", "0", "", "Screen0","{9158BC72-5A77-4d7c-BF09-5CF4DAC1C901}");
+tocTab[tocTab.length] = new Array("0.2.1.2.6:4", "", "SC006.1.1 - Remover matrícula do aluno - Mensagem de tratamento", "EARoot/EA2/EA1/EA2/EA6/EA196.html", "11.png", "216", "0", "", "Screen0","{F848C606-3DEA-4320-913D-7180857256B6}");

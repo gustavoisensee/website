@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.2.1.2.9:1", "", "UC009 - Gerenciar Aplicação de Frequência ao Aluno", "EARoot/EA2/EA1/EA2/EA9/EA206.html", "188.png", "27", "0", "", "Custom diagram0","{80D01704-B870-46fb-9FB1-E9E9F84553B8}");
+tocTab[tocTab.length] = new Array("0.2.1.2.9:2", "", "SC009 - Listagem de frequência", "EARoot/EA2/EA1/EA2/EA9/EA208.html", "11.png", "222", "0", "", "Screen0","{32FAD558-F668-468c-B8E7-99ACB0D1E126}");
