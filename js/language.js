@@ -17,7 +17,7 @@ function LangPage () {
 		menuProject: 'Projetos',
 		menuContact: 'Contato',
 		menuLangPtBR: 'Português',
-		menuLangEnUS: 'Inglês',
+		menuLangEnUS: 'English',
 		developer: 'Desenvolvedor Web',
 		myDescription: "Eu sou Gustavo, tenho " + calculateAge() + " anos de idade, formado como técnico de programação pelo colégio SENAI. Atualmente estou cursando a 8ª fase de Sistemas de Informação na UNISUL. Trabalhei em duas empresas privadas, particípo de projetos open source no GitHub, sou um grande entusiasta Javascript, certificado MCSD pela Microsoft e atualmente estou trabalhando no LabTrans, Laboratório de Transportes e Logística da Universidade Federal de Santa Catarina, Brasil.",
 
