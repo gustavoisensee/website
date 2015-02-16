@@ -1,6 +1,6 @@
 /*
-App v1.0.5
-Date: 2014-10-25
+App v1.0.6
+Date: 2015-02-16
 (c) 2013 Gustavo Isensee
 License: MIT
 */
@@ -23,21 +23,30 @@ License: MIT
 		}).
 		controller('Controller', ['$scope', function($scope) {
 			$scope.language = (localStorage.getItem('lang') ? JSON.parse(localStorage.getItem('lang')) : langPage.ptBR);
-			$scope.buttonProject = 1;
+			$scope.buttonProject = 4;
 			$scope.menuOpen = '';
 
 			$scope.loadList = function () {
-				$scope.listA = [
-					{ cat: 1, name: '2014', class: 'header item', href: '', title: '', target: '', favorite: '' },
-					{ cat: 1, name: 'LabTrans', class: 'head item', href: 'http://www.labtrans.ufsc.br/', title: '', target: '_blank', favorite: '' },
-					{ cat: 1, name: 'Urano - SAC', class: 'item', href: '', title: $scope.language.noLink, target: '', favorite: 'star-icon right' },
-					{ cat: 1, name: 'Hórus - SAC', class: 'item', href: '', title: $scope.language.noLink, target: '', favorite: 'star-icon right' },
-					{ cat: 1, name: 'TLD - Tecnologia de Levantamento de Dados', class: 'item', href: '', title: $scope.language.noLink, target: '', favorite: 'star-icon right' },
-					{ cat: 1, name: 'SicPort - ANTAQ', class: 'item', href: 'http://www.labtrans.ufsc.br/pt-br/projetos/portos/sicport/', title: '', target: '_blank', favorite: 'success-icon right' },
-					{ cat: 1, name: 'GitHub', class: 'head item', href: 'https://github.com/', title: '', target: '_blank', favorite: '' },
-					{ cat: 1, name: 'nodejs-sqlserver', class: 'item', href: 'https://github.com/gustavoisensee/nodejs-sqlserver', title: '', target: '_blank', favorite: 'success-icon right' },
-					{ cat: 1, name: 'informaticaeaprofissao', class: 'item', href: 'https://github.com/gustavoisensee/informaticaeaprofissao', title: '', target: '_blank', favorite: 'success-icon right' },
-					{ cat: 1, name: 'gustavoisensee.com', class: 'item', href: 'https://github.com/gustavoisensee/gustavoisensee.com', title: '', target: '_blank', favorite: 'success-icon right' },
+				$scope.listProjects = [
+					{ cat: 4, name: '2015', class: 'header item', href: '', title: '', target: '', favorite: '' },
+					{ cat: 4, name: 'LabTrans', class: 'head item', href: 'http://www.labtrans.ufsc.br/', title: '', target: '_blank', favorite: '' },
+					{ cat: 4, name: 'Hórus - SAC', class: 'item', href: '', title: $scope.language.noLink, target: '', favorite: 'star-icon right' },
+					{ cat: 4, name: 'TLD - Tecnologia de Levantamento de Dados', class: 'item', href: '', title: $scope.language.noLink, target: '', favorite: 'star-icon right' },
+					{ cat: 4, name: 'GitHub', class: 'head item', href: 'https://github.com/', title: '', target: '_blank', favorite: '' },
+					{ cat: 4, name: 'IntegracaoContinua', class: 'item', href: 'https://github.com/gustavoisensee/IntegracaoContinua', title: '', target: '_blank', favorite: 'success-icon right' },
+					{ cat: 4, name: 'react-first-app', class: 'item', href: 'https://github.com/gustavoisensee/react-first-app', title: '', target: '_blank', favorite: 'success-icon right' },
+					{ cat: 4, name: 'sien', class: 'item', href: 'https://github.com/gustavoisensee/sien', title: '', target: '_blank', favorite: 'star-icon right' },
+
+					{ cat: 3, name: '2014', class: 'header item', href: '', title: '', target: '', favorite: '' },
+					{ cat: 3, name: 'LabTrans', class: 'head item', href: 'http://www.labtrans.ufsc.br/', title: '', target: '_blank', favorite: '' },
+					{ cat: 3, name: 'Urano - SAC', class: 'item', href: '', title: $scope.language.noLink, target: '', favorite: 'success-icon right' },
+					{ cat: 3, name: 'Hórus - SAC', class: 'item', href: '', title: $scope.language.noLink, target: '', favorite: 'success-icon right' },
+					{ cat: 3, name: 'TLD - Tecnologia de Levantamento de Dados', class: 'item', href: '', title: $scope.language.noLink, target: '', favorite: 'success-icon right' },
+					{ cat: 3, name: 'SicPort - ANTAQ', class: 'item', href: 'http://www.labtrans.ufsc.br/pt-br/projetos/portos/sicport/', title: '', target: '_blank', favorite: 'success-icon right' },
+					{ cat: 3, name: 'GitHub', class: 'head item', href: 'https://github.com/', title: '', target: '_blank', favorite: '' },
+					{ cat: 3, name: 'nodejs-sqlserver', class: 'item', href: 'https://github.com/gustavoisensee/nodejs-sqlserver', title: '', target: '_blank', favorite: 'success-icon right' },
+					{ cat: 3, name: 'informaticaeaprofissao', class: 'item', href: 'https://github.com/gustavoisensee/informaticaeaprofissao', title: '', target: '_blank', favorite: 'success-icon right' },
+					{ cat: 3, name: 'gustavoisensee.com', class: 'item', href: 'https://github.com/gustavoisensee/gustavoisensee.com', title: '', target: '_blank', favorite: 'success-icon right' },
 
 					{ cat: 2, name: '2013', class: 'header item', href: '', title: '', target: '', favorite: '' },
 					{ cat: 2, name: 'LabTrans', class: 'head item', href: 'http://www.labtrans.ufsc.br/', title: '', target: '_blank', favorite: '' },
@@ -51,10 +60,17 @@ License: MIT
 					{ cat: 2, name: 'Tumblr-button', class: 'item', href: 'https://github.com/gustavoisensee/tumblr-button', title: '', target: '_blank', favorite: 'success-icon right' },
 					{ cat: 2, name: 'Linkedin-button', class: 'item', href: 'https://github.com/gustavoisensee/linkedin-button', title: '', target: '_blank', favorite: 'success-icon right' },
 
-					{ cat: 3, name: '2012/2009', class: 'header item', href: '', title: '', target: '', favorite: '' },
-					{ cat: 3, name: 'TDSA', class: 'head item', href: 'http://www.tdsa.com.br/', title: '', target: '_blank', favorite: '' },
-					{ cat: 3, name: 'Realclinic', class: 'item', href: 'http://tdsa.com.br/wp/realclinic/', title: '', target: '_blank', favorite: 'success-icon right' },
-					{ cat: 3, name: 'Realblood', class: 'item', href: 'http://tdsa.com.br/wp/realblood/', title: '', target: '_blank', favorite: 'success-icon right' }
+					{ cat: 1, name: '2012/2009', class: 'header item', href: '', title: '', target: '', favorite: '' },
+					{ cat: 1, name: 'TDSA', class: 'head item', href: 'http://www.tdsa.com.br/', title: '', target: '_blank', favorite: '' },
+					{ cat: 1, name: 'Realclinic', class: 'item', href: 'http://tdsa.com.br/wp/realclinic/', title: '', target: '_blank', favorite: 'success-icon right' },
+					{ cat: 1, name: 'Realblood', class: 'item', href: 'http://tdsa.com.br/wp/realblood/', title: '', target: '_blank', favorite: 'success-icon right' }
+				];
+
+				$scope.listYearsProjects = [
+					{ id: 1, year: '2012/2009' },
+					{ id: 2, year: '2013' },
+					{ id: 3, year: '2014' },
+					{ id: 4, year: '2015' }
 				];
 			};
 
@@ -79,11 +95,15 @@ License: MIT
 				for (var i = 0; i < eTo.length; i++) {
 					eTo[i].className = '';
 				}
-				
+
 				e.target.parentNode.className = 'current';
 				document.body.scrollTop = sectionOffset;
-		    	
+
 		    	$scope.openMenu();
+			};
+
+			$scope.goToYearProject = function (id) {
+				$scope.buttonProject = id;
 			};
 
 			$scope.loadList();
