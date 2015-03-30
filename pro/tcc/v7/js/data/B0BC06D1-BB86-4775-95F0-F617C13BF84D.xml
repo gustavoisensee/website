@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.14:1", "", "UC014 - Gerenciar Visualização do Conteúdo Programativo das Disciplinas", "EARoot/EA2/EA1/EA2/EA14/EA225.htm", "188.png", "32", "0", "", "Custom diagram0","{3770572B-E796-4e34-97FA-D85953745B3F}");
-tocTab[tocTab.length] = new Array("0.2.1.2.14:2", "", "SC014 - Listagem de disciplinas", "EARoot/EA2/EA1/EA2/EA14/EA227.htm", "11.png", "228", "0", "", "Screen0","{06E936D3-D9A9-4cda-8D44-7B38609D9D12}");
-tocTab[tocTab.length] = new Array("0.2.1.2.14:3", "", "SC014.1 - Visualizar plano da disciplina", "EARoot/EA2/EA1/EA2/EA14/EA228.htm", "11.png", "229", "0", "", "Screen0","{2EFF9EBF-50FD-418c-A30A-A96E1B1E6766}");

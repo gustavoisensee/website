@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1", "1", "Modelo de Caso de Uso", "EARoot/EA2/EA16.htm", "4.png", "", "", "{BA4E5A0F-FD89-47ba-960E-F3BDC63F470E}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2", "1", "Modelo de Domínio", "EARoot/EA2/EA17.htm", "4.png", "", "", "{E790B9D1-C5DC-4e9c-AE71-C16F771EEB20}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3", "1", "Modelo de Requisitos", "EARoot/EA2/EA18.htm", "4.png", "", "", "{EC96AAF9-CE5C-4c72-9711-CDBBBC9EFED2}", "Package");
-tocTab[tocTab.length] = new Array("0.2.4", "1", "Modelo de Robustez", "EARoot/EA2/EA19.htm", "4.png", "", "", "{FCD1D1A1-1A50-4c85-B7DA-D338C16BF77E}", "Package");

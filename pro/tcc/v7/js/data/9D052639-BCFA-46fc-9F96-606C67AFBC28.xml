@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.4:1", "", "Gerenciar Usuários", "EARoot/EA2/EA1/EA2/EA4/EA178.htm", "188.png", "22", "0", "", "Custom diagram0","{1A1BD722-46DC-4854-8C02-EF4944A586E2}");
-tocTab[tocTab.length] = new Array("0.2.1.2.4:2", "", "SC004.0 - Listagem de usuários", "EARoot/EA2/EA1/EA2/EA4/EA180.htm", "11.png", "197", "0", "", "Screen0","{0A7B2469-D348-4cea-A446-7CBD3AC1B46C}");
-tocTab[tocTab.length] = new Array("0.2.1.2.4:3", "", "SC004.1 - Novo usuário", "EARoot/EA2/EA1/EA2/EA4/EA181.htm", "11.png", "198", "0", "", "Screen0","{25BFF733-7A69-48bd-98C7-193FC3DAAB5F}");
-tocTab[tocTab.length] = new Array("0.2.1.2.4:4", "", "SC004.2 - Editar usuário", "EARoot/EA2/EA1/EA2/EA4/EA182.htm", "11.png", "199", "0", "", "Screen0","{F4564F4F-7663-44f0-8A2B-C46C2A26CE65}");
-tocTab[tocTab.length] = new Array("0.2.1.2.4:5", "", "SC004.3 - Excluir usuário", "EARoot/EA2/EA1/EA2/EA4/EA183.htm", "11.png", "200", "0", "", "Screen0","{CFD07AD4-EA88-4608-93CD-C795C50E1A55}");
-tocTab[tocTab.length] = new Array("0.2.1.2.4:6", "", "SC004.3.1 - Excluir usuário - Mensagem de tratamento", "EARoot/EA2/EA1/EA2/EA4/EA184.htm", "11.png", "201", "0", "", "Screen0","{4EDB9B40-7BE7-44da-8AB2-0CD6CE2476C3}");
