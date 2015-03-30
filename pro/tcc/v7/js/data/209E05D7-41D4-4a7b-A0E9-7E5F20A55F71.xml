@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.6:1", "", "UC006 - Gerenciar Matrícula do Aluno", "EARoot/EA2/EA1/EA1/EA6/EA80.htm", "180.png", "10", "0", "", "Use Case diagram0","{FB03C41B-FD6A-4ad3-90FB-C85A54B95B70}");
+tocTab[tocTab.length] = new Array("0.2.1.1.6:2", "", "UC006 - Gerenciar Matrícula do Aluno", "EARoot/EA2/EA1/EA1/EA6/EA82.htm", "7.png", "52", "0", "", "UseCase0","{1EC68F17-3420-4ac7-954A-5AFC0CB82CB9}");
+tocTab[tocTab.length] = new Array("0.2.1.1.6:3", "", "UC006.1 - Listar Matrículas", "EARoot/EA2/EA1/EA1/EA6/EA83.htm", "7.png", "133", "0", "", "UseCase0","{E3852BCB-DFDF-4500-B1B0-8BB16B52967A}");
+tocTab[tocTab.length] = new Array("0.2.1.1.6:4", "", "UC006.2 - Matricular Aluno", "EARoot/EA2/EA1/EA1/EA6/EA84.htm", "7.png", "134", "0", "", "UseCase0","{DCF56853-795C-4661-93B5-418726A26179}");
+tocTab[tocTab.length] = new Array("0.2.1.1.6:5", "", "UC006.3 - Excluir Matrícula do Aluno", "EARoot/EA2/EA1/EA1/EA6/EA85.htm", "7.png", "137", "0", "", "UseCase0","{E939B079-3CA6-4bf7-B54D-01AED7973CCD}");
+tocTab[tocTab.length] = new Array("0.2.1.1.6:6", "", "UC006.3.1 - Valida exclusão de matrícula do aluno", "EARoot/EA2/EA1/EA1/EA6/EA86.htm", "7.png", "138", "0", "", "UseCase0","{9A46E458-2FC2-40c0-8BFC-078BF3344C9E}");

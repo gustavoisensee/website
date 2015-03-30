@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.2.1.2.2:1", "", "Gerenciar Escolas", "EARoot/EA2/EA1/EA2/EA2/EA161.htm", "188.png", "20", "0", "", "Custom diagram0","{3A0005E6-43FF-4a01-A0D6-62E130975568}");
+tocTab[tocTab.length] = new Array("0.2.1.2.2:2", "", "SC002.0 - Listagem de escolas", "EARoot/EA2/EA1/EA2/EA2/EA163.htm", "11.png", "184", "0", "", "Screen0","{667AC01B-56A1-43a9-BC77-BADFB2A4FBD1}");
+tocTab[tocTab.length] = new Array("0.2.1.2.2:3", "", "SC002.1 - Nova escola", "EARoot/EA2/EA1/EA2/EA2/EA164.htm", "11.png", "185", "0", "", "Screen0","{3E37FFD2-4D84-4576-B170-1E92D70CFDA1}");
+tocTab[tocTab.length] = new Array("0.2.1.2.2:4", "", "SC002.2 - Editar escola", "EARoot/EA2/EA1/EA2/EA2/EA165.htm", "11.png", "186", "0", "", "Screen0","{36279291-5D71-477d-963C-92401C0D7CDA}");
+tocTab[tocTab.length] = new Array("0.2.1.2.2:5", "", "SC002.3 - Excluir escola", "EARoot/EA2/EA1/EA2/EA2/EA166.htm", "11.png", "187", "0", "", "Screen0","{C7065947-1785-4069-9A14-674CA8F499BC}");
+tocTab[tocTab.length] = new Array("0.2.1.2.2:6", "", "SC002.3.1 - Excluir escola - Mensagem de tratamento", "EARoot/EA2/EA1/EA2/EA2/EA167.htm", "11.png", "188", "0", "", "Screen0","{9B0086D8-B6C1-4fd0-85B6-4299B5AF2488}");
+tocTab[tocTab.length] = new Array("0.2.1.2.2:7", "", "SC002.4 - Vincular professor a escola", "EARoot/EA2/EA1/EA2/EA2/EA168.htm", "11.png", "189", "0", "", "Screen0","{77781285-0D0D-4f50-A0B3-AE8308AA4DDA}");
+tocTab[tocTab.length] = new Array("0.2.1.2.2:8", "", "SC002.5 - Remover vínculo do professor com a escola", "EARoot/EA2/EA1/EA2/EA2/EA169.htm", "11.png", "190", "0", "", "Screen0","{D9CC9D81-37C0-49c0-A5C5-E2010C64C5B8}");
+tocTab[tocTab.length] = new Array("0.2.1.2.2:9", "", "SC002.5.1 - Remover vínculo do professor com a escola - Mensagem de tratamento", "EARoot/EA2/EA1/EA2/EA2/EA170.htm", "11.png", "191", "0", "", "Screen0","{01CDD761-0FC7-49f8-B8FE-3A207E9B9EC3}");

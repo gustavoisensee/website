@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.8:1", "", "UC008 - Gerenciar Aplicação de Notas ao Aluno", "EARoot/EA2/EA1/EA2/EA8/EA201.html", "188.png", "26", "0", "", "Custom diagram0","{CC729EAA-D869-4015-92EF-C44344D56776}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8:2", "", "SC008 - Listar notas", "EARoot/EA2/EA1/EA2/EA8/EA203.html", "11.png", "219", "0", "", "Screen0","{FEC333E3-3523-4ab7-8416-64F07F198D24}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8:3", "", "SC008.1 - Excluir nota do aluno", "EARoot/EA2/EA1/EA2/EA8/EA204.html", "11.png", "220", "0", "", "Screen0","{B8D49753-8E49-4198-8B29-42AF70A979EB}");
-tocTab[tocTab.length] = new Array("0.2.1.2.8:4", "", "SC008.1.1 - Excluir nota do aluno - Mensagem de tratamento", "EARoot/EA2/EA1/EA2/EA8/EA205.html", "11.png", "221", "0", "", "Screen0","{86A8BCBB-9406-407f-9904-EDA912F256D5}");

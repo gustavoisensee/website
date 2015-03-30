@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.3:1", "", "UC003 - Gerenciar Disciplinas", "EARoot/EA2/EA1/EA1/EA3/EA53.htm", "180.png", "5", "0", "", "Use Case diagram0","{FF53E4D8-0658-4e79-AAF4-14493F725D82}");
+tocTab[tocTab.length] = new Array("0.2.1.1.3:2", "", "UC003 - Gerenciar Disciplinas", "EARoot/EA2/EA1/EA1/EA3/EA55.htm", "7.png", "33", "0", "", "UseCase0","{342B4F1B-1D0D-4532-88E8-9801C4C504AF}");
+tocTab[tocTab.length] = new Array("0.2.1.1.3:3", "", "UC003.1 - Listar Disciplinas", "EARoot/EA2/EA1/EA1/EA3/EA56.htm", "7.png", "107", "0", "", "UseCase0","{79103DDC-728D-43bd-9134-21D7DA6228A2}");
+tocTab[tocTab.length] = new Array("0.2.1.1.3:4", "", "UC003.2 - Inserir Disciplina", "EARoot/EA2/EA1/EA1/EA3/EA57.htm", "7.png", "108", "0", "", "UseCase0","{CD107B97-4EB1-459e-952C-DD86FB6396CD}");
+tocTab[tocTab.length] = new Array("0.2.1.1.3:5", "", "UC003.3 - Editar Disciplina", "EARoot/EA2/EA1/EA1/EA3/EA58.htm", "7.png", "109", "0", "", "UseCase0","{DD540258-E863-4e15-A5A1-C2848652814A}");
+tocTab[tocTab.length] = new Array("0.2.1.1.3:6", "", "UC003.4 - Excluir Disciplina", "EARoot/EA2/EA1/EA1/EA3/EA59.htm", "7.png", "110", "0", "", "UseCase0","{EF109B19-C739-4ffc-97B8-88695878DEF2}");
+tocTab[tocTab.length] = new Array("0.2.1.1.3:7", "", "UC003.4.1 - Valida exclusão de uma disciplina", "EARoot/EA2/EA1/EA1/EA3/EA60.htm", "7.png", "111", "0", "", "UseCase0","{368C0B57-6998-4507-A10A-E12F74CAA1AD}");

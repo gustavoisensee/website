@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.1.1.15:1", "", "UC015 - Gerenciar Download de Boletins", "EARoot/EA2/EA1/EA1/EA15/EA136.htm", "180.png", "33", "0", "", "Use Case diagram0","{2075C298-8D81-4c81-8EC4-D08571775856}");
+tocTab[tocTab.length] = new Array("0.2.1.1.15:2", "", "UC015 - Gerenciar Download de Boletins", "EARoot/EA2/EA1/EA1/EA15/EA138.htm", "7.png", "230", "0", "", "UseCase0","{F7201AC0-9FBC-4bcc-B060-AEBFD55044C5}");
+tocTab[tocTab.length] = new Array("0.2.1.1.15:3", "", "UC015.1 - Listar boletins", "EARoot/EA2/EA1/EA1/EA15/EA139.htm", "7.png", "235", "0", "", "UseCase0","{EBFDA7DE-43C8-4a78-85D7-983522F673FA}");
+tocTab[tocTab.length] = new Array("0.2.1.1.15:4", "", "UC015.2 - Aplicar filtros na listagem", "EARoot/EA2/EA1/EA1/EA15/EA140.htm", "7.png", "233", "0", "", "UseCase0","{179DBD77-CCF8-4204-8A9D-D41877277C24}");
+tocTab[tocTab.length] = new Array("0.2.1.1.15:5", "", "UC015.3 - Efetuar download do boletim", "EARoot/EA2/EA1/EA1/EA15/EA141.htm", "7.png", "234", "0", "", "UseCase0","{DC8CF965-2BDC-4316-99C8-06A6B520C06E}");

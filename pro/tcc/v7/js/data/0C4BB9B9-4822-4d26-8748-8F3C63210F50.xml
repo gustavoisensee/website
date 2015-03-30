@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.3.2:1", "", "«NonFuncional» RNF001 - Sistema deve ser web", "EARoot/EA2/EA3/EA2/EA278.htm", "19.png", "59", "0", "", "Requirement0","{B781242C-88FD-441d-A6DC-305584224AEB}");
+tocTab[tocTab.length] = new Array("0.2.3.2:2", "", "«NonFuncional» RNF002 - Linguagem da camada back-end deve ser C#", "EARoot/EA2/EA3/EA2/EA279.htm", "19.png", "60", "0", "", "Requirement0","{EC22C9D3-8D34-4e28-AF5A-04615E93AAED}");
+tocTab[tocTab.length] = new Array("0.2.3.2:3", "", "«NonFuncional» RNF003 - Servidor de aplicação deve ser o IIS da Microsoft", "EARoot/EA2/EA3/EA2/EA280.htm", "19.png", "61", "0", "", "Requirement0","{5C026096-247C-4c61-A285-E9EFC93B304A}");
+tocTab[tocTab.length] = new Array("0.2.3.2:4", "", "«NonFuncional» RNF004 - Sistema deve ser escrito na camada MVC", "EARoot/EA2/EA3/EA2/EA281.htm", "19.png", "62", "0", "", "Requirement0","{7DF5D1E4-80AB-4a36-94FD-210B86D6776A}");
+tocTab[tocTab.length] = new Array("0.2.3.2:5", "", "«NonFuncional» RNF005 - Sistema dará suporte ao navegador chrome 35+ e Firefox 32+", "EARoot/EA2/EA3/EA2/EA282.htm", "19.png", "67", "0", "", "Requirement0","{6E637BD6-4AC8-4565-9F0C-52591BA148E8}");
