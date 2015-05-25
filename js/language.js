@@ -11,7 +11,7 @@ function calculateAge() {
 }
 
 function LangPage () {
-	var ptBR = {
+	var _ptBR = {
 		lang: 'ptBR',
 		menuHome: 'Início',
 		menuProject: 'Projetos',
@@ -28,7 +28,7 @@ function LangPage () {
 		noLink: 'Sem link'
 	},
 
-		enUS = {
+		_enUS = {
 			lang: 'enUS',
 			menuHome: 'Home',
 			menuProject: 'Projects',
@@ -46,8 +46,8 @@ function LangPage () {
 		};
 
 	return {
-		ptBR: ptBR,
-		enUS: enUS
+		ptBR: _ptBR,
+		enUS: _enUS
 	};
 }
 var langPage = new LangPage();

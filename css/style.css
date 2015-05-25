@@ -186,7 +186,7 @@ textarea {
 	-ms-transition: background-position .5s ease-in;
 	-moz-transition: background-position .5s ease-in;
 	-o-transition: background-position .5s ease-in;
-	background: url('../img/arrows-down.png') no-repeat;
+	background: url('../images/arrows-down.png') no-repeat;
 	background-position: 0 -5px;
 	bottom: 1px;
 	display: block;
@@ -207,7 +207,7 @@ li > span {
 }
 
 .facebook-icon {
-	background-image: url('../img/facebook-icon.png');
+	background-image: url('../images/facebook-icon.png');
 	width: 40px;
 	height: 40px;
 	display: block;
@@ -219,7 +219,7 @@ li > span {
 }
 
 .twitter-icon {
-	background-image: url('../img/twitter-icon.png');
+	background-image: url('../images/twitter-icon.png');
 	width: 40px;
 	height: 40px;
 	display: block;
@@ -231,7 +231,7 @@ li > span {
 }
 
 .gplus-icon {
-	background-image: url('../img/gplus-icon.png');
+	background-image: url('../images/gplus-icon.png');
 	width: 40px;
 	height: 40px;
 	display: block;
@@ -243,7 +243,7 @@ li > span {
 }
 
 .linkedin-icon {
-	background-image: url('../img/linkedin-icon.png');
+	background-image: url('../images/linkedin-icon.png');
 	width: 40px;
 	height: 40px;
 	display: block;
@@ -255,7 +255,7 @@ li > span {
 }
 
 .github-icon {
-	background-image: url('../img/github-icon.png');
+	background-image: url('../images/github-icon.png');
 	width: 40px;
 	height: 40px;
 	display: block;
@@ -492,14 +492,14 @@ img.illustration {
 }
 
 .star-icon {
-	background: url('../img/star.png') no-repeat;
+	background: url('../images/star.png') no-repeat;
 	width: 26px;
 	height: 24px;
 }
 
 .success-icon {
 	margin-left: 10px;
-	background: url('../img/success.png') no-repeat;
+	background: url('../images/success.png') no-repeat;
 	width: 26px;
 	height: 24px;
 }
@@ -614,6 +614,38 @@ img.illustration {
 		margin-top: 14px;
 	}
 
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+}
+
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
 }
 
 @media (min-width: 1400px) {
