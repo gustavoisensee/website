@@ -73,9 +73,9 @@
     },
     {
         "cat": 4,
-        "name": "IntegracaoContinua",
+        "name": "integracao-continua",
         "class": "item",
-        "href": "https://github.com/gustavoisensee/IntegracaoContinua",
+        "href": "https://github.com/gustavoisensee/integracao-continua",
         "title": "",
         "target": "_blank",
         "favorite": "success-icon right"
