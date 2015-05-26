@@ -19,7 +19,16 @@
     },
     {
         "cat": 4,
-        "name": "Hórus - SAC",
+        "name": "Gerencial - SAC",
+        "class": "item",
+        "href": "",
+        "title": "",
+        "target": "",
+        "favorite": "star-icon right"
+    },
+    {
+        "cat": 4,
+        "name": "Investimento - SAC",
         "class": "item",
         "href": "",
         "title": "",
@@ -46,21 +55,21 @@
     },
     {
         "cat": 4,
-        "name": "Http/2",
-        "class": "item",
-        "href": "https://github.com/gustavoisensee/http2",
-        "title": "",
-        "target": "_blank",
-        "favorite": "success-icon right"
-    },
-    {
-        "cat": 4,
         "name": "sien",
         "class": "item",
         "href": "https://github.com/gustavoisensee/sien",
         "title": "",
         "target": "_blank",
         "favorite": "star-icon right"
+    },
+    {
+        "cat": 4,
+        "name": "http2",
+        "class": "item",
+        "href": "https://github.com/gustavoisensee/http2",
+        "title": "",
+        "target": "_blank",
+        "favorite": "success-icon right"
     },
     {
         "cat": 4,
