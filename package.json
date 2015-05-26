@@ -1,0 +1,30 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "package file",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-uglifycss": "^1.0.4",
+    "gulp-uglify": "^1.2.0",
+    "imagemin-jpegtran": "^4.1.0",
+    "gulp-imagemin": "^2.2.1",
+    "imagemin-optipng": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoisensee/gustavoisensee.com.git"
+  },
+  "author": "Gustavo Isensee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gustavoisensee/gustavoisensee.com/issues"
+  },
+  "homepage": "https://github.com/gustavoisensee/gustavoisensee.com#readme"
+}
