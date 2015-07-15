@@ -19,7 +19,7 @@ function LangPage () {
 		menuLangPtBR: 'Português',
 		menuLangEnUS: 'English',
 		developer: 'Desenvolvedor Web',
-		myDescription: "Olá, eu sou Gustavo Isensee, tenho ' + calculateAge() + ' anos de idade, trabalho com desenvolvimento web a 6 anos, sou formado em Sistemas de Informação pela UNISUL e também em técnico de programação pelo colégio SENAI. Trabalhei em duas empresas privadas, participo de projetos open source no GitHub, sou um grande entusiasta Javascript, certificado MCSD pela Microsoft e atualmente estou trabalhando no LabTrans, Laboratório de Transportes e Logística da Universidade Federal de Santa Catarina, Brasil.",
+		myDescription: "Olá, eu sou Gustavo Isensee, tenho " + calculateAge() + " anos de idade, trabalho com desenvolvimento web a 6 anos, sou formado em Sistemas de Informação pela UNISUL e também em técnico de programação pelo colégio SENAI. Trabalhei em duas empresas privadas, participo de projetos open source no GitHub, sou um grande entusiasta Javascript, certificado MCSD pela Microsoft e atualmente estou trabalhando no LabTrans, Laboratório de Transportes e Logística da Universidade Federal de Santa Catarina, Brasil.",
 		legendTitleCurrentProjet: 'Projeto corrente',
 		legendTitleFinishedProjet: 'Projeto finalizado',
 		goToProject: 'Ir para Projetos',
