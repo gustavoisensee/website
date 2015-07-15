@@ -55,6 +55,15 @@
     },
     {
         "cat": 4,
+        "name": "backbone-first-steps",
+        "class": "item",
+        "href": "https://github.com/gustavoisensee/backbone-first-steps",
+        "title": "",
+        "target": "_blank",
+        "favorite": "star-icon right"
+    },
+    {
+        "cat": 4,
         "name": "sien",
         "class": "item",
         "href": "https://github.com/gustavoisensee/sien",
