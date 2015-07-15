@@ -19,8 +19,7 @@ function LangPage () {
 		menuLangPtBR: 'Português',
 		menuLangEnUS: 'English',
 		developer: 'Desenvolvedor Web',
-		myDescription: "Eu sou Gustavo, tenho " + calculateAge() + " anos de idade, formado como técnico de programação pelo colégio SENAI. Atualmente estou cursando a 9ª fase de Sistemas de Informação na UNISUL. Trabalhei em duas empresas privadas, particípo de projetos open source no GitHub, sou um grande entusiasta Javascript, certificado MCSD pela Microsoft e atualmente estou trabalhando no LabTrans, Laboratório de Transportes e Logística da Universidade Federal de Santa Catarina, Brasil.",
-
+		myDescription: "Olá, eu sou Gustavo Isensee, tenho ' + calculateAge() + ' anos de idade, trabalho com desenvolvimento web a 6 anos, sou formado em Sistemas de Informação pela UNISUL e também em técnico de programação pelo colégio SENAI. Trabalhei em duas empresas privadas, participo de projetos open source no GitHub, sou um grande entusiasta Javascript, certificado MCSD pela Microsoft e atualmente estou trabalhando no LabTrans, Laboratório de Transportes e Logística da Universidade Federal de Santa Catarina, Brasil.",
 		legendTitleCurrentProjet: 'Projeto corrente',
 		legendTitleFinishedProjet: 'Projeto finalizado',
 		goToProject: 'Ir para Projetos',
@@ -36,8 +35,7 @@ function LangPage () {
 			menuLangPtBR: 'Portuguese',
 			menuLangEnUS: 'English',
 			developer: 'Web Developer',
-			myDescription: "I am Gustavo, I'm " + calculateAge() + " years old, Graduated in technical programming at the college SENAI. I'm currently studying the 9th stage of Information Systems at UNISUL. I worked in two private companies, participate in open source projects on GitHub, I'm a great enthusiast Javascript, MCSD certified by Microsoft and I'm currently working on LabTrans, Transportation and Logistics Laboratory of the Federal University of Santa Catarina, Brazil.",
-
+			myDescription: "Hello, I'm Gustavo Isensee, I'm " + calculateAge() + " years old, I work with web development for 6 years, I'm graduated in Information Systems at Unisul and also in technical programming by SENAI college. I have worked in two private companies and also participate in open source projects on Github. I'm a great Javascript enthusiast, MCSD certified by Microsoft  and I am currently working on Labtrans, Transport and Logistics Laboratory of the Federal University of Santa Catarina, Brazil.",
 			legendTitleCurrentProjet: 'Current project',
 			legendTitleFinishedProjet: 'Finished project',
 			goToProject: 'Go to Projects',
