@@ -6,33 +6,33 @@ var imageminJpegtran = require('imagemin-jpegtran');
 var imageminOptipng = require('imagemin-optipng');
 
 gulp.task('compress-css', function() {
-	return gulp.src('css/*.css')
+	return gulp.src('assets/css/*.css')
 		.pipe(uglifycss())
-		.pipe(gulp.dest('./dist/stylesheets'));
+		.pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('compress-js', function() {
-	return gulp.src('js/*.js')
+	return gulp.src('assets/js/*.js')
 		.pipe(uglify())
 		.pipe(concat('all.min.js'))
-		.pipe(gulp.dest('./dist/javascripts'));
+		.pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('compress-jpg', function () {
-    return gulp.src('img/*.jpg')
+    return gulp.src('assets/img/*.jpg')
 	    .pipe(imageminJpegtran({progressive: true})())
-	    .pipe(gulp.dest('dist/images'));
+	    .pipe(gulp.dest('public/img'));
 });
 
 gulp.task('compress-png', function () {
-    return gulp.src('img/*.png')
+    return gulp.src('assets/img/*.png')
         .pipe(imageminOptipng({optimizationLevel: 3})())
-        .pipe(gulp.dest('dist/images'));
+        .pipe(gulp.dest('public/img'));
 });
 
 gulp.task('default', [
 	'compress-css', 
 	'compress-js',
-	'compress-jpg',
-	'compress-png'
+	// 'compress-jpg',
+	// 'compress-png'
 ]);
