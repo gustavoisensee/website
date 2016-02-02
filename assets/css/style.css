@@ -111,14 +111,13 @@ p {
 	}
 
 .description {
-	font-size: 1.5em;
-	line-height: 150%;
+    font-size: 1.5em;
+    line-height: 150%;
     float: left;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 2%;
-    text-align: center;
 }
 
 ul li {
@@ -154,14 +153,16 @@ img.illustration {
 	}
 
 	h2 {
-		font-size: 2.9em;
+		font-size: 2.9em !important;
 	}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1.5em !important;
 	}
 
 	.description {
-		font-size: 1.1em;
+	    width: 90% !important;
+	    margin-left: 5% !important;
+	    margin-right: 5% !important;
 	}
 }
