@@ -15,7 +15,8 @@ body, html {
 	color: #fff;
 	font-size: 1em;
 	height: 100%;
-	font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
 }
 
 li > span {
@@ -143,8 +144,8 @@ img.illustration {
 	.footer ul {
 	    margin: 0;
 	    padding: 0;
-	    width: 138px;
-	    margin-left: calc(50% - 69px);
+        width: 154px;
+    	margin-left: calc(50% - 77px);
 	}
 
 @media (max-width: 800px) {
