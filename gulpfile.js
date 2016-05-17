@@ -33,6 +33,6 @@ gulp.task('compress-png', function () {
 gulp.task('default', [
 	'compress-css', 
 	'compress-js',
-	// 'compress-jpg',
-	// 'compress-png'
+	//'compress-jpg',
+	//'compress-png'
 ]);
