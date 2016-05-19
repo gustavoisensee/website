@@ -107,16 +107,16 @@ p {
 	margin-top: 50px;	
 }
 	.div-description p {
-		text-align: justify;;
+		text-align: center;
 	}
 
 .description {
     font-size: 1.5em;
     line-height: 150%;
     float: left;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 78%;
+    margin-left: 11%;
+    margin-right: 11%;
     margin-top: 2%;
 }
 
