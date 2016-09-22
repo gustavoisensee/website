@@ -1,11 +1,13 @@
 {
   "name": "gustavoisensee.com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "package file",
   "main": "gulpfile.js",
   "dependencies": {
     "ejs": "^2.4.1",
-    "express": "^4.13.4",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.5.2",
     "gulp-concat-css": "^2.2.0",
@@ -15,9 +17,9 @@
     "imagemin-jpegtran": "^4.1.0",
     "imagemin-optipng": "^4.2.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp && node app.js"
   },
   "repository": {
     "type": "git",
