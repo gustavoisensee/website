@@ -4,4 +4,4 @@ gustavoisensee.com
 My website aims to present a bit of me and my work.
 
 
-http://gustavoisensee.github.io/gustavoisensee.com/
+http://gustavoisensee.github.io/
