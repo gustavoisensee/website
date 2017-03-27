@@ -1,0 +1,72 @@
+.current span {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.underline {
+	font-weight: 600;
+}
+
+.facebook-icon {
+	background: url('../img/facebook-icon.png') no-repeat;
+}
+
+.twitter-icon {
+	background: url('../img/twitter-icon.png') no-repeat;
+}
+
+.gplus-icon {
+	background: url('../img/gplus-icon.png') no-repeat;
+}
+
+.linkedin-icon {
+	background: url('../img/linkedin-icon.png') no-repeat;
+}
+
+.github-icon {
+	background: url('../img/github-icon.png') no-repeat;
+}
+
+.footer {
+	width: 100%;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+	.footer > div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+
+		.footer > div > ul {
+	    margin: 0;
+	    padding: 0;
+		}
+
+		.footer > div > a {
+	    width: 38px;
+	    height: 38px;
+	    border-radius: 50%;
+	    background-position: center;
+	    margin: 6px;
+	    box-shadow: 0 0 6px 2px #ccc;
+			transition: .3s;
+		}
+
+			.footer > div > a:hover {
+				opacity: .8;
+			}
+
+		.footer div > ul > li > span {
+			transition: .3s;
+		}
+
+			.footer div > ul > li > span:hover {
+				opacity: .8;
+			}
