@@ -8,13 +8,14 @@ var imageminOptipng = require('imagemin-optipng');
 gulp.task('compress-css', function() {
 	return gulp.src('assets/css/*.css')
 		.pipe(uglifycss())
+		.pipe(concat('bundle.css'))
 		.pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('compress-js', function() {
 	return gulp.src('assets/js/*.js')
 		.pipe(uglify())
-		.pipe(concat('all.min.js'))
+		.pipe(concat('bundle.js'))
 		.pipe(gulp.dest('./public/js'));
 });
 
@@ -31,8 +32,8 @@ gulp.task('compress-png', function () {
 });
 
 gulp.task('default', [
-	'compress-css', 
+	'compress-css',
 	'compress-js',
-	//'compress-jpg',
-	//'compress-png'
+	// 'compress-jpg',
+	// 'compress-png'
 ]);
