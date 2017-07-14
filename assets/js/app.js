@@ -1,8 +1,8 @@
 /*
-App v1.0.8
-Date: 2016-02-01
-(c) 2013-2015 Gustavo Isensee
-License: MIT
+	Language v1.0.6
+	Date: 2017-07-14
+	(c) 2013-2015 Gustavo Isensee
+	License: MIT
 */
 
 (function () {

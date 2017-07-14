@@ -1,8 +1,8 @@
 /*
-Language v1.0.5
-Date: 2016-02-01
-(c) 2013 Gustavo Isensee
-License: MIT
+	Language v1.0.6
+	Date: 2017-07-14
+	(c) 2013 Gustavo Isensee
+	License: MIT
 */
 
 function LangPage () {
@@ -16,7 +16,7 @@ function LangPage () {
 		menuLangPtBR: 'Português',
 		menuLangEnUS: 'English',
 		developer: 'Desenvolvedor Web',
-		myDescription: "Olá, Eu trabalho com desenvolvimento web a " + workedYears + " anos, sou formado em Sistemas de Informação pela UNISUL e também em técnico de programação pelo colégio SENAI. Participo de projetos open source no GitHub, sou um grande entusiasta Javascript, co-organizador da comunidade FloripaJS e também do Front-in-Floripa um dos maiores eventos de front-end de Santa Catarina e atualmente estou trabalhando no LabTrans, Laboratório de Transportes e Logística da Universidade Federal de Santa Catarina, Brasil.",
+		myDescription: "Olá, Eu trabalho com desenvolvimento web a " + workedYears + " anos, sou formado em Sistemas de Informação pela UNISUL e também em técnico de programação pelo colégio SENAI. Participo de projetos open source no GitHub, sou um grande entusiasta Javascript, Organizador da comunidade FloripaJS e também do Front-in-Floripa um dos maiores eventos de front-end de Santa Catarina e atualmente estou trabalhando no LabTrans, Laboratório de Transportes e Logística da Universidade Federal de Santa Catarina, Brasil.",
 		legendTitleCurrentProjet: 'Projeto corrente',
 		legendTitleFinishedProjet: 'Projeto finalizado',
 		goToProject: 'Ir para Projetos',
@@ -32,7 +32,7 @@ function LangPage () {
 			menuLangPtBR: 'Portuguese',
 			menuLangEnUS: 'English',
 			developer: 'Web Developer',
-			myDescription: "Hi, I work with web development for " + workedYears + " years, I'm graduated in Information Systems at Unisul and also in technical programming at SENAI college. I have participated in open source projects on Github. I'm a great Javascript enthusiast, I'm a co-organizer of the FloripaJS community and also Front-in-Floripa one of the biggest front-end events of Santa Catarina and I'm currently working at Labtrans, Transport and Logistics Laboratory of the Federal University of Santa Catarina, Brazil.",
+			myDescription: "Hi, I have been working with web development for " + workedYears + " years, I'm graduated in Information Systems at Unisul and also in technical programming at SENAI college. I have participated in open source projects on Github and I'm a great Javascript enthusiast, I'm a organizer of the FloripaJS community and also Front-in-Floripa one of the biggest front-end events of Santa Catarina and I'm currently working at Labtrans, Transport and Logistics Laboratory of the Federal University of Santa Catarina, Brazil.",
 			legendTitleCurrentProjet: 'Current project',
 			legendTitleFinishedProjet: 'Finished project',
 			goToProject: 'Go to Projects',
