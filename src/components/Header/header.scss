@@ -1,0 +1,11 @@
+$size: 16rem;
+
+.profile-picture {
+  background-image: url("./profile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $size;
+  width: $size;
+  height: $size;
+  border-radius: 50%
+}
