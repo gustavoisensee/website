@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  color: #424242;
+
+  .content-button {
+    display: flex;
+  
+    .button {
+      color: #424242;
+      background-color: transparent;
+      border: 1px solid #e2dfdf;
+      padding: 8px;
+      margin: 2px;
+      border-radius: 12px;
+      width: 100%;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+    
+      &:hover {
+        background-color: #e2dfdf;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}
