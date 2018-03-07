@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+
+  .icon {
+    margin: 0 .2rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &:hover {
+      box-shadow: 0 0 2px 2px #ccc;
+    }
+  }
+}

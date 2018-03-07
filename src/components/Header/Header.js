@@ -1,9 +1,10 @@
 import React from 'react';
+import profile from './img/profile.jpg';
 import './header.scss';
 
 const Header = () => (
   <div className="header">
-    <div className="profile-picture" />
+    <img className="profile-picture" src={profile} alt="" />
   </div>
 );
 

@@ -8,27 +8,34 @@ class Content extends PureComponent {
     super(props);
 
     this.state = {
-      market: Market.EN_US,
+      market: localStorage.market ? localStorage.market : Market.EN_US,
     };
+  }
+  getButtonClass(market) {
+    return `button ${this.state.market === market ? 'active' : ''}`;
   }
   handleChangeMarket(market) {
     this.setState({ market });
+    localStorage.market = market;
   }
   render() {
-    const locale = getMessage(this.state.market);
+    const { market } = this.state;
+    const locale = getMessage(market);
 
     return (
       <div className="content">
-        <h1>{locale.content.description}</h1>
+        <h1>Gustavo Isensee</h1>
+        <h2>{locale.content.title}</h2>
+        <p>{locale.content.description}</p>
         <div className="content-button">
           <button
-            className="button"
+            className={this.getButtonClass(Market.PT_BR)}
             onClick={() => this.handleChangeMarket(Market.PT_BR)}
           >
             {locale.content.portuguese}
           </button>
           <button
-            className="button"
+            className={this.getButtonClass(Market.EN_US)}
             onClick={() => this.handleChangeMarket(Market.EN_US)}
           >
             {locale.content.english}

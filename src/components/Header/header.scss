@@ -1,11 +1,15 @@
-$size: 16rem;
 
-.profile-picture {
-  background-image: url("./profile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: $size;
-  width: $size;
-  height: $size;
-  border-radius: 50%
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  .profile-picture {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0px #ababab;
+  }
 }
