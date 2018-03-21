@@ -1,7 +1,8 @@
-const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const port = 3000;
+const PUBLIC_PATH = 'static/';
 
 module.exports = {
   entry: [
@@ -24,9 +25,7 @@ module.exports = {
     filename: 'bundle.js',
     // the output bundle
 
-    path: path.resolve(__dirname, 'dist'),
-
-    publicPath: '/static/',
+    publicPath: PUBLIC_PATH,
     // necessary for HMR to know where to load the hot update chunks
   },
 
@@ -52,13 +51,10 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [{
-          loader: 'style-loader', // creates style nodes from JS strings
-        }, {
-          loader: 'css-loader', // translates CSS into CommonJS
-        }, {
-          loader: 'sass-loader', // compiles Sass to CSS
-        }],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader'],
+        }),
       },
     ],
   },
@@ -72,6 +68,8 @@ module.exports = {
 
     new webpack.NoEmitOnErrorsPlugin(),
     // do not emit compiled assets that include errors
+
+    new ExtractTextPlugin('style.css'),
   ],
 
   devServer: {

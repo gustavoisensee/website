@@ -1,12 +1,15 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const PUBLIC_PATH = 'static/';
 
 module.exports = {
   entry: './src/index.js',
 
   output: {
-    filename: 'static/bundle.js',
+    filename: `${PUBLIC_PATH}bundle.js`,
     path: path.resolve(__dirname, '../dist'),
   },
 
@@ -26,19 +29,18 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: {},
+            options: {
+              outputPath: PUBLIC_PATH,
+            },
           },
         ],
       },
       {
         test: /\.scss$/,
-        use: [{
-          loader: 'style-loader', // creates style nodes from JS strings
-        }, {
-          loader: 'css-loader', // translates CSS into CommonJS
-        }, {
-          loader: 'sass-loader', // compiles Sass to CSS
-        }],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader'],
+        }),
       },
     ],
   },
@@ -52,5 +54,6 @@ module.exports = {
       template: 'index.html',
       inject: false,
     }),
+    new ExtractTextPlugin(`${PUBLIC_PATH}style.css`),
   ],
 };
