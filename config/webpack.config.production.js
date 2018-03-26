@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const PUBLIC_PATH = 'static/';
+const PUBLIC_PATH = './static/';
 
 module.exports = {
   entry: './src/index.js',
@@ -11,6 +11,7 @@ module.exports = {
   output: {
     filename: `${PUBLIC_PATH}bundle.js`,
     path: path.resolve(__dirname, '../dist'),
+    publicPath: PUBLIC_PATH,
   },
 
   devtool: 'source-map',
@@ -30,6 +31,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
+              publicPath: PUBLIC_PATH,
               outputPath: PUBLIC_PATH,
             },
           },
