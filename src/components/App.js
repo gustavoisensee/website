@@ -2,10 +2,10 @@ import React from 'react';
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
-import './app.scss';
+import './App.scss';
 
 const App = () => (
-  <div className="app">
+  <div className="App">
     <Header />
     <Content />
     <Footer />
