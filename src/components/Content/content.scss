@@ -4,26 +4,38 @@
   align-content: center;
   justify-content: center;
   text-align: center;
-  color: #5f6368;
+  color: #383838;
   
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   h1 {
     margin: 0;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.9rem;
-    color: #e40000;
+    font-size: 2.1rem;
+    padding: 16px 0;
   }
   
   h2 {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #3999dc;
+    border-radius: 25px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14);
+    padding: 0 16px;
   }
 
   p {
-    margin: 2rem 0;
-    line-height: 1.8rem;
+    margin: 1.5rem 0;
+    line-height: 1.7rem;
     font-size: 1rem;
   }
 

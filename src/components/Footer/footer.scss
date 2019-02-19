@@ -8,6 +8,7 @@
     height: 3rem;
     cursor: pointer;
     border-radius: 50%;
+    transition: all .3s ease-out;
 
     &:hover {
       box-shadow: 0 0 2px 2px #ccc;

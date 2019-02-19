@@ -25,7 +25,9 @@ class Content extends PureComponent {
     return (
       <div className="content">
         <h1>Gustavo Isensee</h1>
-        <h2>{locale.content.title}</h2>
+        <div className="row">
+          <h2>{locale.content.title}</h2>
+        </div>
         <p>{locale.content.description}</p>
         <div className="content-button">
           <button
