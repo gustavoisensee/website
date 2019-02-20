@@ -96,3 +96,7 @@ typings/
 .history
 
 # End of https://www.gitignore.io/api/node,visualstudiocode
+
+### Create react app
+# Ignore build folder
+build
