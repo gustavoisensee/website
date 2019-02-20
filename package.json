@@ -14,7 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b feature/add-react-scripts -d build",
+    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject",
     "homepage": "https://gustavoisensee.github.io"
   },
