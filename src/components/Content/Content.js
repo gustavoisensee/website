@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Market from '../../enum/Market';
 import getMessage from '../../utils';
-import './content.scss';
+import './Content.scss';
 
 class Content extends PureComponent {
   constructor(props) {
@@ -23,7 +23,7 @@ class Content extends PureComponent {
     const locale = getMessage(market);
 
     return (
-      <div className="content">
+      <div className="Content">
         <h1>Gustavo Isensee</h1>
         <div className="row">
           <h2>{locale.content.title}</h2>

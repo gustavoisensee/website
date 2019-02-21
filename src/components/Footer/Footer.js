@@ -1,10 +1,10 @@
 import React from 'react';
 import github from './img/github.png';
 import linkedin from './img/linkedin.png';
-import './footer.scss';
+import './Footer.scss';
 
 const Footer = () => (
-  <div className="footer">
+  <div className="Footer">
     <a href="https://github.com/gustavoisensee" target="blank">
       <img className="icon" src={github} alt="" />
     </a>
