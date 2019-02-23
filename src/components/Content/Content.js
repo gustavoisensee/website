@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import Market from '../../enum/Market';
 import getMessage from '../../utils';
+import Bookmark from '../Bookmark';
 import './Content.scss';
 
 class Content extends PureComponent {
@@ -27,6 +28,7 @@ class Content extends PureComponent {
         <h1>Gustavo Isensee</h1>
         <div className="row">
           <h2>{locale.content.title}</h2>
+          <Bookmark />
         </div>
         <p>{locale.content.description}</p>
         <div className="content-button">

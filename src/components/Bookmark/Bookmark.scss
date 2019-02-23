@@ -1,0 +1,47 @@
+$border-color: #009ae1;
+
+.Bookmark {
+  display: block;
+  position: relative;
+
+  .top {
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    background-color: $border-color;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 24px solid white;
+  }
+
+  .left-shadow {
+    @extend .triangle;
+    border-top: 24px solid $border-color;
+    border-right: 20px solid transparent;
+    margin-left: -1px;
+    margin-top: 2px;
+  }
+
+  .right-shadow {
+    @extend .triangle;
+    border-top: 24px solid $border-color;
+    border-left: 21px solid transparent;
+    margin-top: 2px;
+  }
+
+  .left {
+    @extend .triangle;
+    border-right: 20px solid transparent;
+  }
+
+  .right {
+    @extend .triangle;
+    border-left: 20px solid transparent;
+  }
+}
