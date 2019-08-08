@@ -99,4 +99,4 @@ typings/
 
 ### Create react app
 # Ignore build folder
-build
+build/
