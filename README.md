@@ -1,6 +1,6 @@
 # My humble website
 
-This is my humble website a created with CRA.
+This is my humble website created with CRA.
 
 ## Installation
 
