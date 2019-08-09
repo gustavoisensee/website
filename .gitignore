@@ -100,3 +100,8 @@ typings/
 ### Create react app
 # Ignore build folder
 build/
+
+### Netlify
+# Ignore private configs and build folder
+.netlify/
+functions/
