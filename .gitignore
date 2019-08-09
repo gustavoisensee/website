@@ -102,6 +102,5 @@ typings/
 build/
 
 ### Netlify
-# Ignore private configs and build folder
-.netlify/
+# Ignore build folder
 functions/
