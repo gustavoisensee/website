@@ -11,9 +11,7 @@
   "scripts": {
     "build": "react-scripts build",
     "start": "react-scripts start",
-    "test": "react-scripts test",
-    "deploy:preview": "react-scripts build && netlify deploy --dir build",
-    "deploy": "react-scripts build && netlify deploy --dir build --prod"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
