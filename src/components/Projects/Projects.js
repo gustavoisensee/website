@@ -23,7 +23,7 @@ class Projects extends PureComponent {
     const { projects } = this.state;
     return (
       <div className='Projects' id='projects'>
-        <h1>Projects</h1>
+        <h1>Github Projects</h1>
         {projects && projects.length > 0
           && projects.map((p, i) => (<ProjectCard key={i} {...p} />))}
       </div>

@@ -1,7 +1,7 @@
 {
   "content": {
     "title": "Desenvolvedor Front-end",
-    "description": "Olá, Eu trababalho com desenvolvimento web por volta de 10 anos, sou graduado em Sistema de Informação e também em Técnico de Programação. Eu participo de projetos open-source no Github e sou um grande entusiasta em Javascript, No momento estou trabalhando na YoungCapital, a melhor provedora de empregos na Holanda. Gostaria de saber mais sobre mim? Confira os links abaixo.",
+    "description": "Olá, Eu trababalho com desenvolvimento web por volta de 10 anos, sou graduado em Sistema de Informação e também em Técnico de Programação. Eu participo de projetos open-source no Github e sou um grande entusiasta em Javascript, No momento estou trabalhando na YoungCapital, a melhor provedora de empregos na Holanda. Gostaria de saber mais sobre mim? Confira meu {link1} e {link2}.",
     "english": "Inglês",
     "portuguese": "Português"
   }

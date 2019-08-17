@@ -30,7 +30,7 @@ const SideMenu = () => {
         
         <ul id='menu'>
           <a href='/#home' rel='noopener noreferrer'><li>Home</li></a>
-          <a href='/#projects' rel='noopener noreferrer'><li>Projects</li></a>
+          <a href='/#projects' rel='noopener noreferrer'><li>Github Projects</li></a>
           <li>
             <div className='content-button'>
               <button
