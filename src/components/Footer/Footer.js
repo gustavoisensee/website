@@ -1,7 +1,7 @@
 import React from 'react';
 import github from './img/github.png';
 import linkedin from './img/linkedin.png';
-import './Footer.scss';
+import './styles.scss';
 
 const Footer = () => (
   <div className="Footer">

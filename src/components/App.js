@@ -1,14 +1,16 @@
 import React from 'react';
+import SideMenu from './SideMenu';
 import Header from './Header';
 import Content from './Content';
-import Footer from './Footer';
-import './App.scss';
+import Projects from './Projects';
+import './styles.scss';
 
 const App = () => (
   <div className="App">
+    <SideMenu />
     <Header />
     <Content />
-    <Footer />
+    <Projects />
   </div>
 );
 

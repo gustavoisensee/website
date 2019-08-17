@@ -1,58 +1,28 @@
-import React, { PureComponent } from 'react';
-import Market from '../../enum/Market';
+import React from 'react';
 import getMessage from '../../utils';
 import donut from './img/donut.png';
-import './Content.scss';
+import './styles.scss';
 
-class Content extends PureComponent {
-  constructor(props) {
-    super(props);
+const Content = () => {
+  const { market } = localStorage;
+  const locale = getMessage(market);
 
-    this.state = {
-      market: localStorage.market ? localStorage.market : Market.EN_US,
-    };
-  }
-  getButtonClass(market) {
-    return `button ${this.state.market === market ? 'active' : ''}`;
-  }
-  handleChangeMarket(market) {
-    this.setState({ market });
-    localStorage.market = market;
-  }
-  render() {
-    const { market } = this.state;
-    const locale = getMessage(market);
-
-    return (
-      <div className="Content">
-        <div className="row">
-          <h1>Gustavo Isensee</h1>
-        </div>
-        <div className="row">
-          <h2>
-            {locale.content.title}
-            <img className="icon" src={donut} alt="" />  
-          </h2>
-          
-        </div>
-        <p>{locale.content.description}</p>
-        <div className="content-button">
-          <button
-            className={this.getButtonClass(Market.PT_BR)}
-            onClick={() => this.handleChangeMarket(Market.PT_BR)}
-          >
-            {locale.content.portuguese}
-          </button>
-          <button
-            className={this.getButtonClass(Market.EN_US)}
-            onClick={() => this.handleChangeMarket(Market.EN_US)}
-          >
-            {locale.content.english}
-          </button>
-        </div>
+  return (
+    <div className='Content' id='home'>
+      <div className='row'>
+        <h1>Gustavo Isensee</h1>
       </div>
-    );
-  }
-}
+      <div className='row'>
+        <h2>
+          {locale.content.title}
+          <img className='icon' src={donut} alt='' />  
+        </h2>
+        
+      </div>
+      <p>{locale.content.description}</p>
+      
+    </div>
+  );
+};
 
 export default Content;

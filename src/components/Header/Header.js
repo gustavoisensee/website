@@ -1,6 +1,6 @@
 import React from 'react';
 import profile from './img/profile.jpg';
-import './Header.scss';
+import './styles.scss';
 
 const Header = () => (
   <div className="Header">

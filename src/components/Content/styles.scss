@@ -4,7 +4,7 @@
   align-content: center;
   justify-content: center;
   text-align: center;
-  color: #383838;
+  transform: translateZ(0);
 
   .icon {
     margin-left: 8px;
@@ -48,33 +48,5 @@
     line-height: 1.7rem;
     font-size: 1rem;
     text-align: left;
-  }
-
-  .content-button {
-    display: flex;
-  
-    .button {
-      color: #5f6368;
-      background-color: transparent;
-      border: 0;
-      border-bottom: 2px solid #e2dfdf;
-      font-size: 1rem;
-      padding: 0 8px 0 0;
-      margin: 2px;
-      height: 2rem;
-      cursor: pointer;
-      max-width: 10rem;
-      outline: 0;
-      transition: all .2s ease-in-out;
-    
-      &:hover {
-        border: 0;
-        border-bottom: 3px solid;
-      }
-    }
-
-    .active {
-      border-bottom: 3px solid;
-    }
   }
 }
