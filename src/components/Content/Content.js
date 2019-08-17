@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import Market from '../../enum/Market';
 import getMessage from '../../utils';
+import donut from './img/donut.png';
 import './Content.scss';
 
 class Content extends PureComponent {
@@ -24,9 +25,15 @@ class Content extends PureComponent {
 
     return (
       <div className="Content">
-        <h1>Gustavo Isensee</h1>
         <div className="row">
-          <h2>{locale.content.title}</h2>
+          <h1>Gustavo Isensee</h1>
+        </div>
+        <div className="row">
+          <h2>
+            {locale.content.title}
+            <img className="icon" src={donut} alt="" />  
+          </h2>
+          
         </div>
         <p>{locale.content.description}</p>
         <div className="content-button">
