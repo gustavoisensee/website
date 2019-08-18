@@ -26,7 +26,10 @@ const Content = () => {
           <img className='icon' src={donut} alt='' />  
         </h2>
       </div>
-      <p dangerouslySetInnerHTML={{ __html: replaceLinks(locale) }} />
+      <p 
+        className="paragraph"
+        dangerouslySetInnerHTML={{ __html: replaceLinks(locale) }}
+      />
     </div>
   );
 };
