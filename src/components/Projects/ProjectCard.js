@@ -8,7 +8,7 @@ const ProjectCard = ({ name, description, html_url, homepage }) => (
       </a>
     </h2>
     <p>{description}</p>
-    <a href={homepage} target='_blank' rel="noopener noreferrer">
+    <a href={homepage} target='_blank' rel="noopener noreferrer" className="second_link">
       {homepage}
     </a>
   </div>

@@ -1,3 +1,5 @@
+@import './../variables.scss';
+
 a {
   text-decoration: none;
   color: #232323;
@@ -17,7 +19,7 @@ a:hover {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  background: #ffffff;
+  background: $color_white;
   height: 35px;
   padding-left: 8px;
   border-radius: 6px 0 0 6px;
@@ -88,7 +90,7 @@ input:checked ~ #menu {
   height: 100vh;
   margin: -120px 0 0 -50px;
   padding-top: 125px;
-  background: #fff;
+  background: $color_white;
   list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(100%);

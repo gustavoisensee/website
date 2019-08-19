@@ -1,3 +1,5 @@
+@import './../variables.scss';
+
 .Content {
   .icon {
     margin-left: 8px;
@@ -29,8 +31,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    background-color: #3999dc;
+    color: $color_white;
+    background-color: $color_blue;
     border-radius: 3px 25px 25px 3px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14);
     padding: 0 8px 0 16px;
