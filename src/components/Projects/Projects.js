@@ -15,7 +15,7 @@ const Projects = () => {
     setLoading(false);
   };
 
-  useEffect(() => getData(), []);
+  useEffect(() => { getData(); }, []);
 
   return (
     <div className='Projects' id='projects'>
