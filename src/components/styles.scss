@@ -23,7 +23,7 @@ html,
   background-color: $color_white;
   margin-left: auto;
   margin-right: auto;
-  
+
   @media (max-height: 800px) {
     height: auto;
   }
@@ -34,4 +34,8 @@ html,
     width: calc(100% - 3rem);
     padding: 0 1.5rem;
   }
+}
+
+.Loading {
+  margin-top: -50px;
 }
