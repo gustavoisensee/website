@@ -2,6 +2,7 @@ import React from 'react';
 import Lottie from 'react-lottie';
 import Transition from '../Transition';
 import animationData from '../../assets/loading.json';
+import './style.scss';
 
 const defaultOptions = {
   loop: true,
@@ -15,7 +16,7 @@ const defaultOptions = {
 const Loading = () => (
   <Transition show>
     <div className='Loading'>
-      <Lottie options={defaultOptions} height={200} width={200} />
+      <Lottie options={defaultOptions} height={150} width={150} />
     </div>
   </Transition>
 );
