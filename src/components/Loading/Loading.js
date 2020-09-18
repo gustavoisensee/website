@@ -14,7 +14,7 @@ const defaultOptions = {
 };
 
 const Loading = () => (
-  <Transition show>
+  <Transition show id='loading'>
     <div className='Loading'>
       <Lottie options={defaultOptions} height={150} width={150} />
     </div>

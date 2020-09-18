@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { TransitionGroup } from 'react-transition-group';
 import ProjectCard from './ProjectCard';
 import Transition from '../Transition';
 import Loading from '../Loading';
@@ -22,9 +23,14 @@ const Projects = () => {
       <h1>Github Projects</h1>
 
       {loading && <Loading />}
-      <Transition show={!loading}>
-        {projects?.map((p, i) => (<ProjectCard key={i} {...p} />))}
-      </Transition>
+
+      <TransitionGroup>
+        {projects?.map((p, i) => (
+          <Transition id={i} key={i} show={!loading}>
+            <ProjectCard {...p} />
+          </Transition>
+        ))}
+      </TransitionGroup>
     </div>
   );
 };
