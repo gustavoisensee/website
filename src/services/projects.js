@@ -2,9 +2,9 @@ export const getProjects = async() => {
   const url = 'https://api.github.com/users/gustavoisensee/repos?sort=updated';
     try {
       const response = await fetch(url);
-      const projects = await response.json();
+      if (response.ok) return response.json();
 
-      return projects;
+      return [];
     } catch (err) {
       return [];
     }
