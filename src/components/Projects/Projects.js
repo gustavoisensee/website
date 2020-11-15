@@ -1,34 +1,38 @@
-import React, { PureComponent } from 'react';
+import React, { useEffect, useState } from 'react';
+import { TransitionGroup } from 'react-transition-group';
 import ProjectCard from './ProjectCard';
+import Transition from '../Transition';
+import Loading from '../Loading';
+import { getProjects } from '../../services/projects';
 import './styles.scss';
 
-class Projects extends PureComponent {
-  state = {
-    projects: []
-  }
+const Projects = () => {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  async componentDidMount() {
-    const url = 'https://api.github.com/users/gustavoisensee/repos?sort=updated';
-    try {
-      const response = await fetch(url);
-      const projects = await response.json();
+  const getData = async() => {
+    const data = await getProjects();
+    setProjects(data);
+    setLoading(false);
+  };
 
-      this.setState({ projects });
-    } catch (err) {
-      this.setState({ projects: [] });
-    }
-  }
+  useEffect(() => { getData(); }, []);
 
-  render() {
-    const { projects } = this.state;
-    return (
-      <div className='Projects' id='projects'>
-        <h1>Github Projects</h1>
-        {projects && projects.length > 0
-          && projects.map((p, i) => (<ProjectCard key={i} {...p} />))}
-      </div>
-    )
-  }
-}
+  return (
+    <div className='Projects' id='projects'>
+      <h1>Github Projects</h1>
+
+      {loading && <Loading />}
+
+      <TransitionGroup>
+        {projects?.map((p, i) => (
+          <Transition id={i} key={i} show={!loading}>
+            <ProjectCard {...p} />
+          </Transition>
+        ))}
+      </TransitionGroup>
+    </div>
+  );
+};
 
 export default Projects;

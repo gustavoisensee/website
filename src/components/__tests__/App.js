@@ -1,9 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render, waitForElement } from '@testing-library/react';
 import App from '../App';
+import { getProjects } from '../../services/projects';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+jest.mock('../../services/projects');
+
+getProjects.mockResolvedValue([]);
+
+describe('App', () => {
+  it('renders App properly', async() => {
+    const { queryAllByText } = render(<App />);
+    const projectTitleElements = queryAllByText(/Github Projects/i);
+
+    expect(projectTitleElements).toHaveLength(2);
+
+    projectTitleElements.forEach(async(el) =>
+      await waitForElement(() => expect(el).toBeInTheDocument())
+    );
+  });
 });
