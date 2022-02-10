@@ -36,6 +36,6 @@
     "@testing-library/user-event": "^13.1.9",
     "jest-canvas-mock": "^2.2.0",
     "jest-environment-jsdom-sixteen": "^1.0.3",
-    "node-sass": "^6.0.0"
+    "node-sass": "^7.0.0"
   }
 }
