@@ -1,7 +1,7 @@
 import React from 'react';
-import { render, waitForElement } from '@testing-library/react';
-import App from '../App';
+import { render, waitFor } from '@testing-library/react';
 import { getProjects } from '../../services/projects';
+import App from '../App';
 
 jest.mock('../../services/projects');
 
@@ -15,7 +15,7 @@ describe('App', () => {
     expect(projectTitleElements).toHaveLength(2);
 
     projectTitleElements.forEach(async(el) =>
-      await waitForElement(() => expect(el).toBeInTheDocument())
+      await waitFor(() => expect(el).toBeInTheDocument())
     );
   });
 });
