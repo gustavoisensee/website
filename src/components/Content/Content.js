@@ -1,35 +1,43 @@
 import React from 'react';
-import getMessage from '../../utils';
-import donut from './img/donut.png';
+import Projects from '../Projects';
+import Blog from '../Blog';
+import About from '../About/About';
+import useHash from '../../hooks/useHash';
+import { hashtags } from '../../consts';
+import { getMessage } from '../../helpers';
 import './styles.scss';
 
-const replaceLinks = (locale) => {
-  const replaced = locale.content.description
-    .replace('{link1}', '<a href="https://github.com/gustavoisensee" target="blank">Github</a>')
-    .replace('{link2}', '<a href="https://www.linkedin.com/in/gustavo-isensee-75293b3a/" target="blank">Linkedin</a>')
-
-  return replaced;
-}
-
 const Content = () => {
-  const { market } = localStorage;
-  const locale = getMessage(market);
+  const locale = getMessage(localStorage.market);
+
+  const hash = useHash();
+  const TabContent = {
+    [hashtags.about]: About,
+    [hashtags.projects]: Projects,
+    [hashtags.blog]: Blog,
+  }[hash] || About;
+
+  const isTabActive = (index) => (hash === index ? 'active' : 'not-active');
 
   return (
-    <div className='Content' id='home'>
-      <div className='row'>
-        <h1>Gustavo Isensee</h1>
+    <div className='Content'>
+      <div className='tab'>
+        <a
+          className={isTabActive(hashtags.about)}
+          style={{ marginRight: '16px' }}
+          href={hashtags.about}
+        >
+          {locale?.hashtags?.about}
+        </a>
+        <a className={isTabActive(hashtags.projects)} href={hashtags.projects}>
+          {locale?.hashtags?.projects}
+        </a>
+        <a className={isTabActive(hashtags.blog)} href={hashtags.blog}>
+          {locale?.hashtags?.blog}
+        </a>
       </div>
-      <div className='row'>
-        <h2>
-          {locale.content.title}
-          <img className='icon' src={donut} alt='' />  
-        </h2>
-      </div>
-      <p 
-        className="paragraph"
-        dangerouslySetInnerHTML={{ __html: replaceLinks(locale) }}
-      />
+
+      <TabContent />
     </div>
   );
 };

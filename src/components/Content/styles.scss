@@ -1,51 +1,25 @@
-@import './../variables.scss';
+@import '../../styles/variables.scss';
 
 .Content {
-  .icon {
-    margin-left: 8px;
-    width: 32px;
-  }
+  .tab {
+    padding-top: 24px;
+    flex-direction: column;
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    .Bookmark {
-      margin-left: -40px;
-      margin-top: -66px;
+    a {
+      margin-right: 16px;
     }
-  }
 
-  h1 {
-    margin: 0;
-    font-size: 2.1rem;
-    padding: 16px 0;
-  }
+    .active {
+      font-weight: 700;
+      color: $color_blue
+    }
 
-  h2 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 1.3rem;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color_white;
-    background-color: $color_blue;
-    border-radius: 3px 25px 25px 3px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14);
-    padding: 0 8px 0 16px;
+    .not-active {
+      text-decoration: underline;
+    }
   }
 
   .paragraph {
-    margin: 2rem 0 1.5rem 0;
-    line-height: 1.7rem;
-    font-size: 1rem;
-    text-align: left;
-
-    a {
-      text-decoration: underline
-    }
+    line-height: 1.7;
   }
 }

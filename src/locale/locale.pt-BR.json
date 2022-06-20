@@ -1,8 +1,25 @@
 {
+  "pages": {
+    "about": {
+      "title": "Sobre mim"
+    },
+    "projects": {
+      "title": "Projetos do Github"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Em breve..."
+    }
+  },
   "content": {
-    "title": "Desenvolvedor Front-end",
+    "title": "Front-end Developer",
     "description": "Olá, Eu me chamo Gustavo e trababalho com desenvolvimento web há algum tempo, sou graduado em Sistema de Informação e também em Técnico de Programação. Eu contribuo de projetos open-source no Github e sou um grande entusiasta em Javascript, No momento estou trabalhando na YoungCapital, uma das maiores provedoras de trabalhos na Holanda. Gostaria de saber mais sobre mim? Confira meu {link1} e {link2}.",
     "english": "Inglês",
     "portuguese": "Português"
+  },
+  "hashtags": {
+    "about": "Sobre mim",
+    "projects": "Projetos",
+    "blog": "Blog"
   }
 }
