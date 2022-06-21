@@ -29,7 +29,7 @@ const Projects = () => {
       {loading && <Loading />}
 
       {projects?.map((p, i) => (
-        <ProjectCard id={i} key={i} {...p} />
+        <ProjectCard key={`project-${i}`} {...p} />
       ))}
     </div>
   );
