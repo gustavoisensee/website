@@ -8,7 +8,7 @@ const Header = () => {
   const locale = getMessage(localStorage.market);
 
   return (
-    <div className='Header row'>
+    <div className='Header'>
       <img className='profile-picture' src={profile} alt='' />
       <div className='title-container'>
         <h1>Gustavo Isensee</h1>

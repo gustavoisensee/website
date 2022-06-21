@@ -1,6 +1,11 @@
 @import '../../styles/variables.scss';
 
 .Content {
+  h2 {
+    font-family: 'Barlow', sans-serif;
+    margin: 24px 0;
+  }
+
   .tab {
     padding-top: 24px;
     flex-direction: column;
