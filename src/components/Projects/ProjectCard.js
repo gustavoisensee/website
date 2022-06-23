@@ -1,8 +1,8 @@
 import React from 'react';
 
 const ProjectCard = ({ name, description, html_url, homepage }) => (
-  <div className='ProjectCard'>
-    <h2>
+  <div className='shadow-lg hover:shadow-xl transition-all my-5 p-4'>
+    <h2 className='underline text-xl mb-2 font-semibold'>
       <a href={html_url} target='_blank' rel="noopener noreferrer">
         {name}
       </a>

@@ -26,3 +26,7 @@ export const replaceLinks = (locale) => {
 
   return replaced;
 };
+
+export const scrollToTheBottom = () => {
+  document.getElementById('root').scrollTo(0, document.body.scrollHeight);
+};

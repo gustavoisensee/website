@@ -1,5 +1,3 @@
-@import '../../styles/variables.scss';
-
 a {
   color: #232323;
   transition: color 0.3s ease;
@@ -10,6 +8,7 @@ a:hover {
 }
  
 #menuToggle {
+  @apply bg-white;
   position: fixed;
   top: 2rem;
   right: 0;
@@ -18,7 +17,6 @@ a:hover {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  background: $color_white;
   height: 35px;
   padding-left: 8px;
   border-radius: 6px 0 0 6px;
@@ -84,12 +82,12 @@ input:checked ~ #menu {
 }
  
 #menu {
+  @apply bg-white;
   position: absolute;
-  width: 200px;
+  width: 210px;
   height: 100vh;
   margin: -120px 0 0 -50px;
   padding-top: 125px;
-  background: $color_white;
   list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(100%);

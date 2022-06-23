@@ -12,10 +12,10 @@ const Header = () => {
       <img className='profile-picture' src={profile} alt='' />
       <div className='title-container'>
         <h1>Gustavo Isensee</h1>
-        <h2 className='title'>
-          {locale.content.title}
+        <div className='title'>
+          <h2>{locale.content.title}</h2>
           <img className='icon' src={donut} alt='' />
-        </h2>
+        </div>
       </div>
     </div>
   );

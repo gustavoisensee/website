@@ -1,7 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/loading.json';
-import './style.scss';
 
 const defaultOptions = {
   loop: true,
@@ -13,7 +12,7 @@ const defaultOptions = {
 };
 
 const Loading = () => (
-  <div className='Loading'>
+  <div className='-mt-5'>
     <Lottie options={defaultOptions} height={150} width={150} />
   </div>
 );

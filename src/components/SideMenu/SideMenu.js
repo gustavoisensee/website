@@ -22,15 +22,15 @@ const SideMenu = () => {
   console.log({ locale })
 
   return (
-    <nav role='navigation'>
-      <div id='menuToggle'>
+    <nav role='navigation' >
+      <div id='menuToggle' >
         <input type='checkbox' />
 
         <span></span>
         <span></span>
         <span></span>
 
-        <ul id='menu'>
+        <ul id='menu' className='pl-4'>
           <a href={hashtags.about} rel='noopener noreferrer'>
             <li>{locale.hashtags.about}</li>
           </a>

@@ -4,7 +4,6 @@ import { getMessage } from '../../helpers';
 import { getPosts } from '../../services/posts';
 import Loading from '../Loading';
 import Post from '../Post/Post';
-import './styles.scss';
 
 const Blog = () => {
   const locale = getMessage(localStorage.market);
@@ -24,7 +23,7 @@ const Blog = () => {
 
   return (
     <div className='Blog'>
-      <h2>{locale.pages.blog.title}</h2>
+      <h2 className='text-2xl font-semibold my-4'>{locale.pages.blog.title}</h2>
 
       {loading && <Loading />}
 

@@ -7,9 +7,9 @@
       "title": "Github projects"
     },
     "blog": {
-      "title": "Blog",
-      "description": "Coming soon..."
-    }
+      "title": "Blog"
+    },
+    "load_more": "Load more"
   },
   "content": {
     "title": "Front-end Developer",
