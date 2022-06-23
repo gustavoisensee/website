@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-@import '../../styles/variables.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body,
 html,
 #root {
+  @apply text-gray-800;
   display: flex;
 	margin: 0;
 	padding: 0;
@@ -11,20 +13,18 @@ html,
 	height: 100%;
   overflow: auto;
   font-size: 16px;
-  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-family: 'Inter', sans-serif;
-  color: $color_font;
   scroll-behavior: smooth;
 }
 
 .App {
+  @apply bg-white;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: calc(100% - 4rem);
   max-width: 32rem;
   min-width: 273px;
-  background-color: $color_white;
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;

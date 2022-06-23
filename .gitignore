@@ -104,3 +104,6 @@ build/
 ### Netlify
 # Ignore build folder
 functions/
+
+# Custom
+.vscode

@@ -1,5 +1,3 @@
-@import '../../styles/variables.scss';
-
 .Header {
   display: flex;
   flex-direction: row;
@@ -21,20 +19,10 @@
   }
 
   .title {
-    width: fit-content;
-    margin: 0;
-    font-weight: 600;
-    font-size: 1.3rem;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color_white;
-    background-color: $color_blue;
+    @apply bg-indigo-400 text-white font-semibold text-xl py-2 px-2 flex;
     border-radius: 3px 25px 25px 3px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14);
-    padding: 0 8px 0 16px;
-    min-width: 249px;
+    min-width: 250px;
   }
 
   .icon {

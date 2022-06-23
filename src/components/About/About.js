@@ -5,9 +5,11 @@ const About = () => {
   const locale = getMessage(localStorage.market);
   return (
     <>
-      <h2>{locale.pages.about.title}</h2>
+      <h2 className='text-2xl font-semibold my-4'>
+        {locale.pages.about.title}
+      </h2>
       <p
-        className='paragraph'
+        className='text-base leading-relaxed'
         dangerouslySetInnerHTML={{ __html: replaceLinks(locale) }}
       />
     </>
