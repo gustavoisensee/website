@@ -7,9 +7,9 @@
       "title": "Projetos do Github"
     },
     "blog": {
-      "title": "Blog"
+      "title": "Artigos"
     },
-    "load_more": "Carregar mais"
+    "load_more": "Mais"
   },
   "content": {
     "title": "Front-end Developer",
@@ -20,6 +20,6 @@
   "hashtags": {
     "about": "Sobre mim",
     "projects": "Projetos",
-    "blog": "Blog"
+    "blog": "Artigos"
   }
 }

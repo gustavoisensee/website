@@ -28,5 +28,5 @@ export const replaceLinks = (locale) => {
 };
 
 export const scrollToTheBottom = () => {
-  document.getElementById('root').scrollTo(0, document.body.scrollHeight);
+  document.getElementById('root').scrollTo(0, document.body.scrollHeight + 50);
 };
