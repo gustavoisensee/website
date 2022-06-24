@@ -5,7 +5,7 @@ import Content from '../Content';
 import './styles.scss';
 
 const App = () => (
-  <div className='App'>
+  <div className='w-full max-w-lg p-4'>
     <SideMenu />
     <Header />
     <Content />
