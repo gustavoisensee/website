@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Footer from '../Footer';
 import Market from '../../enum/Market';
 import { getMessage } from '../../helpers';
-import './styles.scss';
 import { hashtags } from '../../consts';
+import './styles.scss';
 
 const SideMenu = () => {
   const [market, setMarket] = useState(localStorage.market);
@@ -19,7 +19,6 @@ const SideMenu = () => {
   };
 
   const locale = getMessage(market);
-  console.log({ locale })
 
   return (
     <nav role='navigation' >

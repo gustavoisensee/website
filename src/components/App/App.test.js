@@ -1,21 +1,14 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
-import { getProjects } from '../services/projects';
-import App from './App';
+import { render } from '@testing-library/react';
+import App from './App.jsx';
 
 jest.mock('../../services/projects');
 
-getProjects.mockResolvedValue([]);
-
 describe('App', () => {
-  it('renders App properly', async() => {
+  it('renders About me page properly', async() => {
     const { queryAllByText } = render(<App />);
-    const projectTitleElements = queryAllByText(/Github Projects/i);
+    const aboutTitleElements = queryAllByText('About me');
 
-    expect(projectTitleElements).toHaveLength(2);
-
-    projectTitleElements.forEach(async(el) =>
-      await waitFor(() => expect(el).toBeInTheDocument())
-    );
+    expect(aboutTitleElements).toHaveLength(3);
   });
 });

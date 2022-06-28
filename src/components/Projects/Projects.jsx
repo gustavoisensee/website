@@ -1,15 +1,16 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import Loading from '../Loading';
-import { getProjects } from '../../services/projects';
+import { getOrgProjects, getProjects } from '../../services/projects';
 import { getMessage } from '../../helpers';
 import useFetchAndLoadMore from '../../hooks/useFetchAndLoadMore';
 import LoadMore from '../LoadMore';
 
 const Projects = () => {
   const locale = getMessage(localStorage.market);
-  const { loading, data, loadMore, showLoadMore } =
-    useFetchAndLoadMore(getProjects);
+  const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(() =>
+    Promise.all([getOrgProjects(), getProjects()])
+  );
 
   return (
     <div>

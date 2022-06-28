@@ -22,7 +22,8 @@ const useFetchAndLoadMore = (fetchData) => {
 
   const getData = async () => {
     const data = await fetchData();
-    const _chunks = chunk(data, 5);
+    const flattenedData = data?.flat?.();
+    const _chunks = chunk(flattenedData, 5);
     setData(_chunks[0]);
     setChunks({
       index: 0,
