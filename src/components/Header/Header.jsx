@@ -13,7 +13,7 @@ const Header = () => {
       <div className='title-container'>
         <h1>Gustavo Isensee</h1>
         <div className='title'>
-          <h2>{locale.content.title}</h2>
+          <h2 className='text-center'>{locale.content.title}</h2>
           <img className='icon' src={donut} alt='' />
         </div>
       </div>

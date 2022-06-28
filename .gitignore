@@ -100,6 +100,7 @@ typings/
 ### Create react app
 # Ignore build folder
 build/
+dist/
 
 ### Netlify
 # Ignore build folder
