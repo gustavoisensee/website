@@ -21,8 +21,8 @@ const SideMenu = () => {
   const locale = getMessage(market);
 
   return (
-    <nav role='navigation' >
-      <div id='menuToggle' >
+    <nav role='navigation'>
+      <div id='menuToggle'>
         <input type='checkbox' />
 
         <span></span>

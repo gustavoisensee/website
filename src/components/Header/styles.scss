@@ -9,14 +9,6 @@
     align-items: flex-start;
   }
 
-  h1 {
-    font-family: 'Barlow', sans-serif;
-    font-size: 2.1rem;
-    font-weight: 700;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
   .title {
     @apply bg-indigo-500 text-white font-semibold text-xl py-2 px-2 flex;
     border-radius: 3px 25px 25px 3px;

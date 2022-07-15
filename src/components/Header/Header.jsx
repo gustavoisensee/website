@@ -11,9 +11,9 @@ const Header = () => {
     <div className='Header'>
       <img className='profile-picture' src={profile} alt='' />
       <div className='title-container'>
-        <h1>Gustavo Isensee</h1>
+        <h1 className='text-3xl leading-relaxed font-bold'>Gustavo Isensee</h1>
         <div className='title'>
-          <h2 className='text-center'>{locale.content.title}</h2>
+          <h2 className='text-center leading-relaxed'>{locale.content.title}</h2>
           <img className='icon' src={donut} alt='' />
         </div>
       </div>
