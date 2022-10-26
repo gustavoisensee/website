@@ -13,7 +13,7 @@ const Projects = () => {
   );
 
   return (
-    <div>
+    <div id='content'>
       <h2 className='text-2xl font-semibold my-4'>
         {locale.pages.projects.title}
       </h2>
