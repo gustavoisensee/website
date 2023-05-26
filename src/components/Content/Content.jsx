@@ -14,13 +14,13 @@ const getTabComponent = (hash) => ({
 })[hash] || About;
 
 const Content = () => {
-  const locale = getMessage(localStorage.market);
+  const locale = getMessage();
   const hash = useHash();
   const TabContent = getTabComponent(hash);
 
   return (
     <div>
-      <div className='mt-5'>
+      <div className='my-8'>
         <Link hashSource={hashtags.about} title={locale?.hashtags?.about} />
         <Link hashSource={hashtags.projects} title={locale?.hashtags?.projects} />
         <Link hashSource={hashtags.blog} title={locale?.hashtags?.blog} />

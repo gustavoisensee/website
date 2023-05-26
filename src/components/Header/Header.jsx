@@ -5,7 +5,7 @@ import { getMessage } from '../../helpers';
 import './styles.scss';
 
 const Header = () => {
-  const locale = getMessage(localStorage.market);
+  const locale = getMessage();
 
   return (
     <div className='Header'>

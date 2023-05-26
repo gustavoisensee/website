@@ -2,7 +2,8 @@ import React from 'react';
 import useHash from '../../hooks/useHash';
 import { hashtags } from '../../consts';
 
-const isTabActive = (flag) => (flag ? 'text-indigo-500' : 'underline');
+const isTabActive = (flag) =>
+  flag ? 'text-indigo-500 bg-gray-100 rounded-lg' : 'underline';
 
 const Link = ({ hashSource, title }) => {
   const hash = useHash();
@@ -11,7 +12,7 @@ const Link = ({ hashSource, title }) => {
 
   return (
     <a
-      className={`mr-4 font-semibold ${isTabActive(
+      className={`mr-4 font-semibold p-2 ${isTabActive(
         hashSource === hash || noHashAndAboutTab
       )}`}
       href={hashSource}

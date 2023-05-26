@@ -1,19 +1,19 @@
 import React from 'react';
 import { getMessage } from '../../helpers';
 
-const Projects = ({ loadMore }) => {
-  const locale = getMessage(localStorage.market);
+const LoadMore = ({ onClick, text }) => {
+  const locale = getMessage();
 
   return (
-    <div className='flex justify-center mb-4'>
+    <div className='flex justify-center mb-2'>
       <button
-        onClick={loadMore}
-        className='bg-transparent underline text-indigo-500'
+        onClick={onClick}
+        className='bg-transparent underline text-indigo-500 text-sm'
       >
-        {locale.pages.load_more}
+        {text || locale.pages.load_more}
       </button>
     </div>
   );
 };
 
-export default Projects;
+export default LoadMore;

@@ -1,7 +1,11 @@
 {
   "pages": {
     "about": {
-      "title": "Sobre mim"
+      "title": "Sobre mim",
+      "tech_knowledge": {
+        "title": "Conhecimento técnico"
+      },
+      "show_all": "Mostrar todos"
     },
     "projects": {
       "title": "Projetos do Github"
@@ -12,8 +16,8 @@
     "load_more": "Mais"
   },
   "content": {
-    "title": "Front-end Developer",
-    "description": "Olá, Eu me chamo Gustavo e trababalho com desenvolvimento web há algum tempo, sou graduado em Sistema de Informação e também em Técnico de Programação. Eu contribuo de projetos open-source no Github e sou um grande entusiasta em Javascript, No momento estou trabalhando na YoungCapital, uma das maiores provedoras de trabalhos na Holanda. Gostaria de saber mais sobre mim? Confira meu {link1} e {link2}.",
+    "title": "Frontend Engineer",
+    "description": "Olá, Eu me chamo Gustavo e trababalho com desenvolvimento web há algum tempo, sou graduado em Sistema de Informação e também em Técnico de Programação. Sou apaixonado por Javascript, amo desenvolvimento frontend e todas as suas milhares de bibliotecas, e atualmente trabalho na YoungCapital, uma das maiores agências de trabalho temporário da Holanda. Gostaria de saber mais sobre mim? Confira meu {link1} e {link2}.",
     "english": "Inglês",
     "portuguese": "Português"
   },

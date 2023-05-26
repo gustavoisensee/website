@@ -7,7 +7,7 @@ import useFetchAndLoadMore from '../../hooks/useFetchAndLoadMore';
 import LoadMore from '../LoadMore';
 
 const Projects = () => {
-  const locale = getMessage(localStorage.market);
+  const locale = getMessage();
   const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(() =>
     Promise.all([getOrgProjects(), getProjects()])
   );
@@ -24,7 +24,7 @@ const Projects = () => {
         <ProjectCard key={`project-${i}`} {...p} />
       ))}
 
-      {showLoadMore && <LoadMore loadMore={loadMore} />}
+      {showLoadMore && <LoadMore onClick={loadMore} />}
     </div>
   );
 };

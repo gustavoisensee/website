@@ -7,7 +7,7 @@ import LoadMore from '../LoadMore';
 import Post from '../Post/Post';
 
 const Blog = () => {
-  const locale = getMessage(localStorage.market);
+  const locale = getMessage();
   const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(getPosts);
 
   return (
@@ -20,7 +20,7 @@ const Blog = () => {
         <Post key={`post-${post.id}`} post={post} />
       ))}
 
-      {showLoadMore && <LoadMore loadMore={loadMore} />}
+      {showLoadMore && <LoadMore onClick={loadMore} />}
     </div>
   );
 };

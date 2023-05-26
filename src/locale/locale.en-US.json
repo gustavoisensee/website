@@ -1,7 +1,11 @@
 {
   "pages": {
     "about": {
-      "title": "About me"
+      "title": "About me",
+      "tech_knowledge": {
+        "title": "Tech knowledge"
+      },
+      "show_all": "Show all"
     },
     "projects": {
       "title": "Github projects"
@@ -12,8 +16,8 @@
     "load_more": "Load more"
   },
   "content": {
-    "title": "Front-end Developer",
-    "description": "Hi there, I'm Gustavo and I have been working with web development for quite some time, I'm graduated in Information Systems and also in Technical Programming. I contribute for some open source projects on Github and I'm a great Javascript enthusiast, At the moment I'm working at YoungCapital, one of the greatest job suppliers in the Netherlands. Would you like to know more about me? Check it out my {link1} and {link2}.",
+    "title": "Frontend Engineer",
+    "description": "Hi there, I'm Gus! and I have been working with web development for quite some time, I'm graduated in Information Systems and also in Technical Programming. I'm passionate about Javascript, I love frontend development and all its thousands libraries, and currently working at YoungCapital, one of the greatest temp agencies in the Netherlands. Would you like to know more about me? Check it out my {link1} and {link2}.",
     "english": "English",
     "portuguese": "Portuguese"
   },

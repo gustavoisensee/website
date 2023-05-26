@@ -1,24 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from '../Footer';
-import Market from '../../enum/Market';
+import locales from '../../enum/locales';
 import { getMessage } from '../../helpers';
 import { hashtags } from '../../consts';
 import './styles.scss';
 
 const SideMenu = () => {
-  const [market, setMarket] = useState(localStorage.market);
+  const locale = getMessage();
 
-  const getButtonClass = (_market) => {
-    return `button ${market === _market ? 'active' : ''}`;
+  const getButtonClass = (_locale) => {
+    return `button ${locale === _locale ? 'active' : ''}`;
   };
 
-  const handleChangeMarket = (market) => {
-    setMarket({ market });
-    localStorage.market = market;
+  const handleChangeLocale = (_locale) => {
+    localStorage.locale = _locale;
     document.location.reload();
   };
-
-  const locale = getMessage(market);
 
   return (
     <nav role='navigation'>
@@ -42,14 +39,14 @@ const SideMenu = () => {
           <li>
             <div className='content-button'>
               <button
-                className={getButtonClass(Market.PT_BR)}
-                onClick={() => handleChangeMarket(Market.PT_BR)}
+                className={getButtonClass(locales.PT_BR)}
+                onClick={() => handleChangeLocale(locales.PT_BR)}
               >
                 {locale.content.portuguese}
               </button>
               <button
-                className={getButtonClass(Market.EN_US)}
-                onClick={() => handleChangeMarket(Market.EN_US)}
+                className={getButtonClass(locales.EN_US)}
+                onClick={() => handleChangeLocale(locales.EN_US)}
               >
                 {locale.content.english}
               </button>
