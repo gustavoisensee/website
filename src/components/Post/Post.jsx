@@ -2,7 +2,7 @@ import React from 'react';
 import dayjs from '../../helpers/dayjs';
 
 const Post = ({ post }) => (
-  <div className='mb-4'>
+  <div className='flex flex-col rounded-md shadow-md hover:shadow-xl transition-all my-5 p-4 mb-4'>
     <a className='underline' href={post.url} target='_blank' rel='noopener noreferrer'>
       <h3 className='text-xl font-semibold'>{post.title}</h3>
     </a>
