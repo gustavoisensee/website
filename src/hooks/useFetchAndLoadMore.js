@@ -1,6 +1,14 @@
-import chunk from 'lodash.chunk';
 import { useEffect, useState } from 'react';
+import chunk from 'lodash.chunk';
+import dayjs from 'dayjs'
+
 import { scrollToTheBottom } from '../helpers';
+
+const compareUpdatedAt = (a, b) => {
+  const dateA = dayjs(a.pushed_at);
+  const dateB = dayjs(b.pushed_at);
+  return dateB.diff(dateA);
+};
 
 const useFetchAndLoadMore = (fetchData) => {
   const [chunks, setChunks] = useState({
@@ -21,9 +29,10 @@ const useFetchAndLoadMore = (fetchData) => {
   };
 
   const getData = async () => {
-    const data = await fetchData();
-    const flattenedData = data?.flat?.();
-    const _chunks = chunk(flattenedData, 5);
+    const _data = await fetchData();
+    const flattenedData = _data?.flat?.() || [];
+    const data = flattenedData.sort(compareUpdatedAt);
+    const _chunks = chunk(data, 5);
     setData(_chunks[0]);
     setChunks({
       index: 0,
