@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import chunk from 'lodash.chunk';
 import dayjs from 'dayjs'
 
-import { scrollToTheBottom } from '../helpers';
-
 const compareUpdatedAt = (a, b) => {
   const dateA = dayjs(a.pushed_at);
   const dateB = dayjs(b.pushed_at);
@@ -20,11 +18,10 @@ const useFetchAndLoadMore = (fetchData) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const loadMore = () => {
+  const loadMore = (EN_US) => {
     if (chunks.index < chunks.total) {
       setData([...data, ...chunks.allChunks[chunks.index + 1]]);
       setChunks({ ...chunks, index: chunks.index + 1 });
-      setTimeout(scrollToTheBottom, 200);
     }
   };
 
