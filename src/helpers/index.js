@@ -23,7 +23,7 @@ export const replaceLinks = (locale) => {
     )
     .replace(
       '{link2}',
-      '<a href="https://www.linkedin.com/in/gustavo-isensee-75293b3a/" target="blank">Linkedin</a>'
+      '<a href="https://www.linkedin.com/in/gustavoisensee/" target="blank">Linkedin</a>'
     );
 
   return replaced;
