@@ -1,5 +1,5 @@
 import React from 'react';
-import { getMessage } from '../../helpers';
+import { getMessage } from '../../../helpers';
 
 const LoadMore = ({ onClick, text }) => {
   const locale = getMessage();

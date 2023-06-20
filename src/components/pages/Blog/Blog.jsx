@@ -1,10 +1,10 @@
 import React from 'react';
-import { getMessage } from '../../helpers';
-import useFetchAndLoadMore from '../../hooks/useFetchAndLoadMore';
-import { getPosts } from '../../services/posts';
-import Loading from '../Loading';
-import LoadMore from '../LoadMore';
-import Post from '../Post/Post';
+import { getMessage } from '../../../helpers';
+import useFetchAndLoadMore from '../../../hooks/useFetchAndLoadMore';
+import { getPosts } from '../../../services/posts';
+import Loading from '../../shared/Loading';
+import LoadMore from '../../shared/LoadMore';
+import Post from './components/Post';
 
 const Blog = () => {
   const locale = getMessage();

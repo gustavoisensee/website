@@ -1,7 +1,7 @@
 import React from 'react';
-import profile from '../../assets/images/profile.jpg';
-import donut from '../../assets/images/donut.png';
-import { getMessage } from '../../helpers';
+import profile from '../../../../../assets/images/profile.jpg';
+import donut from '../../../../../assets/images/donut.png';
+import { getMessage } from '../../../../../helpers';
 import './styles.scss';
 
 const Header = () => {

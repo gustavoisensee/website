@@ -1,10 +1,10 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import Loading from '../Loading';
-import { getOrgProjects, getProjects } from '../../services/projects';
-import { getMessage } from '../../helpers';
-import useFetchAndLoadMore from '../../hooks/useFetchAndLoadMore';
-import LoadMore from '../LoadMore';
+import Loading from '../../shared/Loading';
+import { getOrgProjects, getProjects } from '../../../services/projects';
+import { getMessage } from '../../../helpers';
+import useFetchAndLoadMore from '../../../hooks/useFetchAndLoadMore';
+import LoadMore from '../../shared/LoadMore';
 
 const Projects = () => {
   const locale = getMessage();

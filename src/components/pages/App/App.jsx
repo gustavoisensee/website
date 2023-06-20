@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Header';
-import SideMenuNew from '../SideMenuNew/SideMenuNew';
-import Content from '../Content';
+import Header from './components/Header';
+import SideMenuNew from './components/SideMenuNew';
+import Content from './components/Content';
 import './styles.scss';
 
 const App = () => (

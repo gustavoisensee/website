@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import Footer from '../Footer';
-import locales from '../../enum/locales';
-import { getMessage } from '../../helpers';
-import { hashtags } from '../../consts';
-import useHash from '../../hooks/useHash';
+import Footer from './Footer';
+import locales from '../../../../../enum/locales';
+import { getMessage } from '../../../../../helpers';
+import { hashtags } from '../../../../../consts';
+import useHash from '../../../../../hooks/useHash';
 
 const Link = ({ active, href, children }) => {
   const _active = active ? 'bg-gray-100 bg-opacity-40 ' : '';
