@@ -57,9 +57,9 @@ const SideMenuNew = () => {
   return (
     <div className='fixed right-0 top-0'>
       <div className='bg-gray-100 text-gray-800 w-fit absolute top-0 right-0 rounded-bl-md'>
-        <button className='mobile-menu-button p-4 focus:outline-none focus:bg-gray-200'>
+        <button className='mobile-menu-button p-3 focus:outline-none focus:bg-gray-200'>
           <svg
-            className='h-5 w-5'
+            className='h-7 w-7'
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
             viewBox='0 0 24 24'
