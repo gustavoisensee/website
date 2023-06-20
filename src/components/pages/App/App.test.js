@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App.jsx';
 
-jest.mock('../../services/projects');
+jest.mock('../../../services/projects');
 
 describe('App', () => {
   it('renders About me page properly', async() => {
