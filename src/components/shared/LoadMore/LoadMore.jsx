@@ -1,4 +1,3 @@
-import React from 'react';
 import { getMessage } from '../../../helpers';
 
 const locale = getMessage();

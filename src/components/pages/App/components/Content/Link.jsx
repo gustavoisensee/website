@@ -1,4 +1,3 @@
-import React from 'react';
 import useHash from '../../../../../hooks/useHash';
 import { hashtags } from '../../../../../consts';
 
