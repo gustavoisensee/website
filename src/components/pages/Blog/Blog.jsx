@@ -1,4 +1,3 @@
-import React from 'react';
 import { getMessage } from '../../../helpers';
 import useFetchAndLoadMore from '../../../hooks/useFetchAndLoadMore';
 import { getPosts } from '../../../services/posts';
@@ -6,9 +5,11 @@ import Loading from '../../shared/Loading';
 import LoadMore from '../../shared/LoadMore';
 import Post from './components/Post';
 
+const locale = getMessage();
+
 const Blog = () => {
-  const locale = getMessage();
-  const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(getPosts);
+  const { loading, data, loadMore, showLoadMore } =
+    useFetchAndLoadMore(getPosts);
 
   return (
     <div className='Blog'>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => (
   <div className='flex pt-2 justify-center'>
     <a href='https://github.com/gustavoisensee' target='blank' className='duration-200 hover:bg-blue-700 p-2 rounded-md flex justify-center mr-2'>

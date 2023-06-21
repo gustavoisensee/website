@@ -1,4 +1,3 @@
-import React from 'react';
 import dayjs from '../../../../../helpers/dayjs';
 
 const Post = ({ post }) => (

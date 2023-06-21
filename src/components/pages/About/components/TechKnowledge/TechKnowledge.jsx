@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PillGroup from '../PillGroup';
 import LoadMore from '../../../../shared/LoadMore';
 import Pill from '../Pill';
 import { all, list } from './consts';
 import { getColor, getMessage } from '../../../../../helpers';
 
+const locale = getMessage();
+
 const TechnicalSkills = () => {
   const [showAll, setShowAll] = useState(false);
-  const locale = getMessage();
 
   const handleShowAll = () => {
     setShowAll(true);

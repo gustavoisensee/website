@@ -1,4 +1,3 @@
-import React from 'react';
 import Projects from '../../../Projects';
 import Blog from '../../../Blog';
 import About from '../../../About';
@@ -7,6 +6,8 @@ import { hashtags } from '../../../../../consts';
 import { getMessage } from '../../../../../helpers';
 import Link from './Link';
 
+const locale = getMessage();
+
 const getTabComponent = (hash) => ({
   [hashtags.about]: About,
   [hashtags.projects]: Projects,
@@ -14,7 +15,6 @@ const getTabComponent = (hash) => ({
 })[hash] || About;
 
 const Content = () => {
-  const locale = getMessage();
   const hash = useHash();
   const TabContent = getTabComponent(hash);
 
