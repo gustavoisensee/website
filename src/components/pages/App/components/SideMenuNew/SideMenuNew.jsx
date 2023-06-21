@@ -55,8 +55,8 @@ const SideMenuNew = () => {
   }, []);
 
   return (
-    <div className='fixed right-0 top-0'>
-      <div className='bg-gray-100 text-gray-800 w-fit absolute top-0 right-0 rounded-bl-md'>
+    <div>
+      <div className='fixed right-0 top-0 bg-gray-100 text-gray-800 h-fit rounded-bl-md'>
         <button className='mobile-menu-button p-3 focus:outline-none focus:bg-gray-200'>
           <svg
             className='h-7 w-7'
@@ -75,7 +75,7 @@ const SideMenuNew = () => {
         </button>
       </div>
 
-      <div className='translate-x-56 w-56 h-screen sidebar bg-indigo-500 text-white py-7 px-2 inset-y-0 transform transition duration-200 ease-in-out'>
+      <div className='fixed top-0 right-0 translate-x-56 h-screen sidebar bg-indigo-500 text-white py-7 px-2 inset-y-0 transform transition duration-200 ease-in-out'>
         <ul>
           <li>
             <Link active={hash.includes(hashtags.about)} href={hashtags.about}>
