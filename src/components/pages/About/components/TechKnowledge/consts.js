@@ -1,14 +1,16 @@
 
 export const list = [
-  'React',
-  'React Native',
   'JavaScript',
   'TypeScript',
+  'React',
+  'React Native',
+  'Vue',
   'HTML',
   'CSS',
   'SASS',
   'Jest',
   'Testing-Library',
+  'Cypress',
   'NodeJS',
   'ExpressJS',
   'RxJS',
@@ -19,10 +21,28 @@ export const list = [
 ];
 
 export const all = [
+  'Angular 1.x',
+  'Lint',
+  'Prettier',
+  'Semantic release',
+  'MUI',
+  'Sass',
+  'BEM',
+  'ESBuild',
+  'Webpack',
+  'Rollout',
+  'Data modeling',
+  'Data structure',
+  'Design patterns',
+  'Testing pyramid',
+  'CI',
+  'CD',
+  'DNS',
+  'CDN',
+  'Security',
+  'SSL & TLS',
   'Java',
   'C#',
   'MySQL',
-  'Data modeling',
-  'Continuous Integration (CI)',
-  'Continuous Deployment (CD)'
+  'SQL Server'
 ]
