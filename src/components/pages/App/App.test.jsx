@@ -1,8 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App.jsx';
+import { vi, describe, it, expect } from 'vitest';
+import App from './App';
 
-jest.mock('../../../services/projects');
+vi.mock('../../../services/projects');
+vi.mock('../../../services/blogs');
 
 describe('App', () => {
   it('renders About me page properly', async() => {

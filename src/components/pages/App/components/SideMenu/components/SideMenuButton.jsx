@@ -1,3 +1,5 @@
+import React from 'react';
+
 const SideMenuButton = () => (
   <button className='mobile-menu-button p-3 focus:outline-none focus:bg-gray-200'>
     <svg

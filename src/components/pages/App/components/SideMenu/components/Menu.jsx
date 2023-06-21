@@ -1,3 +1,4 @@
+import React from 'react';
 import { getMessage } from '../../../../../../helpers';
 import { hashtags } from '../../../../../../consts';
 import useHash from '../../../../../../hooks/useHash';

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import PillGroup from '../PillGroup';
 import LoadMore from '../../../../shared/LoadMore';
 import Pill from '../Pill';

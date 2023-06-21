@@ -1,3 +1,4 @@
+import React from 'react';
 import locales from '../../../../../../enum/locales';
 import { getMessage } from '../../../../../../helpers';
 import LanguageButton from './LanguageButton';

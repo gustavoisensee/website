@@ -1,3 +1,4 @@
+import React from 'react';
 import Projects from '../../../Projects';
 import Blog from '../../../Blog';
 import About from '../../../About';

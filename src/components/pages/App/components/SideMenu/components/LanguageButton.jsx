@@ -1,3 +1,5 @@
+import React from 'react';
+
 const LanguageButton = ({ active, children, onClick }) => {
   const _active = active ? 'bg-gray-300 bg-opacity-20' : '';
 
