@@ -8,8 +8,9 @@ import LoadMore from '../../shared/LoadMore';
 const locale = getMessage();
 
 const Projects = () => {
-  const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(() =>
-    Promise.all([getOrgProjects(), getProjects()])
+  const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(
+    'projects',
+    () => Promise.all([getOrgProjects(), getProjects()])
   );
 
   return (
@@ -20,7 +21,7 @@ const Projects = () => {
 
       {loading && <Loading />}
 
-      {data?.map((p, i) => (
+      {data?.map?.((p, i) => (
         <ProjectCard key={`project-${i}`} {...p} />
       ))}
 

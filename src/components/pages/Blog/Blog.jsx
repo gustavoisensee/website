@@ -9,7 +9,7 @@ const locale = getMessage();
 
 const Blog = () => {
   const { loading, data, loadMore, showLoadMore } =
-    useFetchAndLoadMore(getPosts);
+    useFetchAndLoadMore('blog', getPosts);
 
   return (
     <div className='Blog'>
@@ -17,7 +17,7 @@ const Blog = () => {
 
       {loading && <Loading />}
 
-      {data?.map((post, i) => (
+      {data?.map?.((post, i) => (
         <Post key={`post-${post.id}`} post={post} />
       ))}
 

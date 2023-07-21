@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import chunk from 'lodash.chunk';
+import { useMemo, useState } from 'react';
 import dayjs from 'dayjs'
+import { useQuery } from 'react-query';
 
 const compareUpdatedAt = (a, b) => {
   const dateA = dayjs(a.pushed_at);
@@ -8,48 +8,31 @@ const compareUpdatedAt = (a, b) => {
   return dateB.diff(dateA);
 };
 
-const useFetchAndLoadMore = (fetchData) => {
-  const [chunks, setChunks] = useState({
-    index: 0,
-    total: 0,
-    allChunks: [],
+const offset = 5
+
+const useFetchAndLoadMore = (key, fetchData) => {
+  const [page, setPage] = useState(1);
+
+  const loadMore = () => setPage(page + 1);
+
+  const { data, isLoading } = useQuery({
+    queryKey: key,
+    queryFn: fetchData,
+    cacheTime: 5 * 60 * 1000,
+    refetchOnWindowFocus: false,
+    refetchOnMount: false
   });
-  
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
 
-  const loadMore = (EN_US) => {
-    if (chunks.index < chunks.total) {
-      setData([...data, ...chunks.allChunks[chunks.index + 1]]);
-      setChunks({ ...chunks, index: chunks.index + 1 });
-    }
-  };
-
-  const getData = async () => {
-    const _data = await fetchData();
-    const flattenedData = _data?.flat?.() || [];
-    const data = flattenedData.sort(compareUpdatedAt);
-    const _chunks = chunk(data, 5);
-    setData(_chunks[0]);
-    setChunks({
-      index: 0,
-      total: _chunks?.length || 0,
-      allChunks: _chunks,
-    });
-    setLoading(false);
-  };
-
-  const showLoadMore = chunks.index < chunks.total - 1;
-
-  useEffect(() => {
-    getData();
-    //eslint-disable-next-line
-  }, []);
+  const totalPage = useMemo(() => page * offset, [page]);
+  const flattenedData = useMemo(() => data?.flat?.() || [], [data]);
+  const sortedData = useMemo(() => flattenedData?.sort?.(compareUpdatedAt), [flattenedData]);
+  const chunkedData = useMemo(() => sortedData.slice(0, totalPage), [sortedData, totalPage]);
+  const showLoadMore = useMemo(() => totalPage < flattenedData?.length, [totalPage, flattenedData?.length]);
 
   return {
     loadMore,
-    loading,
-    data,
+    loading: isLoading,
+    data: chunkedData,
     showLoadMore
   }
 }
