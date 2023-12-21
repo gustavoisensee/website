@@ -1,6 +1,6 @@
 import React from 'react';
-import useHash from '../../../../hooks/useHash';
-import { hashtags } from '../../../../consts';
+import useHash from '../../../hooks/useHash';
+import { hashtags } from '../../../consts';
 
 const isTabActive = (flag) =>
   flag ? 'text-indigo-500 bg-gray-100 rounded-lg' : 'underline';

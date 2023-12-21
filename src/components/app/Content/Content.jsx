@@ -1,11 +1,11 @@
 import React from 'react';
-import Projects from '../../../Projects';
-import Blog from '../../../Blog';
-import About from '../../../About';
-import useHash from '../../../../hooks/useHash';
-import { hashtags } from '../../../../consts';
-import { getMessage } from '../../../../helpers';
-import Career from '../../../Career';
+import Projects from '../../../pages/Projects';
+import Blog from '../../../pages/Blog';
+import About from '../../../pages/About';
+import Career from '../../../pages/Career';
+import useHash from '../../../hooks/useHash';
+import { hashtags } from '../../../consts';
+import { getMessage } from '../../../helpers';
 import Link from './Link';
 
 const locale = getMessage();

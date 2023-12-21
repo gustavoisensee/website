@@ -1,6 +1,6 @@
 import React from 'react';
 import { getMessage, replaceLinks } from '../../helpers';
-import TechKnowledge from './components/TechKnowledge';
+import TechKnowledge from '../../components/about/TechKnowledge';
 
 const locale = getMessage();
 

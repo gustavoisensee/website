@@ -1,9 +1,9 @@
 import { getMessage } from '../../helpers';
 import useFetchAndLoadMore from '../../hooks/useFetchAndLoadMore';
 import { getPosts } from '../../services/posts';
-import Loading from '../../components/Loading';
-import LoadMore from '../../components/LoadMore';
-import Post from './components/Post';
+import Loading from '../../components/shared/Loading';
+import LoadMore from '../../components/shared/LoadMore';
+import Post from '../../components/blog/Post';
 
 const locale = getMessage();
 

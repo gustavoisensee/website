@@ -1,4 +1,4 @@
-import dayjs from '../../../../helpers/dayjs';
+import dayjs from '../../../helpers/dayjs';
 
 const Post = ({ post }) => (
   <div className='flex flex-col rounded-md shadow-md hover:shadow-xl transition-all my-5 p-4 mb-4'>

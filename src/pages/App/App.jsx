@@ -4,9 +4,9 @@ import {
   QueryClientProvider,
 } from 'react-query';
 
-import Header from './components/Header';
-import SideMenu from './components/SideMenu';
-import Content from './components/Content';
+import Header from '../../components/app/Header';
+import SideMenu from '../../components/app/SideMenu';
+import Content from '../../components/app/Content';
 import './styles.scss';
 
 const queryClient = new QueryClient();

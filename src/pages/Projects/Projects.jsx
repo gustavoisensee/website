@@ -1,9 +1,9 @@
-import ProjectCard from './ProjectCard';
-import Loading from '../../components/Loading';
+import ProjectCard from '../../components/projects/ProjectCard';
+import Loading from '../../components/shared/Loading';
 import { getOrgProjects, getProjects } from '../../services/projects';
 import { getMessage } from '../../helpers';
 import useFetchAndLoadMore from '../../hooks/useFetchAndLoadMore';
-import LoadMore from '../../components/LoadMore';
+import LoadMore from '../../components/shared/LoadMore';
 
 const locale = getMessage();
 
