@@ -13,6 +13,76 @@
     "blog": {
       "title": "Artigos"
     },
+    "career": {
+      "title": "Carreira",
+      "description_1": "Olá 👋",
+      "description_2": "Fico feliz que você está interessado em saber mais sobre mim e minha carreira, aqui você verá uma prévia da minha carreira como Engenheiro de Software e da jornada que percorri, se quiser saber mais sobre mim, por favor não hesite em entrar em contato comigo ou consulte meu LinkedIn para obter mais detalhes e uma descrição completa dos meus trabalhos.",
+      "jobs": [
+        {
+          "period": "Set 2023",
+          "company": "Personio",
+          "companyImg":
+            "https://media.licdn.com/dms/image/D4E0BAQHqZToSLhjV9Q/company-logo_100_100/0/1666252443857/personio_logo?e=1710979200&v=beta&t=Ca561mU4NNhyQ_OVbnpyhXxJgjZ4mIjPTz4ot2UXR2M",
+          "title": "Senior Frontend Engineer",
+          "description":
+            "Venho implementando funcionalidades com alta qualidade, escaláveis e sustentáveis visando grande impacto nos clientes no sistema de HR da Personio usado por milhões de pessoas"
+        },
+        {
+          "period": "Set 2021 - Ago 2023 (2 anos)",
+          "company": "DASH",
+          "companyImg":
+            "https://media.licdn.com/dms/image/C4D0BAQHccKUtwO6pVA/company-logo_100_100/0/1645699712536?e=1710979200&v=beta&t=jRVPcl3rbm5LINOw2hwW9FAi7qIgnAqSz-YuetLK344",
+          "title": "Lead Frontend Engineer",
+          "description":
+            "Trabalhei em aplicativos móveis e aplicativos web para candidatos, liderando projetos, equipe de frontend, melhores práticas e muito mais"
+        },
+        {
+          "period": "Set 2020 - Ago 2021 (1 ano)",
+          "company": "Adyen",
+          "companyImg":
+            "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_100_100/0/1664880076052/adyen_logo?e=1710979200&v=beta&t=Mrn6eLAqFUCnp9bhJTzNKtUp_P9W2yweijyMytn3utw",
+          "title": "Senior Frontend Engineer",
+          "description":
+            "Trabalhei no projeto KYC (Know Your Customer), um grande aplicativo web que integra milhões de clientes todos os anos"
+        },
+        {
+          "period": "Set 2018 - Ago 2020 (2 anos)",
+          "company": "YoungCapital",
+          "companyImg":
+            "https://media.licdn.com/dms/image/C4D0BAQESPhY8jIyzaQ/company-logo_100_100/0/1646119963896/youngcapital_logo?e=1710979200&v=beta&t=f1E-MBwcJR-k3hvFtsGhB6SA1lcqK18uc819rr2HQpc",
+          "title": "Senior Frontend Engineer",
+          "description":
+            "Trabalhei em aplicativos web para candidatos, oferecendo novos recursos de alta qualidade para atender às necessidades dos mesmos"
+        },
+        {
+          "period": "Set 2017 - Ago 2018 (1 ano)",
+          "company": "MediaMonks",
+          "companyImg":
+            "https://media.licdn.com/dms/image/D560BAQFgNggAZFKBbw/company-logo_100_100/0/1686628708733/mediamonks_logo?e=1710979200&v=beta&t=tJzGd_hURz-CZxnpDkK3ocRFrsJP14e-XKI68yY-aMQ",
+          "title": "Frontend Engineer",
+          "description":
+            "Trabalhei em projetos como Slimming World e Adidas, impactando diretamente em nessas duas grandes aplicações web, entregando funcionalidade com qualidade e rapidez"
+        },
+        {
+          "period": "Jan 2013 - Aug 2017 (4 anos e 8 meses)",
+          "company": "LabTrans",
+          "companyImg":
+            "https://media.licdn.com/dms/image/C4D0BAQHu818Q8LwIBw/company-logo_100_100/0/1630576232764/labtrans_logo?e=1710979200&v=beta&t=6Q2hSOP2DQUKRuOMA3hIaZ9lO-A839-vnXz23RDYl1M",
+          "title": "Senior Software Engineer",
+          "description":
+            "Trabalhei em diversos projetos relacionados ao transporte no Brasil, entregando métricas e estatísticas para ajudar equipes executivas na tomada de decisões"
+        },
+        {
+          "period": "Ago 2009 - Dez 2012 (3 anos e 5 meses)",
+          "company": "TDSA Sistemas",
+          "companyImg":
+            "https://media.licdn.com/dms/image/C4E0BAQGA4gjtd_VU5Q/company-logo_100_100/0/1630570555331/tdsa_sistemas_logo?e=1710979200&v=beta&t=PwXfd2c7OCbbUYi9MB6HsFfodybsElqcy3ZaYvnCs70",
+          "title": "Software Engineer",
+          "description":
+            "Trabalhei em sistemas clínicos, implementei e mantive os sistemas, ajudando milhares de clínicas a gerenciar seus negócios"
+        }
+      ]
+    },
     "load_more": "Mais"
   },
   "content": {
@@ -24,6 +94,7 @@
   "hashtags": {
     "about": "Sobre mim",
     "projects": "Projetos",
-    "blog": "Artigos"
+    "blog": "Artigos",
+    "career": "Carreira"
   }
 }

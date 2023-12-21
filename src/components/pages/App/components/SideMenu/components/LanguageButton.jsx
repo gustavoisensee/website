@@ -1,10 +1,10 @@
 import React from 'react';
 
 const LanguageButton = ({ active, children, onClick }) => {
-  const _active = active ? 'bg-gray-300 bg-opacity-20' : '';
+  const _active = active ? 'bg-slate-200 ' : '';
 
   return (
-    <button className={`duration-200 hover:bg-blue-700 p-2 rounded-md mr-1 ${_active}`} onClick={onClick}>
+    <button className={`duration-200 hover:bg-indigo-500 hover:text-white p-2 rounded-md mr-1 ${_active}`} onClick={onClick}>
       {children}
     </button>
   );

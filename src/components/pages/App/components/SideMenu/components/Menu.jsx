@@ -9,7 +9,8 @@ const locale = getMessage();
 const menus = [
   { hashName: hashtags.about, text: locale.hashtags.about },
   { hashName: hashtags.projects, text: locale.hashtags.projects },
-  { hashName: hashtags.blog, text: locale.hashtags.blog }
+  { hashName: hashtags.blog, text: locale.hashtags.blog },
+  { hashName: hashtags.career, text: locale.hashtags.career }
 ];
 
 const Menu = () => {
