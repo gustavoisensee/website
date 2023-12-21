@@ -6,13 +6,14 @@ export const hashtags = {
 };
 
 export const colors = [
-  'bg-blue-200',
-  'bg-yellow-200',
-  'bg-green-200',
-  'bg-indigo-200',
-  'bg-lime-200',
-  'bg-orange-200',
-  'bg-violet-200',
-  'bg-slate-200',
-  'bg-amber-200',
+  'border-2 border-blue-300',
+  'border-2 border-red-300',
+  'border-2 border-yellow-300',
+  'border-2 border-green-300',
+  'border-2 border-indigo-300',
+  'border-2 border-lime-300',
+  'border-2 border-orange-300',
+  'border-2 border-violet-300',
+  'border-2 border-slate-300',
+  'border-2 border-amber-300',
 ];
