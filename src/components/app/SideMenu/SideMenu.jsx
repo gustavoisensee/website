@@ -14,7 +14,7 @@ const SideMenu = () => {
         <SideMenuButton />
       </div>
 
-      <div className='fixed top-0 right-0 translate-x-56 h-screen sidebar bg-slate-100 text-gray-900 py-7 px-2 inset-y-0 transform transition duration-200 ease-in-out z-10'>
+      <div className='fixed shadow-lg top-0 right-0 translate-x-56 h-screen sidebar bg-slate-50 text-gray-900 py-7 px-2 inset-y-0 transform transition duration-200 ease-in-out z-10'>
         <Menu />
         <LanguageSwitcher />
         <Footer />
