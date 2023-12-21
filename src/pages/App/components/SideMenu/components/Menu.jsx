@@ -1,7 +1,7 @@
 import React from 'react';
-import { getMessage } from '../../../../../../helpers';
-import { hashtags } from '../../../../../../consts';
-import useHash from '../../../../../../hooks/useHash';
+import { getMessage } from '../../../../../helpers';
+import { hashtags } from '../../../../../consts';
+import useHash from '../../../../../hooks/useHash';
 import MenuLink from './MenuLink';
 
 const locale = getMessage();

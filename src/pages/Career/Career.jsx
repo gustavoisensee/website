@@ -1,6 +1,6 @@
 import cn from "classnames";
-import Check from "../../svgs/Check";
-import { getMessage } from "../../../helpers";
+import Check from "../../components/svgs/Check";
+import { getMessage } from "../../helpers";
 
 const locale = getMessage();
 

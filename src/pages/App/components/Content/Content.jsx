@@ -2,9 +2,9 @@ import React from 'react';
 import Projects from '../../../Projects';
 import Blog from '../../../Blog';
 import About from '../../../About';
-import useHash from '../../../../../hooks/useHash';
-import { hashtags } from '../../../../../consts';
-import { getMessage } from '../../../../../helpers';
+import useHash from '../../../../hooks/useHash';
+import { hashtags } from '../../../../consts';
+import { getMessage } from '../../../../helpers';
 import Career from '../../../Career';
 import Link from './Link';
 

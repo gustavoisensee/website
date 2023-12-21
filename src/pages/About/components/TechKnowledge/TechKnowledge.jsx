@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PillGroup from '../PillGroup';
-import LoadMore from '../../../../shared/LoadMore';
+import LoadMore from '../../../../components/LoadMore';
 import Pill from '../Pill';
 import { all, list } from './consts';
-import { getColor, getMessage } from '../../../../../helpers';
+import { getColor, getMessage } from '../../../../helpers';
 
 const locale = getMessage();
 
