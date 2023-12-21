@@ -4,14 +4,14 @@ import contentEnUS from '../locale/locale.en-US.json';
 import contentPtBR from '../locale/locale.pt-BR.json';
 
 export const getMessage = () => {
-  const locale = localStorage.locale || locales.EN_US
+  const locale = localStorage.locale || locales.EN_US;
   if (locale === locales.PT_BR) {
     return {
-      ...contentPtBR,
+      ...contentPtBR
     };
   }
   return {
-    ...contentEnUS,
+    ...contentEnUS
   };
 };
 
@@ -33,7 +33,6 @@ export const scrollToTheBottom = () => {
   const content = document.querySelector('#content') || document.body;
   document.getElementById('root').scrollTo(0, content.scrollHeight + 50);
 };
-
 
 let counter = 0;
 export const getColor = () => {

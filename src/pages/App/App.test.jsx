@@ -7,7 +7,7 @@ vi.mock('../../../services/projects');
 vi.mock('../../../services/blogs');
 
 describe('App', () => {
-  it('renders About me page properly', async() => {
+  it('renders About me page properly', async () => {
     const { queryAllByText } = render(<App />);
     const aboutTitleElements = queryAllByText('About me');
 

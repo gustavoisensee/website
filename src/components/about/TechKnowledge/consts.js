@@ -1,4 +1,3 @@
-
 export const list = [
   'JavaScript',
   'TypeScript',
@@ -45,4 +44,4 @@ export const all = [
   'C#',
   'MySQL',
   'SQL Server'
-]
+];

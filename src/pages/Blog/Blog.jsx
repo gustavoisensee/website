@@ -8,8 +8,10 @@ import Post from '../../components/blog/Post';
 const locale = getMessage();
 
 const Blog = () => {
-  const { loading, data, loadMore, showLoadMore } =
-    useFetchAndLoadMore('blog', getPosts);
+  const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(
+    'blog',
+    getPosts
+  );
 
   return (
     <div className='Blog'>

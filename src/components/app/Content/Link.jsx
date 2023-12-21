@@ -12,7 +12,7 @@ const Link = ({ hashSource, title }) => {
 
   return (
     <a
-      className={`mr-4 font-semibold p-2 ${isTabActive(
+      className={`mr-1 sm:mr-4 font-semibold p-2 ${isTabActive(
         hashSource === hash || noHashAndAboutTab
       )}`}
       href={hashSource}

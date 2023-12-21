@@ -2,7 +2,11 @@ import React from 'react';
 
 const Footer = () => (
   <div className='flex pt-2 justify-center'>
-    <a href='https://github.com/gustavoisensee' target='blank' className='rounded-md flex justify-center mr-2'>
+    <a
+      href='https://github.com/gustavoisensee'
+      target='blank'
+      className='rounded-md flex justify-center mr-2'
+    >
       <svg
         version='1.1'
         viewBox='0 0 512 512'
@@ -21,8 +25,16 @@ const Footer = () => (
       </svg>
     </a>
 
-    <a href='https://www.linkedin.com/in/gustavoisensee/' target='blank' className='rounded-md flex justify-center mr-2'>
-      <svg version='1.1' viewBox='0 0 512 512' width='50px' height='50px'
+    <a
+      href='https://www.linkedin.com/in/gustavoisensee/'
+      target='blank'
+      className='rounded-md flex justify-center mr-2'
+    >
+      <svg
+        version='1.1'
+        viewBox='0 0 512 512'
+        width='50px'
+        height='50px'
         className='duration-200 bg-gray-700 hover:bg-indigo-500 p-2 rounded-lg'
       >
         <path

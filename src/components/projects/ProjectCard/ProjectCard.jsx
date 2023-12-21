@@ -5,7 +5,7 @@ const ProjectCard = ({
   description,
   html_url,
   homepage,
-  pushed_at,
+  pushed_at
 }) => (
   <div className='flex flex-col rounded-md shadow-md hover:shadow-xl transition-all my-5 p-4'>
     <h2 className='underline text-xl mb-2 font-semibold'>
@@ -23,10 +23,9 @@ const ProjectCard = ({
       {homepage}
     </a>
     <div>
-
-    <span className='italic text-sm'>
-      Last pushed at {dayjs(pushed_at).format('LLL')}
-    </span>
+      <span className='italic text-sm'>
+        Last pushed at {dayjs(pushed_at).format('LLL')}
+      </span>
     </div>
   </div>
 );

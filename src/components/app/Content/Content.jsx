@@ -10,12 +10,13 @@ import Link from './Link';
 
 const locale = getMessage();
 
-const getTabComponent = (hash) => ({
-  [hashtags.about]: About,
-  [hashtags.projects]: Projects,
-  [hashtags.blog]: Blog,
-  [hashtags.career]: Career,
-})[hash] || About;
+const getTabComponent = (hash) =>
+  ({
+    [hashtags.about]: About,
+    [hashtags.projects]: Projects,
+    [hashtags.blog]: Blog,
+    [hashtags.career]: Career
+  })[hash] || About;
 
 const Content = () => {
   const hash = useHash();
@@ -23,9 +24,12 @@ const Content = () => {
 
   return (
     <div>
-      <div className='my-8'>
+      <div className='flex flex-wrap my-8'>
         <Link hashSource={hashtags.about} title={locale?.hashtags?.about} />
-        <Link hashSource={hashtags.projects} title={locale?.hashtags?.projects} />
+        <Link
+          hashSource={hashtags.projects}
+          title={locale?.hashtags?.projects}
+        />
         <Link hashSource={hashtags.blog} title={locale?.hashtags?.blog} />
         <Link hashSource={hashtags.career} title={locale?.hashtags?.career} />
       </div>

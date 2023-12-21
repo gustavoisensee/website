@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import dayjs from 'dayjs'
+import dayjs from 'dayjs';
 import { useQuery } from 'react-query';
 
 const compareUpdatedAt = (a, b) => {
@@ -8,7 +8,7 @@ const compareUpdatedAt = (a, b) => {
   return dateB.diff(dateA);
 };
 
-const offset = 5
+const offset = 5;
 
 const useFetchAndLoadMore = (key, fetchData) => {
   const [page, setPage] = useState(1);
@@ -25,16 +25,25 @@ const useFetchAndLoadMore = (key, fetchData) => {
 
   const totalPage = useMemo(() => page * offset, [page]);
   const flattenedData = useMemo(() => data?.flat?.() || [], [data]);
-  const sortedData = useMemo(() => flattenedData?.sort?.(compareUpdatedAt), [flattenedData]);
-  const chunkedData = useMemo(() => sortedData.slice(0, totalPage), [sortedData, totalPage]);
-  const showLoadMore = useMemo(() => totalPage < flattenedData?.length, [totalPage, flattenedData?.length]);
+  const sortedData = useMemo(
+    () => flattenedData?.sort?.(compareUpdatedAt),
+    [flattenedData]
+  );
+  const chunkedData = useMemo(
+    () => sortedData.slice(0, totalPage),
+    [sortedData, totalPage]
+  );
+  const showLoadMore = useMemo(
+    () => totalPage < flattenedData?.length,
+    [totalPage, flattenedData?.length]
+  );
 
   return {
     loadMore,
     loading: isLoading,
     data: chunkedData,
     showLoadMore
-  }
-}
+  };
+};
 
 export default useFetchAndLoadMore;

@@ -15,7 +15,7 @@ const menus = [
 
 const Menu = () => {
   const hash = useHash();
-  
+
   return (
     <ul>
       {menus.map(({ hashName, text }) => (
