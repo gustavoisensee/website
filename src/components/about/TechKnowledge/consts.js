@@ -3,6 +3,7 @@ export const list = [
   'TypeScript',
   'React',
   'React Native',
+  'Next',
   'Vue',
   'HTML',
   'CSS',
