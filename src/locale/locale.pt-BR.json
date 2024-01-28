@@ -23,14 +23,14 @@
           "company": "Personio",
           "companyImg": "https://media.licdn.com/dms/image/D4E0BAQHqZToSLhjV9Q/company-logo_100_100/0/1666252443857/personio_logo?e=1710979200&v=beta&t=Ca561mU4NNhyQ_OVbnpyhXxJgjZ4mIjPTz4ot2UXR2M",
           "title": "Senior Frontend Engineer",
-          "description": "Venho implementando funcionalidades com alta qualidade, escaláveis e sustentáveis visando grande impacto nos clientes no sistema de HR da Personio usado por milhões de pessoas"
+          "description": "Tenho implementado funcionalidades de alta qualidade e liderado uma iniciativa de migração de algumas das aplicações micro-frontend que possuímos e também colaborado com equipes ajudando outros engenheiros líderes a prosseguir com sua migração para a nova arquitetura"
         },
         {
           "period": "Set 2021 - Ago 2023 (2 anos)",
           "company": "DASH",
           "companyImg": "https://media.licdn.com/dms/image/C4D0BAQHccKUtwO6pVA/company-logo_100_100/0/1645699712536?e=1710979200&v=beta&t=jRVPcl3rbm5LINOw2hwW9FAi7qIgnAqSz-YuetLK344",
-          "title": "Lead Frontend Engineer",
-          "description": "Trabalhei em aplicativos móveis e aplicativos web para candidatos, liderando projetos, equipe de frontend, melhores práticas e muito mais"
+          "title": "Team Lead / Senior Frontend Engineer",
+          "description": "Trabalhei em aplicativos móveis candidatos e aplicativos web candidatos, liderando projetos, equipe multifuncional, melhores práticas e muito mais"
         },
         {
           "period": "Set 2020 - Ago 2021 (1 ano)",
@@ -72,8 +72,8 @@
     "load_more": "Mais"
   },
   "content": {
-    "title": "Frontend Engineer",
-    "description": "Olá, Eu me chamo Gustavo e trababalho com desenvolvimento web há algum tempo, sou graduado em Sistema de Informação e também em Técnico de Programação. Sou apaixonado por Javascript, amo desenvolvimento frontend e todas as suas milhares de bibliotecas, e atualmente trabalho na Personio. Gostaria de saber mais sobre mim? Confira meu {link1} e {link2}.",
+    "title": "Lead & Software Engineer",
+    "description": "Olá, me chamo Gus! e trabalho com desenvolvimento web há algum tempo, sou formado em Sistemas de Informação e também em Programação Técnica. Sou bastante apaixonado pelo que faço. E ter experiência com desenvolvimento de banco de dados, backend, frontend, full-stack e mobile é o que me torna um excelente engenheiro, além disso adoro trabalhar de forma ágil, liderando equipes, ajudando-as a atingir seus objetivos e contribuir para seu crescimento profissional. Gostaria de saber mais sobre mim? Confira meu {link1} e {link2}.",
     "english": "Inglês",
     "portuguese": "Português"
   },

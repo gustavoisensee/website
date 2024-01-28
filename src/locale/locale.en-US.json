@@ -23,14 +23,14 @@
           "company": "Personio",
           "companyImg": "https://media.licdn.com/dms/image/D4E0BAQHqZToSLhjV9Q/company-logo_100_100/0/1666252443857/personio_logo?e=1710979200&v=beta&t=Ca561mU4NNhyQ_OVbnpyhXxJgjZ4mIjPTz4ot2UXR2M",
           "title": "Senior Frontend Engineer",
-          "description": "I've been implementing features with high quality, scalable and maintainable visioning large impact on customers in Personio HR system used by millions"
+          "description": "I've been implementing high quality features and leading an initiative of migrating some of the micro-frontend applications we own and also collaborating cross teams helping other leaders engineers to proceed with their migration to the new architecture"
         },
         {
           "period": "Sep 2021 - Aug 2023 (2y)",
           "company": "DASH",
           "companyImg": "https://media.licdn.com/dms/image/C4D0BAQHccKUtwO6pVA/company-logo_100_100/0/1645699712536?e=1710979200&v=beta&t=jRVPcl3rbm5LINOw2hwW9FAi7qIgnAqSz-YuetLK344",
-          "title": "Lead Frontend Engineer",
-          "description": "I've worked on candidate mobile app and candidate web apps, leading projects, frontend team, best practices and much more"
+          "title": "Team Lead / Senior Frontend Engineer",
+          "description": "I've worked on candidate mobile app and candidate web apps, leading projects, multi functional team, best practices and much more"
         },
         {
           "period": "Sep 2020 - Aug 2021 (1y)",
@@ -72,8 +72,8 @@
     "load_more": "Load more"
   },
   "content": {
-    "title": "Frontend Engineer",
-    "description": "Hi there, I'm Gus! and I have been working with web development for quite some time, I'm graduated in Information Systems and also in Technical Programming. I'm passionate about Javascript, I love frontend development and all its thousands libraries, and currently working at Personio. Would you like to know more about me? Check it out my {link1} and {link2}.",
+    "title": "Lead & Software Engineer",
+    "description": "Hi there, I'm Gus! and I have been working with web development for quite some time, I'm graduated in Information Systems and also in Technical Programming. I am quite passionate about what I do. And having a background with database, backend, frontend, full-stack and mobile development is what makes me a great engineer, besides that I love working in an agile way, leading teams, helping them to achieve their goals and contribute to their professional growth. Would you like to know more about me? Check it out my {link1} and {link2}.",
     "english": "English",
     "portuguese": "Portuguese"
   },
