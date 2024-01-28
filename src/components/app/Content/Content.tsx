@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import useHash from '../../../hooks/useHash';
 import { hashtags } from '../../../consts';
 import { getMessage } from '../../../helpers';
+import Loading from '../../shared/Loading';
 import Link from './Link';
 
 const locale = getMessage();
@@ -35,7 +36,7 @@ const Content = () => {
         <Link hashSource={hashtags.blog} title={locale?.hashtags?.blog} />
         <Link hashSource={hashtags.career} title={locale?.hashtags?.career} />
       </div>
-      <Suspense fallback='...'>
+      <Suspense fallback={<Loading />}>
         <TabContent />
       </Suspense>
     </div>
