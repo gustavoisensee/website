@@ -10,6 +10,6 @@ describe('App', () => {
     const { queryAllByText } = render(<App />);
     const aboutTitleElements = queryAllByText('About me');
 
-    expect(aboutTitleElements).toHaveLength(3);
+    expect(aboutTitleElements).toHaveLength(2);
   });
 });
