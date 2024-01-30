@@ -22,6 +22,9 @@ jobs:
       - name: Run jest unit tests
         run: pnpm test
 
+      - name: Install Playwright
+        run: pnpm exec playwright install
+
       - name: Run Playwright tests
         run: pnpm test:e2e
         env:
