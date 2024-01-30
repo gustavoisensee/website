@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "vitest --environment=jsdom --exclude=['tests/**']",
     "test:coverage": "vitest run --coverage --environment=jsdom",
-    "test:e2e:dev": "playwright test",
+    "test:e2e:dev": "NODE_ENV=dev playwright test",
     "test:e2e": "playwright test",
     "test:e2e:report": "playwright show-report",
     "test:e2e:ui": "playwright test --ui"
