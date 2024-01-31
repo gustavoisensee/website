@@ -15,6 +15,13 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
+        
+      - uses: actions/cache@v3
+        id: playwright-cache
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies
         run: pnpm install
@@ -24,6 +31,7 @@ jobs:
 
       - name: Install Playwright
         run: pnpm exec playwright install
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
 
       - name: Run Playwright tests
         run: pnpm test:e2e
