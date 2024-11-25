@@ -1,7 +1,7 @@
-import { getMessage, replaceLinks } from '../../helpers';
+import { getLocale, replaceLinks } from '../../helpers';
 import TechKnowledge from '../../components/about/TechKnowledge';
 
-const locale = getMessage();
+const locale = getLocale();
 
 const About = () => (
   <div className='mb-4'>

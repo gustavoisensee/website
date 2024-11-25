@@ -1,7 +1,7 @@
 import { MouseEventHandler } from 'react';
-import { getMessage } from '../../../helpers';
+import { getLocale } from '../../../helpers';
 
-const locale = getMessage();
+const locale = getLocale();
 
 type Props = {
   onClick: MouseEventHandler<HTMLButtonElement>;

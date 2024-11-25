@@ -1,11 +1,11 @@
 import { Suspense, lazy } from 'react';
 import useHash from '../../../hooks/useHash';
 import { hashtags } from '../../../consts';
-import { getMessage } from '../../../helpers';
+import { getLocale } from '../../../helpers';
 import Loading from '../../shared/Loading';
 import Link from './Link';
 
-const locale = getMessage();
+const locale = getLocale();
 
 const AboutLazy = lazy(() => import('../../../pages/About'));
 const ProjectsLazy = lazy(() => import('../../../pages/Projects'));

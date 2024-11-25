@@ -1,9 +1,9 @@
-import { getMessage } from '../../../../helpers';
+import { getLocale } from '../../../../helpers';
 import { hashtags } from '../../../../consts';
 import useHash from '../../../../hooks/useHash';
 import MenuLink from './MenuLink';
 
-const locale = getMessage();
+const locale = getLocale();
 
 const menus = [
   { hashName: hashtags.about, text: locale.hashtags.about },

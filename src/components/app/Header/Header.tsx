@@ -1,9 +1,9 @@
 import profile from '../../../assets/images/profile.jpg';
 import donut from '../../../assets/images/donut.png';
-import { getMessage } from '../../../helpers';
+import { getLocale } from '../../../helpers';
 import './styles.css';
 
-const locale = getMessage();
+const locale = getLocale();
 
 const Header = () => (
   <div className='Header'>

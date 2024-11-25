@@ -19,51 +19,51 @@
       "description_2": "I'm glad you're interested to know more about me and my career, here you'll see a preview of my career as a Software Engineer and the jouney I walked through, if you wanna know more about me, please don't hesitate to contact me or look into my linkedin for more details and full description of my jobs.",
       "jobs": [
         {
+          "id": "personio",
           "period": "Sep 2023",
           "company": "Personio",
-          "companyImg": "https://media.licdn.com/dms/image/D4E0BAQHqZToSLhjV9Q/company-logo_100_100/0/1666252443857/personio_logo?e=1710979200&v=beta&t=Ca561mU4NNhyQ_OVbnpyhXxJgjZ4mIjPTz4ot2UXR2M",
           "title": "Senior Frontend Engineer",
-          "description": "I've been implementing high quality features and leading an initiative of migrating some of the micro-frontend applications we own and also collaborating cross teams helping other leaders engineers to proceed with their migration to the new architecture"
+          "description": "I've been implementing high-quality features that significantly impact both scale and product performance. Additionally, I monitor and enhance our Service Level Objectives (SLOs) and Datadog Synthetic tests to ensure the reliability and observability of our product."
         },
         {
+          "id": "dash",
           "period": "Sep 2021 - Aug 2023 (2y)",
           "company": "DASH",
-          "companyImg": "https://media.licdn.com/dms/image/C4D0BAQHccKUtwO6pVA/company-logo_100_100/0/1645699712536?e=1710979200&v=beta&t=jRVPcl3rbm5LINOw2hwW9FAi7qIgnAqSz-YuetLK344",
           "title": "Team Lead / Senior Frontend Engineer",
           "description": "I've worked on candidate mobile app and candidate web apps, leading projects, multi functional team, best practices and much more"
         },
         {
+          "id": "adyen",
           "period": "Sep 2020 - Aug 2021 (1y)",
           "company": "Adyen",
-          "companyImg": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_100_100/0/1664880076052/adyen_logo?e=1710979200&v=beta&t=Mrn6eLAqFUCnp9bhJTzNKtUp_P9W2yweijyMytn3utw",
           "title": "Senior Frontend Engineer",
           "description": "I've worked on KYC (Know Your Customer) project, a large web app that onboards millions of customer every year"
         },
         {
+          "id": "youngcapital",
           "period": "Sep 2018 - Aug 2020 (2y)",
           "company": "YoungCapital",
-          "companyImg": "https://media.licdn.com/dms/image/C4D0BAQESPhY8jIyzaQ/company-logo_100_100/0/1646119963896/youngcapital_logo?e=1710979200&v=beta&t=f1E-MBwcJR-k3hvFtsGhB6SA1lcqK18uc819rr2HQpc",
           "title": "Senior Frontend Engineer",
           "description": "I've worked on candidate web apps delivering new high quality features to meet the candidates needs"
         },
         {
+          "id": "mediamonks",
           "period": "Sep 2017 - Aug 2018 (1y)",
           "company": "MediaMonks",
-          "companyImg": "https://media.licdn.com/dms/image/D560BAQFgNggAZFKBbw/company-logo_100_100/0/1686628708733/mediamonks_logo?e=1710979200&v=beta&t=tJzGd_hURz-CZxnpDkK3ocRFrsJP14e-XKI68yY-aMQ",
           "title": "Frontend Engineer",
           "description": "I've worked on Slimming World and Adidas projects, having direct impact in two large web applications, delivering new features with quality and speed"
         },
         {
+          "id": "labtrans",
           "period": "Jan 2013 - Aug 2017 (4y8m)",
           "company": "LabTrans",
-          "companyImg": "https://media.licdn.com/dms/image/C4D0BAQHu818Q8LwIBw/company-logo_100_100/0/1630576232764/labtrans_logo?e=1710979200&v=beta&t=6Q2hSOP2DQUKRuOMA3hIaZ9lO-A839-vnXz23RDYl1M",
           "title": "Senior Software Engineer",
           "description": "I've worked on multiple projects related to transport in Brazil, delivering metrics and statistics to help executive teams to make decisions"
         },
         {
+          "id": "tdsa",
           "period": "Aug 2009 - Dec 2012 (3y5m)",
           "company": "TDSA Systems",
-          "companyImg": "https://media.licdn.com/dms/image/C4E0BAQGA4gjtd_VU5Q/company-logo_100_100/0/1630570555331/tdsa_sistemas_logo?e=1710979200&v=beta&t=PwXfd2c7OCbbUYi9MB6HsFfodybsElqcy3ZaYvnCs70",
           "title": "Software Engineer",
           "description": "I've worked on clinic systems, implemented and maintained the systems, helping thousands of clinics to manage their businesses"
         }

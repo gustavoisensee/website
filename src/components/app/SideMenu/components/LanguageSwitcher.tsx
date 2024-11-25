@@ -1,8 +1,8 @@
 import locales from '../../../../enum/locales';
-import { getMessage } from '../../../../helpers';
+import { getLocale } from '../../../../helpers';
 import LanguageButton from './LanguageButton';
 
-const locale = getMessage();
+const locale = getLocale();
 
 const LanguageSwitcher = () => {
   const handleChangeLocale = (_locale: string) => {
