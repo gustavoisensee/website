@@ -38,12 +38,12 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "jsdom": "^24.0.0",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.34",
     "postcss-apply": "^0.12.0",
     "postcss-nesting": "^12.0.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
-    "vite": "^5.4.18",
-    "vitest": "^1.2.2"
+    "vite": "^5.4.19",
+    "vitest": "^1.6.1"
   }
 }
