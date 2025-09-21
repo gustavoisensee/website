@@ -6,17 +6,17 @@ type Props = {
 }
 
 const Post = ({ post }: Props) => (
-  <div className='flex flex-col rounded-md shadow-md hover:shadow-xl transition-all my-5 p-4 mb-4'>
+  <div className='flex flex-col rounded-md shadow-md hover:shadow-xl transition-all p-4 h-full'>
     <a
       className='underline'
       href={post.url}
       target='_blank'
       rel='noopener noreferrer'
     >
-      <h3 className='text-xl font-semibold'>{post.title}</h3>
+      <h3 className='text-xl font-semibold mb-2'>{post.title}</h3>
     </a>
-    {post.description && <p>{post.description}</p>}
-    <span className='italic'>{dayjs(post.created_at).format('LLL')}</span>
+    {post.description && <p className='flex-grow mb-3'>{post.description}</p>}
+    <span className='italic text-sm mt-auto'>{dayjs(post.created_at).format('LLL')}</span>
   </div>
 );
 
