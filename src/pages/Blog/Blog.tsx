@@ -20,11 +20,13 @@ const Blog = () => {
 
       {loading && <Loading />}
 
-      {(data as Array<PostType>)?.map?.((post) => (
-        <Post key={`post-${post.id}`} post={post} />
-      ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {(data as Array<PostType>)?.map?.((post) => (
+          <Post key={`post-${post.id}`} post={post} />
+        ))}
+      </div>
 
-      {showLoadMore && <LoadMore onClick={loadMore} />}
+      {showLoadMore && <LoadMore onClick={loadMore} className='mt-4' />}
     </div>
   );
 };
