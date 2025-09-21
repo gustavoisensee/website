@@ -19,8 +19,15 @@
       "description_2": "I'm glad you're interested to know more about me and my career, here you'll see a preview of my career as a Software Engineer and the jouney I walked through, if you wanna know more about me, please don't hesitate to contact me or look into my linkedin for more details and full description of my jobs.",
       "jobs": [
         {
+          "id": "prosus",
+          "period": "Aug 2025 - present",
+          "company": "Prosus",
+          "title": "Senior Software Engineer",
+          "description": "At Prosus, contributing to AI-driven products across the portfolio with a focus on user-centric, scalable experiences; current work includes iFood’s Concierge AI, building a React-based discovery interface and agentic AI that interprets intent to deliver contextual food recommendations, integrating with iFood APIs, and designing performant, real-time backend systems; responsibilities span full-stack development, conversational NLP, cross-functional collaboration, and UX optimization at scale using Python, TypeScript, React, and LLMs"
+        },
+        {
           "id": "personio",
-          "period": "Sep 2023",
+          "period": "Sep 2023 - Jul 2025 (1y10m)",
           "company": "Personio",
           "title": "Senior Frontend Engineer",
           "description": "I've been implementing high-quality features that significantly impact both scale and product performance. Additionally, I monitor and enhance our Service Level Objectives (SLOs) and Datadog Synthetic tests to ensure the reliability and observability of our product."

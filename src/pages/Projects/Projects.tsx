@@ -22,11 +22,13 @@ const Projects = () => {
 
       {loading && <Loading />}
 
-      {(data as Array<ProjectType>)?.map?.((p, i) => (
-        <ProjectCard key={`project-${i}`} project={p} />
-      ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {(data as Array<ProjectType>)?.map?.((p, i) => (
+          <ProjectCard key={`project-${i}`} project={p} />
+        ))}
+      </div>
 
-      {showLoadMore && <LoadMore onClick={loadMore} />}
+      {showLoadMore && <LoadMore onClick={loadMore} className='mt-4' />}
     </div>
   );
 };

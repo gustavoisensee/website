@@ -9,9 +9,9 @@ type Props = {
 const Pill = ({ children, className }: Props) => (
   <div
     className={cn(
-      'flex align-middle justify-center',
+      'flex align-middle justify-center self-center',
       'rounded-2xl max-w-fit px-3 py-1 mr-2 mb-2',
-      'duration-200 border-2 text-gray-700 hover:text-white',
+      'duration-200 border-2 hover:text-white',
       className
     )}
   >
