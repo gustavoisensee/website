@@ -14,7 +14,9 @@ const SideMenu = () => {
   return (
     <div>
       <div className={styles.container}>
-        <ThemeToggle />
+        <div className={styles.themeToggleContainer}>
+          <ThemeToggle />
+        </div>
         <div className={styles.buttonContainer}>
           <SideMenuButton />
         </div>
