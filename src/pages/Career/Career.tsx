@@ -2,18 +2,27 @@ import cn from 'classnames';
 import Check from '../../components/svgs/Check';
 import { getLocale } from '../../helpers';
 
+// Import all logo images
+import adyenLogo from '../../assets/logos/adyen.jpeg';
+import dashLogo from '../../assets/logos/dash.jpeg';
+import labtransLogo from '../../assets/logos/labtrans.jpeg';
+import mediamonksLogo from '../../assets/logos/mediamonks.jpeg';
+import personioLogo from '../../assets/logos/personio.jpeg';
+import prosusLogo from '../../assets/logos/prosus.jpeg';
+import tdsaLogo from '../../assets/logos/tdsa.jpeg';
+import youngcapitalLogo from '../../assets/logos/youngcapital.jpeg';
+
 const locale = getLocale();
 
-const url = 'https://media.licdn.com/dms/image/v2';
-const path = 'company-logo_100_100/company-logo_100_100/0';
 const imageMapping = {
-  personio: `${url}/D4E0BAQHqZToSLhjV9Q/${path}/1666252443857/personio_logo?e=1740614400&v=beta&t=WB25oyhHAfclRNr09BLdYLzK9qrtqKjjXWEx3-2yk88`,
-  dash: `${url}/C4D0BAQHccKUtwO6pVA/${path}/1645699712536?e=1740614400&v=beta&t=-RQWZqk54ofvzavFGCjwgZquORIRq_hUie4_AT8w5DQ`,
-  adyen: `${url}/D4E0BAQGCuaSq8TqalA/${path}/1664880076052/adyen_logo?e=1740614400&v=beta&t=oGBddpGUJZ-93AZSVCPjTcZoEczRgh8C1yONk3eb3Xc`,
-  youngcapital: `${url}/C4D0BAQESPhY8jIyzaQ/${path}/1646119963896/youngcapital_logo?e=1740614400&v=beta&t=cwqO7fMMRP9tjcVvQuuqOtS_0Q8MpaIfEruQE2Erjyk`,
-  mediamonks: `${url}/D560BAQEI-gxFLQF3nQ/${path}/1721303718951/mediamonks_logo?e=1740614400&v=beta&t=LKJhxSt4GcIPX5t_Nmaj7ysYPMXOR5cfIemNWArgStM`,
-  labtrans: `${url}/C4D0BAQHu818Q8LwIBw/${path}/1630576232764/labtrans_logo?e=1740614400&v=beta&t=W-QjYUG2OLhUBwkAWqi-85dnENocrGtGQa305EdVBEA`,
-  tdsa: `${url}/D4D0BAQHiM_GFY4nEhA/${path}/1730820263623/tdsa_sistemas_logo?e=1740614400&v=beta&t=Q2ZC7zWULsjJlFNXwxyabDhwY_thC7jZpOHbAEK8Q5w`,
+  adyen: adyenLogo,
+  dash: dashLogo,
+  labtrans: labtransLogo,
+  mediamonks: mediamonksLogo,
+  personio: personioLogo,
+  prosus: prosusLogo,
+  tdsa: tdsaLogo,
+  youngcapital: youngcapitalLogo,
 } as {
   [x: string]: string;
 };
@@ -47,22 +56,23 @@ export default function Career() {
                     : 'timeline-end text-start'
                 )}
               >
-                <time className='text-sm italic'>{period}</time>
+                
                 <div
                   className={cn(
-                    'text-sm italic flex items-center',
+                    'flex items-center',
                     i % 2 == 0
-                      ? 'justify-start md:justify-end'
+                      ? 'justify-start md:flex-row-reverse'
                       : 'justify-start'
                   )}
                 >
                   {imageMapping[id] && (
-                    <div className='size-6 mr-2'>
+                    <div className='size-7 mx-1'>
                       <img src={imageMapping[id] as string} className='rounded-md border' />
                     </div>
                   )}
-                  <label>{company}</label>
+                  <label className='mx-2 text-lg font-semibold'>{company}</label>
                 </div>
+                <time className='text-sm italic'>{period}</time>
                 <div className='text-lg font-semibold py-1'>{title}</div>
                 <div className='text-sm'>
                   {description}

@@ -9,7 +9,7 @@ type Props = {
 }
 
 const ProjectCard = ({ project }: Props) => (
-  <div className='flex flex-col rounded-md shadow-md hover:shadow-xl transition-all my-5 p-4'>
+  <div className='flex flex-col rounded-md shadow-md hover:shadow-xl transition-all p-4 h-full'>
     <h2 className='underline text-xl mb-2 font-semibold'>
       <a href={project.html_url} target='_blank' rel='noopener noreferrer'>
         {project.full_name}
