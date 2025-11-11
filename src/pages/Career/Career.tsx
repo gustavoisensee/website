@@ -12,6 +12,16 @@ import prosusLogo from "../../assets/logos/prosus.jpeg";
 import tdsaLogo from "../../assets/logos/tdsa.jpeg";
 import youngcapitalLogo from "../../assets/logos/youngcapital.jpeg";
 
+// Import all logo images
+import adyenLogo from '../../assets/logos/adyen.jpeg';
+import dashLogo from '../../assets/logos/dash.jpeg';
+import labtransLogo from '../../assets/logos/labtrans.jpeg';
+import mediamonksLogo from '../../assets/logos/mediamonks.jpeg';
+import personioLogo from '../../assets/logos/personio.jpeg';
+import prosusLogo from '../../assets/logos/prosus.jpeg';
+import tdsaLogo from '../../assets/logos/tdsa.jpeg';
+import youngcapitalLogo from '../../assets/logos/youngcapital.jpeg';
+
 const locale = getLocale();
 
 const imageMapping = {
