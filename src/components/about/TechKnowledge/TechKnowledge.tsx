@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import PillGroup from '../PillGroup';
-import LoadMore from '../../shared/LoadMore';
-import Pill from '../Pill';
-import { all, list } from './consts';
-import { getColor, getLocale } from '../../../helpers';
+import { useState } from "react";
+import PillGroup from "../PillGroup";
+import LoadMore from "../../shared/LoadMore";
+import Pill from "../Pill";
+import { all, list } from "./consts";
+import { getColor, getLocale } from "../../../helpers";
 
 const locale = getLocale();
 
@@ -18,7 +18,7 @@ const TechnicalSkills = () => {
 
   return (
     <PillGroup title={locale.pages.about.tech_knowledge.title}>
-      <div className='flex flex-wrap'>
+      <div className="flex flex-wrap">
         {array.map((l, i) => (
           <Pill key={i} className={getColor()}>
             {l}

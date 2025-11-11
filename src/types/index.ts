@@ -4,7 +4,7 @@ export type PostType = {
   title: string;
   description: string;
   created_at: string;
-}
+};
 
 export type ProjectType = {
   full_name: string;
@@ -12,4 +12,4 @@ export type ProjectType = {
   html_url: string;
   homepage: string;
   pushed_at: string;
-}
+};

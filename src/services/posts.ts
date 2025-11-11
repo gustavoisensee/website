@@ -1,9 +1,9 @@
 export const getPosts = async () => {
-  const url = 'https://dev.to/api/articles?username=gustavoisensee';
+  const url = "https://dev.to/api/articles?username=gustavoisensee";
   const options = {
     headers: {
-      Accept: 'application/json'
-    }
+      Accept: "application/json",
+    },
   };
 
   try {

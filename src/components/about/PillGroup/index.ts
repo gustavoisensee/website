@@ -1,1 +1,1 @@
-export { default } from './PillGroup';
+export { default } from "./PillGroup";

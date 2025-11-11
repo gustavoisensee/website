@@ -1,34 +1,34 @@
-import { colors } from '../consts';
-import locales from '../enum/locales';
-import contentEnUS from '../locale/locale.en-US.json';
-import contentPtBR from '../locale/locale.pt-BR.json';
+import { colors } from "../consts";
+import locales from "../enum/locales";
+import contentEnUS from "../locale/locale.en-US.json";
+import contentPtBR from "../locale/locale.pt-BR.json";
 
 export const getLocale = () => {
   const locale = localStorage.locale || locales.EN_US;
   if (locale === locales.PT_BR) {
     return {
-      ...contentPtBR
+      ...contentPtBR,
     };
   }
   return {
-    ...contentEnUS
+    ...contentEnUS,
   };
 };
 
 type Locale = {
   content: {
     description: string;
-  }
-}
+  };
+};
 
 export const replaceLinks = (locale: Locale) => {
   const replaced = locale.content.description
     .replace(
-      '{link1}',
+      "{link1}",
       '<a href="https://github.com/gustavoisensee" target="blank">Github</a>'
     )
     .replace(
-      '{link2}',
+      "{link2}",
       '<a href="https://www.linkedin.com/in/gustavoisensee/" target="blank">Linkedin</a>'
     );
 
@@ -36,8 +36,8 @@ export const replaceLinks = (locale: Locale) => {
 };
 
 export const scrollToTheBottom = () => {
-  const content = document.querySelector('#content') || document.body;
-  document.getElementById('root')!.scrollTo(0, content.scrollHeight + 50);
+  const content = document.querySelector("#content") || document.body;
+  document.getElementById("root")!.scrollTo(0, content.scrollHeight + 50);
 };
 
 let counter = 0;

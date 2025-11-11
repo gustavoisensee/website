@@ -1,13 +1,15 @@
-import useHash from '../../../hooks/useHash';
-import { hashtags } from '../../../consts';
+import useHash from "../../../hooks/useHash";
+import { hashtags } from "../../../consts";
 
 type Props = {
   hashSource: string;
   title: string;
-}
+};
 
 const isTabActive = (flag: boolean) =>
-  flag ? 'text-indigo-500 bg-gray-100 rounded-lg' : 'underline';
+  flag
+    ? "text-indigo-500 dark:text-indigo-400 bg-gray-100 dark:bg-gray-800 rounded-lg"
+    : "underline hover:text-indigo-500 dark:hover:text-indigo-400";
 
 const Link = ({ hashSource, title }: Props) => {
   const hash = useHash();

@@ -23,14 +23,14 @@
           "period": "Ago 2025 - atualmente",
           "company": "Prosus",
           "title": "Senior Software Engineer",
-          "description": "Na Prosus, contribuo para produtos AI-driven em todo o portfólio, com foco em experiências centradas no usuário e escaláveis; atualmente, trabalho no Concierge AI do iFood, construindo uma interface de descoberta baseada em React e um agente de IA que interpreta intenções para fornecer recomendações de comida contextuais, integrando-se com APIs do iFood e projetando sistemas de backend escaláveis e em tempo real; minhas responsabilidades abrangem desenvolvimento full-stack, NLP conversacional, colaboração entre equipes e otimização de UX em escala usando Python, TypeScript, React e LLMs"
+          "description": "Engenheiro full-stack na Prosus, desenvolvendo produtos orientados por IA, como o Concierge AI da iFood, um assistente conversacional para pedidos de comida, e o Toqan, um chat de automação com IA que integra ferramentas para busca na web, manipulação de arquivos e envio de mensagens. Construiu frontends modernos e escaláveis com React, TypeScript, Zustand e WebSockets."
         },
         {
           "id": "personio",
           "period": "Set 2023 - Jul 2025 (1 ano e 10 meses)",
           "company": "Personio",
           "title": "Senior Frontend Engineer",
-          "description": "Tenho implementado recursos de alta qualidade que impactam significativamente tanto a escala quanto o desempenho do produto. Além disso, monitoro e aprimoro nossos Service Level Objectives (SLOs) e Datadog Synthetic Tests para garantir a confiabilidade e a observabilidade do nosso produto."
+          "description": "Implementei recursos de alta qualidade que impactam significativamente a escalabilidade e o desempenho do produto. Além disso, monitoro e aprimoro nossos Service Level Objectives (SLOs) e testes sintéticos do Datadog para garantir a confiabilidade e a observabilidade do produto."
         },
         {
           "id": "dash",

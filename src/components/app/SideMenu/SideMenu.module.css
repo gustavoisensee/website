@@ -1,0 +1,41 @@
+/* Container for the side menu button and theme toggle */
+.container {
+  @apply fixed right-0 top-0 z-10;
+  @apply flex items-center gap-2;
+}
+
+/* Container for the side menu button */
+.buttonContainer {
+  @apply bg-gray-100 text-gray-800 h-fit rounded-bl-md z-10;
+  @apply flex items-center gap-2;
+}
+
+:global(.dark) .buttonContainer {
+  @apply bg-gray-800 text-gray-200;
+}
+
+/* Main sidebar panel */
+.sidebar {
+  @apply fixed shadow-lg top-0 right-0 translate-x-56 h-screen;
+  @apply bg-slate-50 text-gray-900 py-7 px-2;
+  @apply inset-y-0 transform transition duration-200 ease-in-out z-10;
+  @apply border-l border-gray-200;
+}
+
+:global(.dark) .sidebar {
+  @apply bg-gray-800 text-gray-100 border-gray-700;
+}
+
+/* Global translate utility classes for JavaScript manipulation */
+:global(.translate-x-56) {
+  transform: translateX(14rem);
+}
+
+/* Open state for sidebar - when translate-x-56 class is removed */
+.sidebar:not(:global(.translate-x-56)) {
+  transform: translateX(0);
+}
+
+.menuItem {
+  @apply mb-1;
+}

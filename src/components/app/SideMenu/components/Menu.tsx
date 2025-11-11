@@ -1,7 +1,8 @@
-import { getLocale } from '../../../../helpers';
-import { hashtags } from '../../../../consts';
-import useHash from '../../../../hooks/useHash';
-import MenuLink from './MenuLink';
+import { getLocale } from "../../../../helpers";
+import { hashtags } from "../../../../consts";
+import useHash from "../../../../hooks/useHash";
+import MenuLink from "./MenuLink";
+import styles from "../SideMenu.module.css";
 
 const locale = getLocale();
 
@@ -9,7 +10,7 @@ const menus = [
   { hashName: hashtags.about, text: locale.hashtags.about },
   { hashName: hashtags.projects, text: locale.hashtags.projects },
   { hashName: hashtags.blog, text: locale.hashtags.blog },
-  { hashName: hashtags.career, text: locale.hashtags.career }
+  { hashName: hashtags.career, text: locale.hashtags.career },
 ];
 
 const Menu = () => {
@@ -18,7 +19,7 @@ const Menu = () => {
   return (
     <ul>
       {menus.map(({ hashName, text }) => (
-        <li key={hashName}>
+        <li key={hashName} className={styles.menuItem}>
           <MenuLink active={hash.includes(hashName)} href={hashName}>
             {text}
           </MenuLink>

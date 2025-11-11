@@ -1,6 +1,6 @@
-import locales from '../../../../enum/locales';
-import { getLocale } from '../../../../helpers';
-import LanguageButton from './LanguageButton';
+import locales from "../../../../enum/locales";
+import { getLocale } from "../../../../helpers";
+import LanguageButton from "./LanguageButton";
 
 const locale = getLocale();
 
@@ -11,7 +11,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className='flex justify-center mt-4 px-2 pt-4 border-t-2 border-opacity-5'>
+    <div className="flex justify-center mt-4 px-2 pt-4 border-t border-gray-300 dark:border-gray-600">
       <LanguageButton
         active={localStorage.locale === locales.PT_BR}
         onClick={() => handleChangeLocale(locales.PT_BR)}

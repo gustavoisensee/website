@@ -1,22 +1,22 @@
-import ProjectCard from '../../components/projects/ProjectCard';
-import Loading from '../../components/shared/Loading';
-import { getOrgProjects, getProjects } from '../../services/projects';
-import { getLocale } from '../../helpers';
-import useFetchAndLoadMore from '../../hooks/useFetchAndLoadMore';
-import LoadMore from '../../components/shared/LoadMore';
-import { ProjectType } from '../../types';
+import ProjectCard from "../../components/projects/ProjectCard";
+import Loading from "../../components/shared/Loading";
+import { getOrgProjects, getProjects } from "../../services/projects";
+import { getLocale } from "../../helpers";
+import useFetchAndLoadMore from "../../hooks/useFetchAndLoadMore";
+import LoadMore from "../../components/shared/LoadMore";
+import { ProjectType } from "../../types";
 
 const locale = getLocale();
 
 const Projects = () => {
   const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(
-    'projects',
+    "projects",
     () => Promise.all([getOrgProjects(), getProjects()])
   );
 
   return (
-    <div id='content'>
-      <h2 className='text-2xl font-semibold my-4'>
+    <div id="content">
+      <h2 className="text-2xl font-semibold my-4 text-gray-900 dark:text-gray-100">
         {locale.pages.projects.title}
       </h2>
 
@@ -28,7 +28,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {showLoadMore && <LoadMore onClick={loadMore} className='mt-4' />}
+      {showLoadMore && <LoadMore onClick={loadMore} className="mt-4" />}
     </div>
   );
 };

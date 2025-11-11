@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from "react";
 
 const useHash = () => {
   const [hash, setHash] = useState(() => window.location.hash);
@@ -8,10 +8,10 @@ const useHash = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener('hashchange', hashChangeHandler);
+    window.addEventListener("hashchange", hashChangeHandler);
 
     return () => {
-      window.removeEventListener('hashchange', hashChangeHandler);
+      window.removeEventListener("hashchange", hashChangeHandler);
     };
 
     // eslint-disable-next-line

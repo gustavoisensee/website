@@ -1,10 +1,10 @@
 export const getProjects = async () => {
   const url =
-    'https://api.github.com/users/gustavoisensee/repos?sort=pushed&direction=desc';
+    "https://api.github.com/users/gustavoisensee/repos?sort=pushed&direction=desc";
   const options = {
     headers: {
-      Accept: 'application/vnd.github.v3+json'
-    }
+      Accept: "application/vnd.github.v3+json",
+    },
   };
 
   try {
@@ -19,11 +19,11 @@ export const getProjects = async () => {
 
 export const getOrgProjects = async () => {
   const url =
-    'https://api.github.com/users/tipy/repos?sort=pushed&direction=desc';
+    "https://api.github.com/users/tipy/repos?sort=pushed&direction=desc";
   const options = {
     headers: {
-      Accept: 'application/vnd.github.v3+json'
-    }
+      Accept: "application/vnd.github.v3+json",
+    },
   };
 
   try {
