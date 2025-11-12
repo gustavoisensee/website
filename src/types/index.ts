@@ -4,6 +4,7 @@ export type PostType = {
   title: string;
   description: string;
   created_at: string;
+  published_at: string;
 };
 
 export type ProjectType = {

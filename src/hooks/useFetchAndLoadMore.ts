@@ -5,11 +5,11 @@ import { PostType, ProjectType } from "../types";
 
 type Data = Partial<PostType> &
   Partial<ProjectType> & {
-    pushed_at: string;
+    published_at: string;
   };
 const compareUpdatedAt = (a: Data, b: Data) => {
-  const dateA = dayjs(a.pushed_at);
-  const dateB = dayjs(b.pushed_at);
+  const dateA = dayjs(a.published_at);
+  const dateB = dayjs(b.published_at);
   return dateB.diff(dateA);
 };
 

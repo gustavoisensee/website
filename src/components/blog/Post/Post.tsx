@@ -23,7 +23,7 @@ const Post = ({ post }: Props) => (
       </p>
     )}
     <span className="italic text-sm mt-auto text-gray-600 dark:text-gray-400">
-      {dayjs(post.created_at).format("LLL")}
+      {dayjs(post.published_at).format("LLL")}
     </span>
   </div>
 );
