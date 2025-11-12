@@ -7,6 +7,7 @@ export type PostType = {
 };
 
 export type ProjectType = {
+  name: string;
   full_name: string;
   description: string;
   html_url: string;

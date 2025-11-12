@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: Props) => (
         rel="noopener noreferrer"
         className="hover:text-indigo-500 dark:hover:text-indigo-400"
       >
-        {project.full_name}
+        {project.name}
       </a>
     </h2>
     <p className="mb-1 text-gray-700 dark:text-gray-300 line-clamp-4 break-words">
