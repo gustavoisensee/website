@@ -68,6 +68,7 @@ export default function Career() {
                       <img
                         src={imageMapping[id] as string}
                         className="rounded-md border"
+                        alt={`${company} logo`}
                       />
                     </div>
                   )}
@@ -87,6 +88,8 @@ export default function Career() {
                     className="link-primary hover:text-indigo-600 dark:hover:text-indigo-400"
                     href="https://www.linkedin.com/in/gustavoisensee/details/experience/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Read more about ${company} experience on LinkedIn`}
                   >
                     {" "}
                     ...

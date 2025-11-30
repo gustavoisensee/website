@@ -28,12 +28,13 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2" role="group" aria-label="Theme toggle">
       <svg
         className="w-4 h-4 text-yellow-500"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
       >
         <path
           fillRule="evenodd"
@@ -55,6 +56,7 @@ const ThemeToggle = () => {
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
       >
         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
       </svg>

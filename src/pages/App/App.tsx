@@ -12,7 +12,9 @@ const App = () => (
     <div className="w-full max-w-2xl py-8 px-4">
       <SideMenu />
       <Header />
-      <Content />
+      <main role="main">
+        <Content />
+      </main>
     </div>
   </QueryClientProvider>
 );
