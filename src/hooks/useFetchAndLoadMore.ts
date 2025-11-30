@@ -1,6 +1,6 @@
 import { useMemo, useState } from "preact/hooks";
 import dayjs from "dayjs";
-import { useQuery } from "@tanstack/react-query";
+import useQuery from "./useQuery";
 import { PostType, ProjectType } from "../types";
 
 type Data = Partial<PostType> &
@@ -26,9 +26,6 @@ const useFetchAndLoadMore = (
   const { data, isLoading } = useQuery({
     queryKey: [key],
     queryFn: fetchData,
-    gcTime: 5 * 60 * 1000,
-    refetchOnWindowFocus: false,
-    refetchOnMount: false,
   });
 
   const totalPage = useMemo(() => page * offset, [page]);

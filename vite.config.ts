@@ -5,12 +5,7 @@ import preact from '@preact/preset-vite'
 export default defineConfig({
   base: '/',
   plugins: [preact()],
-  resolve: {
-    alias: {
-      react: 'preact/compat',
-      'react-dom': 'preact/compat',
-    },
-  },
+  // @ts-expect-error - test is from vitest
   test: {
     setupFiles: ['./vitest.setup.ts'],
     exclude: [
@@ -21,9 +16,5 @@ export default defineConfig({
       '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build}.config.*',
       'tests/**'
     ],
-    alias: {
-      react: 'preact/compat',
-      'react-dom': 'preact/compat',
-    },
   },
 })

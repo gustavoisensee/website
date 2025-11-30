@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@tanstack/react-query':
-        specifier: ^5.62.15
-        version: 5.90.11(@preact/compat@18.3.1(preact@10.27.2))
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -30,9 +27,6 @@ importers:
       '@playwright/test':
         specifier: ^1.49.0
         version: 1.57.0
-      '@preact/compat':
-        specifier: ^18.3.1
-        version: 18.3.1(preact@10.27.2)
       '@preact/preset-vite':
         specifier: ^2.10.2
         version: 2.10.2(@babel/core@7.28.5)(preact@10.27.2)(vite@7.2.4(@types/node@22.19.1)(jiti@1.21.7))
@@ -72,12 +66,6 @@ importers:
       postcss-nesting:
         specifier: ^13.0.1
         version: 13.0.2(postcss@8.5.6)
-      react:
-        specifier: npm:@preact/compat@^18.3.1
-        version: '@preact/compat@18.3.1(preact@10.27.2)'
-      react-dom:
-        specifier: npm:@preact/compat@^18.3.1
-        version: '@preact/compat@18.3.1(preact@10.27.2)'
       tailwindcss:
         specifier: ^3.4.16
         version: 3.4.18
@@ -637,11 +625,6 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@preact/compat@18.3.1':
-    resolution: {integrity: sha512-Kog4PSRxtT4COtOXjsuQPV1vMXpUzREQfv+6Dmcy9/rMk0HOPK0HTE9fspFjAmY8R80T/T8gtgmZ68u5bOSngw==}
-    peerDependencies:
-      preact: '*'
-
   '@preact/preset-vite@2.10.2':
     resolution: {integrity: sha512-K9wHlJOtkE+cGqlyQ5v9kL3Ge0Ql4LlIZjkUTL+1zf3nNdF88F9UZN6VTV8jdzBX9Fl7WSzeNMSDG7qECPmSmg==}
     peerDependencies:
@@ -778,14 +761,6 @@ packages:
     resolution: {integrity: sha512-UhTd8u31dXadv0MopwGgNOBpUVROFKWVQgAg5N1ESyCz8AuBcMqm4AuTjrwgQKGDfoFuz02EuMRHQIw/frmYKQ==}
     cpu: [x64]
     os: [win32]
-
-  '@tanstack/query-core@5.90.11':
-    resolution: {integrity: sha512-f9z/nXhCgWDF4lHqgIE30jxLe4sYv15QodfdPDKYAk7nAEjNcndy4dHz3ezhdUaR23BpWa4I2EH4/DZ0//Uf8A==}
-
-  '@tanstack/react-query@5.90.11':
-    resolution: {integrity: sha512-3uyzz01D1fkTLXuxF3JfoJoHQMU2fxsfJwE+6N5hHy0dVNoZOvwKP8Z2k7k1KDeD54N20apcJnG75TBAStIrBA==}
-    peerDependencies:
-      react: ^18 || ^19
 
   '@testing-library/dom@8.20.1':
     resolution: {integrity: sha512-/DiOQ5xBxgdYRC8LNk7U+RWat0S3qRLeIw3ZIkMQ9kkVlRmwD/Eg8k8CqIpD6GW7u20JIUOfMKbxtiLutpjQ4g==}
@@ -2797,10 +2772,6 @@ snapshots:
     dependencies:
       playwright: 1.57.0
 
-  '@preact/compat@18.3.1(preact@10.27.2)':
-    dependencies:
-      preact: 10.27.2
-
   '@preact/preset-vite@2.10.2(@babel/core@7.28.5)(preact@10.27.2)(vite@7.2.4(@types/node@22.19.1)(jiti@1.21.7))':
     dependencies:
       '@babel/core': 7.28.5
@@ -2907,13 +2878,6 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.53.3':
     optional: true
-
-  '@tanstack/query-core@5.90.11': {}
-
-  '@tanstack/react-query@5.90.11(@preact/compat@18.3.1(preact@10.27.2))':
-    dependencies:
-      '@tanstack/query-core': 5.90.11
-      react: '@preact/compat@18.3.1(preact@10.27.2)'
 
   '@testing-library/dom@8.20.1':
     dependencies:

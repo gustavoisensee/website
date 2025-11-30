@@ -3,6 +3,8 @@ import locales from "../enum/locales";
 import contentEnUS from "../locale/locale.en-US.json";
 import contentPtBR from "../locale/locale.pt-BR.json";
 
+export { cache, clearCache, getCachedData } from "./cache";
+
 export const getLocale = () => {
   const locale = localStorage.locale || locales.EN_US;
   if (locale === locales.PT_BR) {
