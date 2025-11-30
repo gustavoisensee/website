@@ -22,11 +22,14 @@ const SideMenu = () => {
         </div>
       </div>
 
-      <div className={cn("sidebar translate-x-56", styles.sidebar)}>
+      <nav 
+        className={cn("sidebar translate-x-56", styles.sidebar)}
+        aria-label="Main navigation"
+      >
         <Menu />
         <LanguageSwitcher />
         <Footer />
-      </div>
+      </nav>
     </div>
   );
 };

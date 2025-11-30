@@ -8,7 +8,7 @@
 
 .title {
   @apply flex justify-evenly py-2 px-2 cursor-default rounded-r-3xl rounded-l-sm shadow-md;
-  @apply bg-indigo-500 hover:bg-indigo-700 transition-all text-white font-semibold text-xl;
+  @apply bg-indigo-600 hover:bg-indigo-700 transition-all text-white font-semibold text-xl;
   min-width: 250px;
 }
 

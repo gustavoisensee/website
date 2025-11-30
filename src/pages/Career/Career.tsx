@@ -68,6 +68,7 @@ export default function Career() {
                       <img
                         src={imageMapping[id] as string}
                         className="rounded-md border"
+                        alt={`${company} logo`}
                       />
                     </div>
                   )}
@@ -83,14 +84,6 @@ export default function Career() {
                 </div>
                 <div className="text-sm text-gray-700 dark:text-gray-300">
                   {description}
-                  <a
-                    className="link-primary hover:text-indigo-600 dark:hover:text-indigo-400"
-                    href="https://www.linkedin.com/in/gustavoisensee/details/experience/"
-                    target="_blank"
-                  >
-                    {" "}
-                    ...
-                  </a>
                 </div>
               </div>
               {i != locale.pages.career.jobs.length - 1 && (

@@ -16,6 +16,8 @@ const MenuLink = ({ active, href, children }: Props) => {
       className={`block py-2.5 px-4 rounded transition duration-200 hover:bg-indigo-500 dark:hover:bg-indigo-600 hover:text-white ${_active}`}
       href={href}
       rel="noopener noreferrer"
+      role="menuitem"
+      aria-current={active ? "page" : undefined}
     >
       {children}
     </a>

@@ -17,9 +17,9 @@ const Menu = () => {
   const hash = useHash();
 
   return (
-    <ul>
+    <ul role="menu" aria-label="Navigation menu">
       {menus.map(({ hashName, text }) => (
-        <li key={hashName} className={styles.menuItem}>
+        <li key={hashName} className={styles.menuItem} role="none">
           <MenuLink active={hash.includes(hashName)} href={hashName}>
             {text}
           </MenuLink>

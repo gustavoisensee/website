@@ -26,7 +26,7 @@ const Content = () => {
 
   return (
     <div>
-      <div className="flex flex-wrap my-8">
+      <nav className="flex flex-wrap my-8" role="tablist" aria-label="Content sections">
         <Link hashSource={hashtags.about} title={locale?.hashtags?.about} />
         <Link
           hashSource={hashtags.projects}
@@ -34,7 +34,7 @@ const Content = () => {
         />
         <Link hashSource={hashtags.blog} title={locale?.hashtags?.blog} />
         <Link hashSource={hashtags.career} title={locale?.hashtags?.career} />
-      </div>
+      </nav>
       <Suspense fallback={<Loading />}>
         <TabContent />
       </Suspense>

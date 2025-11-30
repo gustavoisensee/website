@@ -16,12 +16,15 @@ const Link = ({ hashSource, title }: Props) => {
   const hasHash = Object.values(hashtags).includes(hash);
   const noHashAndAboutTab = !hasHash && hashSource === hashtags.about;
 
+  const isActive = hashSource === hash || noHashAndAboutTab;
+
   return (
     <a
-      className={`mr-1 sm:mr-4 font-semibold p-2 ${isTabActive(
-        hashSource === hash || noHashAndAboutTab
-      )}`}
+      className={`mr-1 sm:mr-4 font-semibold p-2 ${isTabActive(isActive)}`}
       href={hashSource}
+      role="tab"
+      aria-selected={isActive}
+      aria-current={isActive ? "page" : undefined}
     >
       {title}
     </a>
