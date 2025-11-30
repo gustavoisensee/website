@@ -11,7 +11,7 @@ export const getPosts = async () => {
     if (response.ok) return response.json();
 
     return [];
-  } catch (err) {
+  } catch {
     return [];
   }
 };

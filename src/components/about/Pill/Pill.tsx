@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { ReactNode } from "react";
+import { ReactNode } from "preact/compat";
 
 type Props = {
   children: ReactNode;

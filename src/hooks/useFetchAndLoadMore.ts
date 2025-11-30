@@ -1,6 +1,6 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState } from "preact/hooks";
 import dayjs from "dayjs";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import { PostType, ProjectType } from "../types";
 
 type Data = Partial<PostType> &
@@ -24,9 +24,9 @@ const useFetchAndLoadMore = (
   const loadMore = () => setPage(page + 1);
 
   const { data, isLoading } = useQuery({
-    queryKey: key,
+    queryKey: [key],
     queryFn: fetchData,
-    cacheTime: 5 * 60 * 1000,
+    gcTime: 5 * 60 * 1000,
     refetchOnWindowFocus: false,
     refetchOnMount: false,
   });

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "preact/hooks";
 
 const useHash = () => {
   const [hash, setHash] = useState(() => window.location.hash);
@@ -13,9 +13,7 @@ const useHash = () => {
     return () => {
       window.removeEventListener("hashchange", hashChangeHandler);
     };
-
-    // eslint-disable-next-line
-  }, []);
+  }, [hashChangeHandler]);
 
   return hash;
 };

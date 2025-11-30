@@ -12,7 +12,7 @@ export const getProjects = async () => {
     if (response.ok) return response.json();
 
     return [];
-  } catch (err) {
+  } catch {
     return [];
   }
 };
@@ -31,7 +31,7 @@ export const getOrgProjects = async () => {
     if (response.ok) return response.json();
 
     return [];
-  } catch (err) {
+  } catch {
     return [];
   }
 };

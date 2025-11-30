@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler } from "preact/compat";
 import { getLocale } from "../../../helpers";
 import cn from "classnames";
 

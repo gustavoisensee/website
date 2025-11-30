@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy } from "preact/compat";
 import useHash from "../../../hooks/useHash";
 import { hashtags } from "../../../consts";
 import { getLocale } from "../../../helpers";

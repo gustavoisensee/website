@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "preact/hooks";
 import PillGroup from "../PillGroup";
 import LoadMore from "../../shared/LoadMore";
 import Pill from "../Pill";
