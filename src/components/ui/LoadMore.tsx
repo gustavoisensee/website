@@ -1,5 +1,5 @@
 import { MouseEventHandler } from 'preact/compat';
-import { getLocale } from '../../../helpers';
+import { getLocale } from '../../helpers';
 import cn from 'classnames';
 
 const locale = getLocale();
@@ -13,8 +13,10 @@ type Props = {
 const LoadMore = ({ onClick, text, className }: Props) => (
   <div className={cn('flex justify-center mb-2', className)}>
     <button
+      type="button"
       onClick={onClick}
       className="bg-transparent underline text-indigo-600 dark:text-indigo-400 text-sm hover:text-indigo-700 dark:hover:text-indigo-300"
+      aria-label={text || locale.pages.load_more}
     >
       {text || locale.pages.load_more}
     </button>

@@ -1,5 +1,5 @@
-import { getLocale, replaceLinks } from "../../helpers";
-import TechKnowledge from "../../components/about/TechKnowledge";
+import { getLocale, replaceLinks } from '../../helpers';
+import TechKnowledge from '../../components/about/TechKnowledge';
 
 const locale = getLocale();
 

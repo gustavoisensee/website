@@ -1,6 +1,6 @@
-import dayjs from "dayjs";
-import localizedFormat from "dayjs/plugin/localizedFormat";
-import { ProjectType } from "../../../types";
+import dayjs from 'dayjs';
+import localizedFormat from 'dayjs/plugin/localizedFormat';
+import { ProjectType } from '../../../types';
 
 dayjs.extend(localizedFormat);
 
@@ -8,6 +8,10 @@ type Props = {
   project: ProjectType;
 };
 
+/**
+ * Card component to display a GitHub project with name, description, homepage, and last push date.
+ * @param project ProjectType object containing project details.
+ */
 const ProjectCard = ({ project }: Props) => (
   <div className="flex flex-col rounded-md shadow-md hover:shadow-xl transition-all p-4 h-full bg-white dark:bg-gray-800 border dark:border-gray-700">
     <h2 className="underline text-xl mb-2 font-semibold text-gray-900 dark:text-gray-100">
@@ -33,7 +37,7 @@ const ProjectCard = ({ project }: Props) => (
     </a>
     <div>
       <span className="italic text-sm text-gray-600 dark:text-gray-400">
-        Last pushed at {dayjs(project.pushed_at).format("LLL")}
+        Last pushed at {dayjs(project.pushed_at).format('LLL')}
       </span>
     </div>
   </div>

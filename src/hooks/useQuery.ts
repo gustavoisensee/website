@@ -1,13 +1,19 @@
-import { useEffect, useState } from "preact/hooks";
-import { cache, getCachedData } from "../helpers/cache";
+import { useEffect, useState } from 'preact/hooks';
+import { cache, getCachedData } from '../helpers/cache';
 
 interface UseQueryOptions {
   queryKey: string[];
   queryFn: () => Promise<unknown>;
 }
 
+/**
+ * Custom hook to fetch and cache data, with loading and error state management.
+ * @param options.queryKey Unique cache key for the query.
+ * @param options.queryFn Function to fetch data (should return a Promise).
+ * @returns Object containing data, error, and loading state.
+ */
 const useQuery = ({ queryKey, queryFn }: UseQueryOptions) => {
-  const key = queryKey.join("-");
+  const key = queryKey.join('-');
   const [data, setData] = useState<unknown>(undefined);
   const [error, setError] = useState<Error | undefined>(undefined);
   const [isLoading, setIsLoading] = useState(true);

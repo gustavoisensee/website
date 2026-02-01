@@ -1,11 +1,8 @@
-import type { Config } from 'tailwindcss'
-import themes from 'daisyui/src/theming/themes'
+import type { Config } from 'tailwindcss';
+import themes from 'daisyui/src/theming/themes';
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -30,15 +27,14 @@ export default {
         light: {
           ...themes['light'],
           // 'error': '#ffffff',
-        }
+        },
       },
       {
         dark: {
           ...themes['dark'],
-        }
-      }
-    ]
+        },
+      },
+    ],
   },
-  plugins: [require("daisyui")],
-} satisfies Config
-
+  plugins: [require('daisyui')],
+} satisfies Config;

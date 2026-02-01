@@ -1,9 +1,9 @@
-import { colors } from "../consts";
-import locales from "../enum/locales";
-import contentEnUS from "../locale/locale.en-US.json";
-import contentPtBR from "../locale/locale.pt-BR.json";
+import { colors } from '../consts';
+import locales from '../enums/locales';
+import contentEnUS from '../locale/locale.en-US.json';
+import contentPtBR from '../locale/locale.pt-BR.json';
 
-export { cache, clearCache, getCachedData } from "./cache";
+export { cache, clearCache, getCachedData } from './cache';
 
 export const getLocale = () => {
   const locale = localStorage.locale || locales.EN_US;
@@ -25,21 +25,18 @@ type Locale = {
 
 export const replaceLinks = (locale: Locale) => {
   const replaced = locale.content.description
+    .replace('{link1}', '<a href="https://github.com/gustavoisensee" target="blank">Github</a>')
     .replace(
-      "{link1}",
-      '<a href="https://github.com/gustavoisensee" target="blank">Github</a>'
-    )
-    .replace(
-      "{link2}",
-      '<a href="https://www.linkedin.com/in/gustavoisensee/" target="blank">Linkedin</a>'
+      '{link2}',
+      '<a href="https://www.linkedin.com/in/gustavoisensee/" target="blank">Linkedin</a>',
     );
 
   return replaced;
 };
 
 export const scrollToTheBottom = () => {
-  const content = document.querySelector("#content") || document.body;
-  document.getElementById("root")!.scrollTo(0, content.scrollHeight + 50);
+  const content = document.querySelector('#content') || document.body;
+  document.getElementById('root')!.scrollTo(0, content.scrollHeight + 50);
 };
 
 let counter = 0;

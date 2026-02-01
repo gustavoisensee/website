@@ -1,8 +1,8 @@
-import { getLocale } from "../../../../helpers";
-import { hashtags } from "../../../../consts";
-import useHash from "../../../../hooks/useHash";
-import MenuLink from "./MenuLink";
-import styles from "../SideMenu.module.css";
+import { getLocale } from '../../../../helpers';
+import { hashtags } from '../../../../consts';
+import useHash from '../../../../hooks/useHash';
+import MenuLink from './MenuLink';
+import styles from '../SideMenu.module.css';
 
 const locale = getLocale();
 

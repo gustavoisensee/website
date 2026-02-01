@@ -1,5 +1,5 @@
-import useHash from "../../../hooks/useHash";
-import { hashtags } from "../../../consts";
+import useHash from '../../../hooks/useHash';
+import { hashtags } from '../../../consts';
 
 type Props = {
   hashSource: string;
@@ -8,8 +8,8 @@ type Props = {
 
 const isTabActive = (flag: boolean) =>
   flag
-    ? "text-indigo-500 dark:text-indigo-400 bg-gray-100 dark:bg-gray-800 rounded-lg"
-    : "underline hover:text-indigo-500 dark:hover:text-indigo-400";
+    ? 'text-indigo-500 dark:text-indigo-400 bg-gray-100 dark:bg-gray-800 rounded-lg'
+    : 'underline hover:text-indigo-500 dark:hover:text-indigo-400';
 
 const Link = ({ hashSource, title }: Props) => {
   const hash = useHash();
@@ -24,7 +24,7 @@ const Link = ({ hashSource, title }: Props) => {
       href={hashSource}
       role="tab"
       aria-selected={isActive}
-      aria-current={isActive ? "page" : undefined}
+      aria-current={isActive ? 'page' : undefined}
     >
       {title}
     </a>

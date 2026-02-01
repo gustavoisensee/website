@@ -1,5 +1,5 @@
 const SideMenuButton = () => (
-  <button 
+  <button
     className="mobile-menu-button p-3 focus:outline-none focus:bg-gray-200 dark:focus:bg-gray-700"
     aria-label="Toggle navigation menu"
     aria-expanded="false"

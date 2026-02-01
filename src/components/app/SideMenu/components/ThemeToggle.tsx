@@ -1,28 +1,26 @@
-import { useEffect, useState } from "preact/hooks";
+import { useEffect, useState } from 'preact/hooks';
 
 const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 
   // Initialize theme on component mount
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
 
-    setIsDark(initialTheme === "dark");
+    setIsDark(initialTheme === 'dark');
     applyTheme(initialTheme);
   }, []);
 
   const applyTheme = (theme: string) => {
-    document.documentElement.setAttribute("data-theme", theme);
-    document.documentElement.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("theme", theme);
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+    localStorage.setItem('theme', theme);
   };
 
   const handleToggle = () => {
-    const newTheme = isDark ? "light" : "dark";
+    const newTheme = isDark ? 'light' : 'dark';
     setIsDark(!isDark);
     applyTheme(newTheme);
   };

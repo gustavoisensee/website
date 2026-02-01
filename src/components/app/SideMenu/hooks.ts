@@ -1,19 +1,17 @@
-import { useEffect } from "preact/hooks";
+import { useEffect } from 'preact/hooks';
 
 export const useSideMenu = () => {
   useEffect(() => {
-    const btn: HTMLButtonElement = document.querySelector(
-      ".mobile-menu-button"
-    )!;
-    const sidebar: HTMLDivElement = document.querySelector(".sidebar")!;
+    const btn: HTMLButtonElement = document.querySelector('.mobile-menu-button')!;
+    const sidebar: HTMLDivElement = document.querySelector('.sidebar')!;
 
-    btn.addEventListener("click", () => {
-      sidebar.classList.remove("translate-x-56");
+    btn.addEventListener('click', () => {
+      sidebar.classList.remove('translate-x-56');
     });
 
-    document.addEventListener("click", (event: MouseEvent) => {
+    document.addEventListener('click', (event: MouseEvent) => {
       if (!btn.contains(event.target as Node)) {
-        sidebar.classList.add("translate-x-56");
+        sidebar.classList.add('translate-x-56');
         return;
       }
     });

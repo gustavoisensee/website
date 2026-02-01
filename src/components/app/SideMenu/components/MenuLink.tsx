@@ -1,4 +1,4 @@
-import { ReactNode } from "preact/compat";
+import { ReactNode } from 'preact/compat';
 
 type Props = {
   active: boolean;
@@ -8,8 +8,8 @@ type Props = {
 
 const MenuLink = ({ active, href, children }: Props) => {
   const _active = active
-    ? "bg-slate-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 font-semibold"
-    : "text-gray-700 dark:text-gray-300";
+    ? 'bg-slate-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 font-semibold'
+    : 'text-gray-700 dark:text-gray-300';
 
   return (
     <a
@@ -17,7 +17,7 @@ const MenuLink = ({ active, href, children }: Props) => {
       href={href}
       rel="noopener noreferrer"
       role="menuitem"
-      aria-current={active ? "page" : undefined}
+      aria-current={active ? 'page' : undefined}
     >
       {children}
     </a>

@@ -1,5 +1,5 @@
-import cn from "classnames";
-import { ReactNode } from "preact/compat";
+import cn from 'classnames';
+import { ReactNode } from 'preact/compat';
 
 type Props = {
   children: ReactNode;
@@ -9,10 +9,10 @@ type Props = {
 const Pill = ({ children, className }: Props) => (
   <div
     className={cn(
-      "flex align-middle justify-center self-center",
-      "rounded-2xl max-w-fit px-3 py-1 mr-2 mb-2",
-      "duration-200 border-2 hover:text-white",
-      className
+      'flex align-middle justify-center self-center',
+      'rounded-2xl max-w-fit px-3 py-1 mr-2 mb-2',
+      'duration-200 border-2 hover:text-white',
+      className,
     )}
   >
     <span className="text-sm font-medium">{children}</span>

@@ -1,18 +1,15 @@
-import { getLocale } from "../../helpers";
-import useFetchAndLoadMore from "../../hooks/useFetchAndLoadMore";
-import { getPosts } from "../../services/posts";
-import Loading from "../../components/shared/Loading";
-import LoadMore from "../../components/shared/LoadMore";
-import Post from "../../components/blog/Post";
-import { PostType } from "../../types";
+import { getLocale } from '../../helpers';
+import useFetchAndLoadMore from '../../hooks/useFetchAndLoadMore';
+import { getPosts } from '../../services/posts';
+import Loading from '../../components/shared/Loading';
+import LoadMore from '../../components/shared/LoadMore';
+import Post from '../../components/blog/Post';
+import { PostType } from '../../types';
 
 const locale = getLocale();
 
 const Blog = () => {
-  const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore(
-    "blog",
-    getPosts
-  );
+  const { loading, data, loadMore, showLoadMore } = useFetchAndLoadMore('blog', getPosts);
 
   return (
     <div className="Blog">

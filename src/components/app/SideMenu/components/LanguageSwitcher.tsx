@@ -1,6 +1,6 @@
-import locales from "../../../../enum/locales";
-import { getLocale } from "../../../../helpers";
-import LanguageButton from "./LanguageButton";
+import locales from '../../../../enums/locales';
+import { getLocale } from '../../../../helpers';
+import LanguageButton from './LanguageButton';
 
 const locale = getLocale();
 

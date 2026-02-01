@@ -28,7 +28,7 @@ export const cache = async ({ key, fetcher, options }: CacheOptions): Promise<un
   // Fetch fresh data
   const data = await fetcher();
   cacheStore.set(key, { data, timestamp: now });
-  
+
   return data;
 };
 
@@ -48,7 +48,7 @@ export const clearCache = (key?: string): void => {
  */
 export const getCachedData = (
   key: string,
-  options?: { cacheTime?: number }
+  options?: { cacheTime?: number },
 ): unknown | undefined => {
   const cacheTime = options?.cacheTime ?? DEFAULT_CACHE_TIME;
   const cachedItem = cacheStore.get(key);
@@ -60,4 +60,3 @@ export const getCachedData = (
 
   return undefined;
 };
-

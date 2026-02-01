@@ -1,4 +1,4 @@
-import cn from "classnames";
+import cn from 'classnames';
 
 type Props = {
   className: string;
@@ -10,7 +10,7 @@ export default function Check({ className }: Props) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
-      className={cn("h-5 w-5", className)}
+      className={cn('h-5 w-5', className)}
     >
       <path
         fillRule="evenodd"

@@ -1,9 +1,9 @@
-import { useState } from "preact/hooks";
-import PillGroup from "../PillGroup";
-import LoadMore from "../../shared/LoadMore";
-import Pill from "../Pill";
-import { all, list } from "./consts";
-import { getColor, getLocale } from "../../../helpers";
+import { useState } from 'preact/hooks';
+import PillGroup from '../PillGroup';
+import LoadMore from '../../shared/LoadMore';
+import Pill from '../Pill';
+import { all, list } from './consts';
+import { getColor, getLocale } from '../../../helpers';
 
 const locale = getLocale();
 
@@ -24,12 +24,7 @@ const TechnicalSkills = () => {
             {l}
           </Pill>
         ))}
-        {!showAll && (
-          <LoadMore
-            onClick={handleShowAll}
-            text={locale.pages.about.show_all}
-          />
-        )}
+        {!showAll && <LoadMore onClick={handleShowAll} text={locale.pages.about.show_all} />}
       </div>
     </PillGroup>
   );

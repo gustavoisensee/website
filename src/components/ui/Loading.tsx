@@ -1,4 +1,4 @@
-import './styles.css';
+import './Loading.css';
 
 const Loading = () => (
   <div className="-m-5 flex justify-center">
