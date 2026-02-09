@@ -19,7 +19,7 @@
     "classnames": "^2.5.1",
     "daisyui": "^4.6.0",
     "dayjs": "^1.11.10",
-    "preact": "^10.24.3"
+    "preact": "^10.27.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
