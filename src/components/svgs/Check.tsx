@@ -1,22 +1,23 @@
-import cn from 'classnames';
+import { cx } from '../../helpers/cx';
 
 type Props = {
-  className: string;
+  className?: string;
 };
 
-export default function Check({ className }: Props) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      className={cn('h-5 w-5', className)}
-    >
-      <path
-        fillRule="evenodd"
-        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-        clipRule="evenodd"
-      />
-    </svg>
-  );
-}
+const Check = ({ className }: Props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+    className={cx('h-5 w-5', className)}
+    aria-hidden="true"
+  >
+    <path
+      fillRule="evenodd"
+      d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+
+export default Check;

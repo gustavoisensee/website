@@ -1,0 +1,15 @@
+.panel {
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+
+.panelHidden {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel,
+  .panelHidden {
+    transition: none;
+  }
+}

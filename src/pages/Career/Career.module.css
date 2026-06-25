@@ -1,0 +1,132 @@
+.timeline {
+  @apply relative m-0 list-none p-0;
+}
+
+/* Soft vertical spine — fades at ends for a smoother look */
+.timeline::before {
+  content: "";
+  @apply pointer-events-none absolute left-[0.6875rem] top-2 bottom-2 w-px -translate-x-1/2;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgb(165 180 252 / 0.45) 12%,
+    rgb(129 140 248 / 0.7) 50%,
+    rgb(165 180 252 / 0.45) 88%,
+    transparent 100%
+  );
+  filter: blur(0.25px);
+}
+
+:global(.dark) .timeline::before {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgb(67 56 202 / 0.35) 12%,
+    rgb(99 102 241 / 0.65) 50%,
+    rgb(67 56 202 / 0.35) 88%,
+    transparent 100%
+  );
+}
+
+@media (min-width: 768px) {
+  .timeline::before {
+    @apply left-1/2;
+  }
+}
+
+.item {
+  @apply relative pb-10 last:pb-0;
+}
+
+@media (min-width: 768px) {
+  .item {
+    @apply grid items-start gap-x-8 pb-12;
+    grid-template-columns: minmax(0, 1fr) 1rem minmax(0, 1fr);
+  }
+
+  .item:last-child {
+    @apply pb-0;
+  }
+}
+
+.marker {
+  @apply absolute left-[0.6875rem] top-1.5 z-10 flex -translate-x-1/2 items-center justify-center;
+}
+
+.dot {
+  @apply block h-3 w-3 rounded-full bg-indigo-500;
+  box-shadow:
+    0 0 0 3px rgb(255 255 255),
+    0 0 0 4px rgb(129 140 248 / 0.35);
+}
+
+:global(.dark) .dot {
+  box-shadow:
+    0 0 0 3px rgb(17 24 39),
+    0 0 0 4px rgb(99 102 241 / 0.4);
+}
+
+@media (min-width: 768px) {
+  .marker {
+    @apply relative left-auto top-auto col-start-2 col-end-3 row-start-1 translate-x-0 justify-self-center;
+  }
+}
+
+.body {
+  @apply relative pl-8 text-left;
+}
+
+@media (min-width: 768px) {
+  .body {
+    @apply max-w-md pl-0;
+  }
+
+  .bodyLeft {
+    @apply col-start-1 col-end-2 row-start-1 justify-self-end;
+  }
+
+  .bodyRight {
+    @apply col-start-3 col-end-4 row-start-1 justify-self-start;
+  }
+}
+
+.companyRow {
+  @apply mb-1 flex items-center gap-2;
+}
+
+.logo {
+  @apply h-7 w-7 shrink-0 rounded-md border border-gray-200 object-cover;
+  @apply dark:border-gray-600;
+}
+
+.company {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+:global(.dark) .company {
+  @apply text-gray-100;
+}
+
+.period {
+  @apply mb-1 block text-sm italic text-gray-600;
+}
+
+:global(.dark) .period {
+  @apply text-gray-300;
+}
+
+.role {
+  @apply mb-1 py-1 text-lg font-semibold text-gray-900;
+}
+
+:global(.dark) .role {
+  @apply text-gray-100;
+}
+
+.description {
+  @apply text-sm leading-relaxed text-gray-700;
+}
+
+:global(.dark) .description {
+  @apply text-gray-200;
+}

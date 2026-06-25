@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'preact/hooks';
-import dayjs from 'dayjs';
+import { compareDatesDesc } from '../helpers/formatDate';
 import useQuery from './useQuery';
 import { PostType, ProjectType } from '../types';
 
@@ -7,11 +7,9 @@ type Data = Partial<PostType> &
   Partial<ProjectType> & {
     published_at: string;
   };
-const compareUpdatedAt = (a: Data, b: Data) => {
-  const dateA = dayjs(a.published_at);
-  const dateB = dayjs(b.published_at);
-  return dateB.diff(dateA);
-};
+
+const compareUpdatedAt = (a: Data, b: Data) =>
+  compareDatesDesc(a.published_at, b.published_at);
 
 const offset = 6;
 

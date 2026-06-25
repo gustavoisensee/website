@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-import themes from 'daisyui/src/theming/themes';
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -8,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         sans: [
+          'Inter Variable',
           'Inter',
           'system-ui',
           '-apple-system',
@@ -21,20 +21,5 @@ export default {
       },
     },
   },
-  daisyui: {
-    themes: [
-      {
-        light: {
-          ...themes['light'],
-          // 'error': '#ffffff',
-        },
-      },
-      {
-        dark: {
-          ...themes['dark'],
-        },
-      },
-    ],
-  },
-  plugins: [require('daisyui')],
+  plugins: [],
 } satisfies Config;

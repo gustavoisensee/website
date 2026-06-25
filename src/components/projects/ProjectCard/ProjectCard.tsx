@@ -1,8 +1,5 @@
-import dayjs from 'dayjs';
-import localizedFormat from 'dayjs/plugin/localizedFormat';
+import { formatDate } from '../../../helpers/formatDate';
 import { ProjectType } from '../../../types';
-
-dayjs.extend(localizedFormat);
 
 type Props = {
   project: ProjectType;
@@ -37,7 +34,7 @@ const ProjectCard = ({ project }: Props) => (
     </a>
     <div>
       <span className="italic text-sm text-gray-600 dark:text-gray-400">
-        Last pushed at {dayjs(project.pushed_at).format('LLL')}
+        Last pushed at {formatDate(project.pushed_at)}
       </span>
     </div>
   </div>

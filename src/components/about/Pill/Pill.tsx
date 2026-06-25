@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import { cx } from '../../../helpers/cx';
 import { ReactNode } from 'preact/compat';
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
 
 const Pill = ({ children, className }: Props) => (
   <div
-    className={cn(
+    className={cx(
       'flex align-middle justify-center self-center',
       'rounded-2xl max-w-fit px-3 py-1 mr-2 mb-2',
       'duration-200 border-2 hover:text-white',

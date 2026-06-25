@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import { cx } from '../../../helpers/cx';
 
 import Footer from './components/Footer';
 import SideMenuButton from './components/SideMenuButton';
@@ -12,7 +12,7 @@ const SideMenu = () => {
   useSideMenu();
 
   return (
-    <div>
+    <>
       <div className={styles.container}>
         <div className={styles.themeToggleContainer}>
           <ThemeToggle />
@@ -21,13 +21,15 @@ const SideMenu = () => {
           <SideMenuButton />
         </div>
       </div>
-
-      <nav className={cn('sidebar translate-x-56', styles.sidebar)} aria-label="Main navigation">
+      <nav
+        className={cx('sidebar translate-x-56', styles.sidebar)}
+        aria-label="Side navigation"
+      >
         <Menu />
         <LanguageSwitcher />
         <Footer />
       </nav>
-    </div>
+    </>
   );
 };
 

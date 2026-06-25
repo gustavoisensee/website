@@ -1,20 +1,32 @@
 import { colors } from '../consts';
 import locales from '../enums/locales';
-import contentEnUS from '../locale/locale.en-US.json';
-import contentPtBR from '../locale/locale.pt-BR.json';
 
 export { cache, clearCache, getCachedData } from './cache';
+export { cx } from './cx';
+export { formatDate, compareDatesDesc } from './formatDate';
 
-export const getLocale = () => {
-  const locale = localStorage.locale || locales.EN_US;
-  if (locale === locales.PT_BR) {
-    return {
-      ...contentPtBR,
-    };
+type LocaleContent = typeof import('../locale/locale.en-US.json');
+
+const localeLoaders: Record<string, () => Promise<{ default: LocaleContent }>> = {
+  [locales.EN_US]: () => import('../locale/locale.en-US.json'),
+  [locales.PT_BR]: () => import('../locale/locale.pt-BR.json'),
+};
+
+let cachedLocale: LocaleContent | null = null;
+
+export const loadLocale = async (localeKey?: string) => {
+  const key = localeKey || localStorage.locale || locales.EN_US;
+  const loader = localeLoaders[key] ?? localeLoaders[locales.EN_US];
+  const mod = await loader();
+  cachedLocale = mod.default;
+  return cachedLocale;
+};
+
+export const getLocale = (): LocaleContent => {
+  if (!cachedLocale) {
+    throw new Error('Locale not loaded. Call loadLocale() before rendering.');
   }
-  return {
-    ...contentEnUS,
-  };
+  return cachedLocale;
 };
 
 type Locale = {
