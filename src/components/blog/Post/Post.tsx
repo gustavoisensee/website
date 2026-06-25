@@ -1,4 +1,4 @@
-import dayjs from '../../../helpers/dayjs';
+import { formatDate } from '../../../helpers/formatDate';
 import { PostType } from '../../../types';
 
 type Props = {
@@ -25,7 +25,7 @@ const Post = ({ post }: Props) => (
       </p>
     )}
     <span className="italic text-sm mt-auto text-gray-600 dark:text-gray-400">
-      {dayjs(post.published_at).format('LLL')}
+      {formatDate(post.published_at)}
     </span>
   </div>
 );

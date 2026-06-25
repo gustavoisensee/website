@@ -1,6 +1,6 @@
 import { MouseEventHandler } from 'preact/compat';
 import { getLocale } from '../../helpers';
-import cn from 'classnames';
+import { cx } from '../../helpers/cx';
 
 const locale = getLocale();
 
@@ -11,7 +11,7 @@ type Props = {
 };
 
 const LoadMore = ({ onClick, text, className }: Props) => (
-  <div className={cn('flex justify-center mb-2', className)}>
+  <div className={cx('flex justify-center mb-2', className)}>
     <button
       type="button"
       onClick={onClick}

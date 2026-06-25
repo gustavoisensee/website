@@ -8,40 +8,38 @@
     "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest --environment=jsdom --exclude=['tests/**']",
-    "test:coverage": "vitest run --coverage --environment=jsdom",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
     "test:e2e:dev": "NODE_ENV=dev playwright test",
     "test:e2e": "playwright test",
     "test:e2e:report": "playwright show-report",
     "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
-    "classnames": "^2.5.1",
-    "daisyui": "^4.6.0",
-    "dayjs": "^1.11.10",
     "preact": "^10.27.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
+    "@fontsource-variable/inter": "^5.2.5",
     "@playwright/test": "^1.49.0",
-    "@preact/preset-vite": "^2.10.2",
+    "@preact/preset-vite": "^2.10.4",
     "@testing-library/preact": "^3.2.4",
     "@types/node": "^22.10.0",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@typescript-eslint/parser": "^8.17.0",
-    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/coverage-v8": "^4.1.9",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.16.0",
     "globals": "^15.13.0",
     "jsdom": "^25.0.1",
     "postcss": "^8.4.49",
-    "postcss-apply": "^0.12.0",
     "postcss-nesting": "^13.0.1",
     "prettier": "^3.7.4",
+    "sharp": "^0.34.2",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2",
-    "vite": "^7.1.4",
-    "vitest": "^2.1.8"
+    "vite": "^8.0.16",
+    "vitest": "^4.1.9"
   },
   "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef"
 }

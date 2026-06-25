@@ -1,13 +1,16 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import preact from '@preact/preset-vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/',
   plugins: [preact()],
-  // @ts-expect-error - test is from vitest
+  build: {
+    assetsInlineLimit: 0,
+  },
   test: {
     setupFiles: ['./vitest.setup.ts'],
+    environment: 'jsdom',
     exclude: [
       '**/node_modules/**',
       '**/dist/**',
@@ -16,5 +19,9 @@ export default defineConfig({
       '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build}.config.*',
       'tests/**',
     ],
+    coverage: {
+      provider: 'v8',
+      include: ['src/**/*.{ts,tsx}'],
+    },
   },
 });

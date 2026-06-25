@@ -3,7 +3,6 @@ import { useEffect, useState } from 'preact/hooks';
 const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 
-  // Initialize theme on component mount
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -14,7 +13,6 @@ const ThemeToggle = () => {
   }, []);
 
   const applyTheme = (theme: string) => {
-    document.documentElement.setAttribute('data-theme', theme);
     document.documentElement.classList.toggle('dark', theme === 'dark');
     localStorage.setItem('theme', theme);
   };
@@ -41,13 +39,16 @@ const ThemeToggle = () => {
         />
       </svg>
 
-      <input
-        type="checkbox"
-        className="toggle toggle-sm theme-controller"
-        checked={isDark}
-        onChange={handleToggle}
-        aria-label="Toggle dark mode"
-      />
+      <label className="relative inline-flex cursor-pointer items-center">
+        <input
+          type="checkbox"
+          className="peer sr-only"
+          checked={isDark}
+          onChange={handleToggle}
+          aria-label="Toggle dark mode"
+        />
+        <span className="relative h-5 w-9 rounded-full bg-gray-300 after:absolute after:left-[2px] after:top-[2px] after:h-4 after:w-4 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:bg-indigo-600 peer-checked:after:translate-x-4 dark:bg-gray-600" />
+      </label>
 
       <svg
         className="w-4 h-4 text-blue-600"

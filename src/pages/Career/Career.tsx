@@ -1,20 +1,19 @@
-import cn from 'classnames';
-import Check from '../../components/svgs/Check';
+import { cx } from '../../helpers/cx';
 import { getLocale } from '../../helpers';
+import styles from './Career.module.css';
 
-// Import all logo images
-import adyenLogo from '../../assets/logos/adyen.jpeg';
-import dashLogo from '../../assets/logos/dash.jpeg';
-import labtransLogo from '../../assets/logos/labtrans.jpeg';
-import mediamonksLogo from '../../assets/logos/mediamonks.jpeg';
-import personioLogo from '../../assets/logos/personio.jpeg';
-import prosusLogo from '../../assets/logos/prosus.jpeg';
-import tdsaLogo from '../../assets/logos/tdsa.jpeg';
-import youngcapitalLogo from '../../assets/logos/youngcapital.jpeg';
+import adyenLogo from '../../assets/logos/adyen.webp';
+import dashLogo from '../../assets/logos/dash.webp';
+import labtransLogo from '../../assets/logos/labtrans.webp';
+import mediamonksLogo from '../../assets/logos/mediamonks.webp';
+import personioLogo from '../../assets/logos/personio.webp';
+import prosusLogo from '../../assets/logos/prosus.webp';
+import tdsaLogo from '../../assets/logos/tdsa.webp';
+import youngcapitalLogo from '../../assets/logos/youngcapital.webp';
 
 const locale = getLocale();
 
-const imageMapping = {
+const imageMapping: Record<string, string> = {
   adyen: adyenLogo,
   dash: dashLogo,
   labtrans: labtransLogo,
@@ -23,8 +22,6 @@ const imageMapping = {
   prosus: prosusLogo,
   tdsa: tdsaLogo,
   youngcapital: youngcapitalLogo,
-} as {
-  [x: string]: string;
 };
 
 export default function Career() {
@@ -40,48 +37,45 @@ export default function Career() {
         {locale.pages.career.description_2}
       </p>
 
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-        {locale.pages.career.jobs.map(({ id, period, company, title, description }, i) => (
-          <li key={i}>
-            <div className="timeline-middle">
-              <Check className="text-indigo-500" />
-            </div>
-            <div
-              className={cn(
-                '!mb-8',
-                i % 2 == 0 ? 'timeline-start text-start md:text-end' : 'timeline-end text-start',
-              )}
-            >
-              <div
-                className={cn(
-                  'flex items-center',
-                  i % 2 == 0 ? 'justify-start md:flex-row-reverse' : 'justify-start',
-                )}
-              >
-                {imageMapping[id] && (
-                  <div className="size-7 mx-1">
-                    <img
-                      src={imageMapping[id] as string}
-                      className="rounded-md border"
-                      alt={`${company} logo`}
-                    />
+      <ul className={styles.timeline}>
+        {locale.pages.career.jobs.map(
+          ({ id, period, company, title, description }, i) => {
+            const isEven = i % 2 === 0;
+
+            return (
+              <li key={i} className={styles.item}>
+                <div className={styles.marker} aria-hidden="true">
+                  <span className={styles.dot} />
+                </div>
+                <div
+                  className={cx(
+                    styles.body,
+                    isEven ? styles.bodyLeft : styles.bodyRight
+                  )}
+                >
+                  <div className={styles.companyRow}>
+                    {imageMapping[id] && (
+                      <img
+                        src={imageMapping[id]}
+                        className={styles.logo}
+                        alt={`${company} logo`}
+                        width={28}
+                        height={28}
+                        loading="lazy"
+                      />
+                    )}
+                    <span className={styles.company}>{company}</span>
                   </div>
-                )}
-                <label className="mx-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
-                  {company}
-                </label>
-              </div>
-              <time className="text-sm italic text-gray-600 dark:text-gray-400">{period}</time>
-              <div className="text-lg font-semibold py-1 text-gray-900 dark:text-gray-100">
-                {title}
-              </div>
-              <div className="text-sm text-gray-700 dark:text-gray-300">{description}</div>
-            </div>
-            {i != locale.pages.career.jobs.length - 1 && (
-              <hr className="bg-gray-300 dark:bg-gray-600 !w-0.5 !-mb-2" />
-            )}
-          </li>
-        ))}
+                  <time className={styles.period} dateTime={period}>
+                    {period}
+                  </time>
+                  <h3 className={styles.role}>{title}</h3>
+                  <p className={styles.description}>{description}</p>
+                </div>
+              </li>
+            );
+          }
+        )}
       </ul>
     </div>
   );

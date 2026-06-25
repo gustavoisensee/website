@@ -1,11 +1,14 @@
-import { Suspense, lazy } from 'preact/compat';
+import { Suspense, lazy, useEffect, useState } from 'preact/compat';
 import useHash from '../../../hooks/useHash';
 import { hashtags } from '../../../consts';
 import { getLocale } from '../../../helpers';
+import { cx } from '../../../helpers/cx';
 import Loading from '../../shared/Loading';
 import Link from './Link';
+import styles from './Content.module.css';
 
 const locale = getLocale();
+const FADE_MS = 200;
 
 const AboutLazy = lazy(() => import('../../../pages/About'));
 const ProjectsLazy = lazy(() => import('../../../pages/Projects'));
@@ -22,7 +25,22 @@ const getTabComponent = (hash: string) =>
 
 const Content = () => {
   const hash = useHash();
-  const TabContent = getTabComponent(hash);
+  const [activeHash, setActiveHash] = useState(hash);
+  const [fading, setFading] = useState(false);
+
+  useEffect(() => {
+    if (hash === activeHash) return;
+
+    setFading(true);
+    const timer = window.setTimeout(() => {
+      setActiveHash(hash);
+      setFading(false);
+    }, FADE_MS);
+
+    return () => window.clearTimeout(timer);
+  }, [hash, activeHash]);
+
+  const TabContent = getTabComponent(activeHash);
 
   return (
     <div>
@@ -32,9 +50,14 @@ const Content = () => {
         <Link hashSource={hashtags.blog} title={locale?.hashtags?.blog} />
         <Link hashSource={hashtags.career} title={locale?.hashtags?.career} />
       </nav>
-      <Suspense fallback={<Loading />}>
-        <TabContent />
-      </Suspense>
+      <div
+        className={cx(styles.panel, fading && styles.panelHidden)}
+        role="tabpanel"
+      >
+        <Suspense fallback={<Loading />}>
+          <TabContent key={activeHash} />
+        </Suspense>
+      </div>
     </div>
   );
 };
